@@ -1,0 +1,145 @@
+{
+    "data_types": [
+        {
+            "data_class": "name",
+            "data_mentioned_in_text": "The personal information which you may provide to us may include your name",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "to provide the information, products and services you request",
+            "line_number": [
+                33,
+                48
+            ]
+        },
+        {
+            "data_class": "physical_address",
+            "data_mentioned_in_text": "The personal information which you may provide to us may include your address",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "to provide the information, products and services you request",
+            "line_number": [
+                33,
+                48
+            ]
+        },
+        {
+            "data_class": "phone_number",
+            "data_mentioned_in_text": "The personal information which you may provide to us may include your telephone number",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "to provide the information, products and services you request",
+            "line_number": [
+                33,
+                48
+            ]
+        },
+        {
+            "data_class": "email_address",
+            "data_mentioned_in_text": "The personal information which you may provide to us may include your e-mail address",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "to provide the information, products and services you request",
+            "line_number": [
+                33,
+                48
+            ]
+        },
+        {
+            "data_class": "credit_related_information",
+            "data_mentioned_in_text": "in rare instances, credit card information",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "to provide the information, products and services you request",
+            "line_number": [
+                33,
+                48
+            ]
+        },
+        {
+            "data_class": "ip_address",
+            "data_mentioned_in_text": "we collect information that is sent to us automatically by your web browser... typically includes the IP address of your Internet service provider",
+            "purpose_class": "improve_products_and_services",
+            "purpose_mentioned_in_text": "improve this Site (for example, by making it more compatible with the technology used by our visitors)",
+            "line_number": [
+                150,
+                156,
+                165,
+                168
+            ]
+        },
+        {
+            "data_class": "ip_address",
+            "data_mentioned_in_text": "We may also provide your IP address to our third-party service providers who can use it to identify information such as your state and zip code",
+            "purpose_class": "personalisation",
+            "purpose_mentioned_in_text": "improve this Site (for example, by making it more compatible with the technology used by our visitors)",
+            "line_number": [
+                150,
+                156,
+                162
+            ]
+        }
+    ],
+    "TP_sharing": [
+        {
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "We may send your personal information to other group companies, affiliates and third parties to help us process your personal information for the purposes set out in this policy",
+            "third_party_sharing_practice_class": "affiliates_and_subsidiaries",
+            "third_party_sharing_practice_mentioned_in_text": "We may send your personal information to other group companies, affiliates and third parties",
+            "line_number": [
+                42
+            ]
+        },
+        {
+            "purpose_class": "marketing",
+            "purpose_mentioned_in_text": "may also use your information for their own marketing purposes",
+            "third_party_sharing_practice_class": "affiliates_and_subsidiaries",
+            "third_party_sharing_practice_mentioned_in_text": "Our distributors may also use your information for their own marketing purposes",
+            "line_number": [
+                114
+            ]
+        },
+        {
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "may also share your information with selected third parties (other than our third-party vendors or distributors) for joint marketing purposes",
+            "third_party_sharing_practice_class": "merger_and_acquisition",
+            "third_party_sharing_practice_mentioned_in_text": "may also share your information with selected third parties",
+            "line_number": [
+                117
+            ]
+        },
+        {
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "Your information may be transferred to successor organization if, for example, we transfer the ownership or operation of this Site to another organization or if we merge with another organization",
+            "third_party_sharing_practice_class": "merger_and_acquisition",
+            "third_party_sharing_practice_mentioned_in_text": "Your information may be transferred to successor organization",
+            "line_number": [
+                126
+            ]
+        },
+        {
+            "purpose_class": "regulatory_compliance",
+            "purpose_mentioned_in_text": "We may disclose your information when we, in good faith, believe disclosure is appropriate to comply with the law, a court order or a subpoena",
+            "third_party_sharing_practice_class": "regulatory_compliance",
+            "third_party_sharing_practice_mentioned_in_text": "We may disclose your information when we believe disclosure is appropriate to comply with the law",
+            "line_number": [
+                132
+            ]
+        }
+    ],
+    "TP_name": [
+        {
+            "third_party_sharing_practice_class": "regulatory_compliance",
+            "third_party_sharing_practice_mentioned_in_text": "we might share our server logs, which contain visitors IP addresses, with the appropriate investigative authorities",
+            "third_party_name": "Unknown",
+            "third_party_name_mentioned_in_text": "appropriate investigative authorities",
+            "line_number": [
+                156
+            ]
+        }
+    ],
+    "your_rights": [
+        {
+            "rights_class": "access_to_information",
+            "rights_mentioned_in_text": "If you would like to review, correct and update the personal information you have provided to us through this Site",
+            "line_number": [
+                264
+            ]
+        }
+    ],
+    "your_responsibilities": []
+}

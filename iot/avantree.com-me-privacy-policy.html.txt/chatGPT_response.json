@@ -1,0 +1,137 @@
+{
+    "data_types": [
+        {
+            "data_class": "name",
+            "data_mentioned_in_text": "your name",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "To complete your purchase transactions.",
+            "line_number": [
+                72
+            ]
+        },
+        {
+            "data_class": "address",
+            "data_mentioned_in_text": "address",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "To complete your purchase transactions. To provide the services you request.",
+            "line_number": [
+                72,
+                75
+            ]
+        },
+        {
+            "data_class": "telephone_number",
+            "data_mentioned_in_text": "telephone number, mobile telephone number",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "To provide the services you request.",
+            "line_number": [
+                75
+            ]
+        },
+        {
+            "data_class": "email_address",
+            "data_mentioned_in_text": "email address",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "To provide the services you request. To send you our catalogs and other offerings by mail.",
+            "line_number": [
+                75,
+                78
+            ]
+        },
+        {
+            "data_class": "account_credentials",
+            "data_mentioned_in_text": "Using your name and a password of your choice",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "To make online shopping faster and easier, you may register on the Avantree website.",
+            "line_number": [
+                93
+            ]
+        },
+        {
+            "data_class": "payment_information",
+            "data_mentioned_in_text": "If you use a credit or debit card or pay by check, we will also include your account number.",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "To complete your purchase transactions.",
+            "line_number": [
+                72
+            ]
+        },
+        {
+            "data_class": "date_of_birth",
+            "data_mentioned_in_text": "birth date",
+            "purpose_class": "personalisation",
+            "purpose_mentioned_in_text": "To identify your product and service preferences, so we can notify you of new or additional products, services, and promotions that might be of interest to you.",
+            "line_number": [
+                81
+            ]
+        },
+        {
+            "data_class": "purchase_history",
+            "data_mentioned_in_text": "we obtain information concerning the specific products or services you purchase or use",
+            "purpose_class": "improve_products_and_services",
+            "purpose_mentioned_in_text": "To improve our merchandise selections, customer service, and overall shopping experience.",
+            "line_number": [
+                57,
+                87
+            ]
+        },
+        {
+            "data_class": "ip_address",
+            "data_mentioned_in_text": "IP addresses",
+            "purpose_class": "improve_products_and_services",
+            "purpose_mentioned_in_text": "such as improving our site design, product assortments, customer service, and special promotions.",
+            "line_number": [
+                60
+            ]
+        }
+    ],
+    "TP_sharing": [
+        {
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "To complete your purchase transactions. To provide the services you request.",
+            "third_party_sharing_practice_class": "performance_of_contract",
+            "third_party_sharing_practice_mentioned_in_text": "such as by subscribing to our catalogs, email, or mobile messaging.",
+            "line_number": [
+                72,
+                75,
+                51
+            ]
+        }
+    ],
+    "TP_name": [
+        {
+            "third_party_sharing_practice_class": "performance_of_contract",
+            "third_party_sharing_practice_mentioned_in_text": "We use information from our interactions with you and other customers, as well as from other parties.",
+            "third_party_name": "Unknown",
+            "third_party_name_mentioned_in_text": "other parties.",
+            "line_number": [
+                36
+            ]
+        }
+    ],
+    "your_rights": [
+        {
+            "rights_class": "access_to_information",
+            "rights_mentioned_in_text": "the choices you have about the way information is collected and used",
+            "line_number": [
+                39
+            ]
+        },
+        {
+            "rights_class": "opt_out_marketing",
+            "rights_mentioned_in_text": "If you do not want to receive an email from Avantree or its affiliates you can click on the Unsubscribe link at the bottom of any email communication sent by us.",
+            "line_number": [
+                102
+            ]
+        }
+    ],
+    "your_responsibilities": [
+        {
+            "responsibilities_class": "data_protection",
+            "responsibilities_mentioned_in_text": "If you are using a public computer, we strongly encourage you to LOG OUT at the conclusion of your session.",
+            "line_number": [
+                96
+            ]
+        }
+    ]
+}

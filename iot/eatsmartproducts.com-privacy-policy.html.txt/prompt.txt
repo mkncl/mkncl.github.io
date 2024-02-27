@@ -1,0 +1,296 @@
+Generate a JSON representation of: (a) all the data types and (b) all purposes of collection and (c) all third party sharing practices and (d) name of companies with which data are shared and (e) all user rights mentions and (f) all user responsibilities mentioned in the given privacy policy paragraph. If a data type is used for more than one purpose or if more than one data type is used for a single purpose, duplicate the records accordingly - similar for third party sharing practices.
+
+------- Instruction:
+1. Find in the text which data types the company collects and provide their corresponding purposes of collection. Data types can be one of these classes (use exactly the same class name) (for "data_class" in JSON):
+- "name" (DEFINITION: Uses the term name)
+- "contact_information" (DEFINITION: “May include, mailing addresses, email addresses, and phone numbers)
+- "physical_address" (DEFINITION: May include home address and/or zip/post code)
+- "date_of_birth" (DEFINITION: May refer to date of birth or birthday)
+- "photo_profile_picture" (DEFINITION: May refer to a photograph or image used to identify an individual)
+- "gender" (DEFINITION: May refer to an individual's actual or perceived sex, gender identity, self-image)
+- "biometric" (DEFINITION: May refer to information used to specifically identify a person, such as fingerprints, voice patterns, or iris scans)
+- "personal_description" (DEFINITION: May refer to physical description such height, weight, hair color, eye color, facial features, and body type. It might also include details about a person's usual attire, posture, or any distinctive physical characteristics. It might also refer to a description of a person's personality, interests, and values. This might describe their personality traits, their hobbies and interests, their values and beliefs, their strengths and weaknesses, and their overall demeanor.)
+- "social_media_profiles" (DEFINITION: This may include, instagram, X (formally twitter), Snapchat, Tiktok, facebook, Watsapp, telegram, discord, linkedin, youtube, pinterest, reddit ,quora or tumblr or any other social media platform)
+- "account_credentials" (DEFINITION: “may refer to pieces of information needed to access and use a particular  This can include Username or Identifier and password or access key.  This may also include security questions and answers, two-factor authentication and biometric authentication”)
+- "user_name" (DEFINITION: “may also refer to a login name, user ID, or account name”)
+- "password" (DEFINITION: Password as letters, biometric password that authenticate user.)
+- "phone_number" (DEFINITION: Mobile or stationary phone number)
+- "email_address" (DEFINITION: Email address)
+- "age" (DEFINITION: How old is the person)
+- "payment_information" (DEFINITION: “may refer to the payment method through which funds are transferred. This may include  Card information such as card number, expiration date, CVV code, and potentially the cardholder's name and billing address for credit or debit cards.
+For bank transfers, this might include the account number, routing number, and potentially the account holder's name and address.For a digital wallet like PayPal or Apple Pay, this could involve usernames, passwords, or unique identifiers associated with the wallet. It could also include details for alternative payment methods like cash app balances, cryptocurrency wallets, or loyalty points.”)
+- "purchase_history" (DEFINITION: “refers to a record of transactions you've made with a particular business or retailer over time. It may include items purchased, dates of purachase, quantities, prices paid, payment method or platform”)
+- "credit_related_information" (DEFINITION: “may refer to borrowing activity, including details of open and closed accounts and payment history. May also refer to a credit report, credit score score, county court judgements, liens or bankruptcy”)
+- "page_response_times" (DEFINITION: “may refer to server response time or TTDB and the refers to the amount of time  it takes for a web server to send the first byte of data back to a user's browser after receiving a request.”)
+- "cookie_information" (DEFINITION: “may refer to session cookies, persistent cookies, first-party cookies, and third-party cookies. It may also include website preference, login information, browsing history, shopping cart contents or location data”)
+- "ip_address" (DEFINITION: IP address or other internet address similar to IP)
+- "health_data" (DEFINITION: “health data refers to any data related to a person's physical or mental health, including the provision of healthcare services. It may include clinical data such as medical record,prescriptions immunisations, administrative data such as hospital admission, lifestyle and behavioural data such as Physical activity levels, sleep patterns, diet, smoking status, alcohol consumption, medication adherence”)
+- "health_activity_data" (DEFINITION: “refers to measurements and information related to physical activity and movement. It may include steps taken, distance covered, heart rate, calorie burned, active minutes, sleep duration and quality or specific activities such as yoga or swimming”)
+- "weight" (DEFINITION: Weight of the person in kg/lbs/etc)
+- "height" (DEFINITION: Height of the person in cm/etc)
+- "body_temperature" (DEFINITION: Body temperature of person)
+- "bmi" (DEFINITION: Body measurement index of the person)
+- "menstrual_cycle_dates" (DEFINITION: Date of menstrual cycle of the person)
+- "pregnancy" (DEFINITION: Pregnancy status or any information related to the person's pregnancy)
+- "other_health_related_information" (DEFINITION: “may refer to wearable sensor data not necessarily related to the activity, such as Skin temperature, sweat composition, oxygen saturation levels, travel history, biomarkers in  your blood, saliva, or other bodily fluids, such as blood sugar, cholesterol, or hormone levels, information about smoking, alcohol consumption, drug use, and other risky behaviours”)
+- "users_location" (DEFINITION: “may refer to the user’s physical location or the user’s virtual location, including where they are within a specific digital environment, such as what page the user is  currently viewing”)
+- "device_location" (DEFINITION: “may refer to the geographical position of the device or the devices location within a network such as its MAC address”)
+- "language" (DEFINITION: “may refer to the language settings”)
+- "temperature" (DEFINITION: Temperature of the home or other environment)
+- "humidity" (DEFINITION: Humidity of the home or other environment)
+- "ambient_light" (DEFINITION: Information about light (bulbs, light strips. etc.) of the home or other environment)
+- "movement" (DEFINITION: “may refer to the movement detected for motion detection”)
+- "smoke_carbon_monoxide_levels" (DEFINITION: “may include detection of volatile organic compounds  and particulate matter “ )
+- "general_environmental_data" (DEFINITION: “may include energy consumption, weather data, noise levels”)
+- "device_type" (DEFINITION: “may refer to the model or serial number”)
+- "operating_system" (DEFINITION: “may refer to mobile or pc operating system”)
+- "application" (DEFINITION: applications installed on the device)
+- "video_card" (DEFINITION: information about video card used by device)
+- "sound_card" (DEFINITION: information about sound card used by device)
+- "memory" (DEFINITION: information about RAM used by device)
+- "browser_type" (DEFINITION: information about used browser)
+- "enabled_device_accessibility_features" (DEFINITION: information about turned on accessibility features - such as increasing of text, text to speech, etc.)
+- "browser_plugin_types_and_versions" (DEFINITION: information about browser plugins)
+- "battery_level" (DEFINITION: information about battery of the device)
+- "device_signals__wifi__bluetooth_" (DEFINITION: “may refer to the wifi signal strength or Bluetooth strength”)
+- "technical_information__general_" (DEFINITION: any other information about device or software)
+- "mobile_network_information" (DEFINITION: information about mobile network strength, carrier, etc.)
+- "time_zone" (DEFINITION: information about timezone)
+- "the_number_of_sessions_on_app" (DEFINITION: number of sessions/opening of the app or website)
+- "usage_activity_data" (DEFINITION: “may refer to the time, frequency or duration of activities”)
+- "users_on_the_app" (DEFINITION: “may refer to users on the app”)
+- "error_reports" (DEFINITION: reports about app/website failures and errors)
+- "advertisement_engagement" (DEFINITION: “may refer to the advertisements shown and how the users interact with them”)
+- "behaviours" (DEFINITION: “may refers to actions taken by users perform within the system, such as clicks, taps, searches, selections, or button presses; navigation patterns: Sequences of actions users take, showing how they move through the system and complete tasks.Time spent: Duration of interaction in specific sections or activities within the system. Frequency of use: How often users engage with specific features or return to the system overall.”
+)
+- "visits_to_site" (DEFINITION: number of visits to the website/app)
+- "resources_you_access" (DEFINITION: specific information about resources that user access when visited the website/app)
+- "details_of_use_of_apps" (DEFINITION: any other information of how user use website/app)
+- "product_view_or_searched_for" (DEFINITION: information about user searches when visited the app/website)
+- "length_of_visits_to_certain_pages" (DEFINITION: time spend on specific page of app/website)
+- "page_interaction_information" (DEFINITION: “may refer to how the user interacts with the app, the page they are viewing, browsing actions, patterns”)
+- "methods_used_to_browse_away_from_the_page" (DEFINITION: how user browse away from the page (close, open new page, etc.))
+- "websites_visited" (DEFINITION: list of previously visited websites)
+- "steps" (DEFINITION: number of steps user did)
+- "pace" (DEFINITION: pace of the user)
+- "distance" (DEFINITION: walked distance of the user)
+- "url_clickstream_to_and_from" (DEFINITION: how user moved from one page to another)
+- "communications_between_players" (DEFINITION: “nay refer to the actual words, phrases, and messages exchanged between players. This could include chat logs, forum posts, in-game dialogues, voice chat transcripts or Images, videos, or audio files shared between players.”)
+- "friend_relationships" (DEFINITION: “may refer to friend list”)
+- "conversational_data__general_" (DEFINITION: “may refer to information provided to a chatbot, messages you send and receive”)
+- "Social meta data" (DEFINITION: “may refer to sender and receiver information: Usernames, IDs, or other identifiers of the players involved in the communication. Timestamps: When the communication occurred.Channel information: The specific channel or platform used for communication (e.g., in-game chat, voice chat, forum thread).
+Engagement details: Whether the message was read, reacted to, or forwarded.”)
+- "audio" (DEFINITION: any audio user-generated content)
+- "video" (DEFINITION: any video user-generated content)
+- "comments" (DEFINITION: “any text user-generated content, may refer to comments posted by user”)
+- "metadata_general" (DEFINITION: metadata of user-generated content)
+- "hashtag" (DEFINITION: “may refer to hashtags used”)
+- "Sexual Orientation" (DEFINITION: individual's sexual preferences or any information that may identify user's sexual preferences)
+- "Political views" (DEFINITION: individual's political views or any information that may identify user's political views)
+- "racial or ethnic origin" (DEFINITION: individual's racial or ethnic origin or any information that may identify user's racial or ethnic origin)
+- "philosophical beliefs" (DEFINITION: individual's philosophical beliefs or any information that may identify user's philosophical beliefs)
+- "trade union membership" (DEFINITION: information about trade union membership)
+- "Social Security Number" (DEFINITION: information about social security number)
+2. For each data type, categorize the purpose of collection into one of the following classes (use exactly the same class name) (for "purpose_class" in JSON):
+- "personalisation" (DEFINITION: “may refer to personalising the product or suggestions”)
+- "interaction" (DEFINITION: “may refer to the interactive feature of the service”)
+- "display" (DEFINITION: “may refer to how the content is displayed”)
+- "marketing" (DEFINITION: “may refer to advertisements, marketing communications, surveys, news, updates”)
+- "improve_products_and_services" (DEFINITION: “may refer to developing new features,products, offerings”)
+- "provide_services_and_fulfill_contractual_obligations" (DEFINITION: “may refer to using the information collected to deliver the product or service and fulfil terms and conditions”)
+- "preserve_system_integrity" (DEFINITION: “may refer to detecting and preventing fraud, cheating, unauthorised activities, prevent hacking, spamming, enforce terms of service”)
+- "provide_business_services" (DEFINITION: “may refer to specific features or functionalities of the software, technical support, maintenance, data storage, backups”)
+- "troubleshoot" (DEFINITION: “may refers to tests to ensure that the service or product is functioning”)
+- "communicate_with_user" (DEFINITION: may refer to using contact information to connect with user and send messages)
+- "connect_with_other_users" (DEFINITION: “may refer to using contact information to connect with others or allow others to connect or find you”)
+- "promotions" (DEFINITION: “may refer to contests, programs or promotions”)
+- "changes_to_terms" (DEFINITION: “may refer to change in the product or service” )
+- "user_safety" (DEFINITION: “may refer to the detection of illegal activity, abuse, violation of terms of service, threats to the security of users and the public, protecting harms against property”)
+- "service_security" (DEFINITION: “may refer to conducting audits”)
+- "defend_legal_rights" (DEFINITION: “may refer to the defence of legal rights in relation to litigation”)
+- "corporate_governance" (DEFINITION: “may refer to complying with finance, tax, accounting audits, assessments of operations, privacy, security, risk compliance obligations, information needed for a merger, acquisition, asset sale or transfer of the business” )
+- "research" (DEFINITION: “may refer to research and datasets for researchers, professional groups and charitable groups”)
+- "market_research" (DEFINITION: “may refer to sales, marketing or business strategy decisions” )
+3. For each purpose, categorize the third party sharing practices into one of the following classes (use exactly the same class name) (for "third_party_sharing_practice_class" in JSON):
+- "regulatory_compliance" (DEFINITION: “may refer to complying to a law, regulation, legal process”)
+- "performance_of_contract" (DEFINITION: “may refer to protecting, maintaining, or operating our business”)
+- "prevent_harm" (DEFINITION: “ may refer to protecting users from harm, fraud, abuse, violations of our terms, threats to the security of the service, threats to the physical safety of any person”)
+- "invesitigate  harm" (DEFINITION: “may refer to investigating fraud, abuse, violations of our terms, threats to the security of the service, threats to the physical safety of any person”)
+- "aggregated_information" (DEFINITION: “may refer to non-personal information that is aggregated or de-identified and shared with third-parties”)
+- "merger_and_acquisition" (DEFINITION: “may refer to information shared in the process of a sale, merger or acquisition”)
+- "affiliates_and_subsidiaries" (DEFINITION: “may refer to corporate affiliates, service providers, vendors agents who support our internal services”)
+- "third_party_platforms_integration" (DEFINITION: “may refer to third-party platforms such as steam”)
+- "consumer_retention_rewards_program" (DEFINITION: “may refer to product, reward offers and offers by us or partners”)
+4. For each third party sharing practice find the name of the company or government body with which data are shared (for "third_party_name" in JSON). If name is not mentioned - set name as "Unknown".
+5. Categorize the user rights into one of the following classes (use exactly the same class name) (for "rights_class" in JSON):
+- "opt_out_marketing" (DEFINITION: “may refer to the right to not process information for advertisement or marketing purposes.”)
+- "access_to_information" (DEFINITION: “may refer to the right to access information”)
+- "data_correction" (DEFINITION: “may refer to the right to correction or rectification to correct any incorrect or inaccurate personal information”)
+- "third_party_data_sharing" (DEFINITION: “ may refer to the right to revoke consent or process information by third parties”)
+- "cookie_preference" (DEFINITION: “may refer to managing cookie preferences” )
+- "content_removal_erasure" (DEFINITION: “may refer to the remover of user content”)
+- "automatic_decision_making" (DEFINITION: “may refer to being not subject to automated decision making if it affects or produces a legal effect”)
+- "data_processing_complaint" (DEFINITION: “may refer to the right to lodge a complaint if the data processing infringes the law” )
+- "data_portability" (DEFINITION: “may refer to the right to receive a copy of personal information obtained and it may gave a right to ask it transferred to third party” )
+- "limit_use_or_disclosure_of_sensitive_personal_information" (DEFINITION: “ may refer to the the right to limit use or disclosure of sensitive personal information” )
+- "opt_out_of_push_notification" (DEFINITION: “may refer to the right to opt out of push notifications” )
+- "arbitration_opt-out" (DEFINITION: “may refer to the right to opt-out arbitration or class action” )
+6. Categorize the user responsibilities into one of the following classes (use exactly the same class name) (for "responsibilities_class" in JSON):
+- "visitors_consent" (DEFINITION: “may refer to the need to gain consent of the people visiting home”)
+- "others_right_to_privacy" (DEFINITION: “may refer to respecting others right to privacy”)
+- "data_sharing" (DEFINITION: “may refer to sharing data such as name and photo that you are willing to be made public” )
+- "additional_users_data_responsibilities" (DEFINITION: “may refer to other authorised users who may be able to control the device or user content”  )
+- "data_processor" (DEFINITION: “may refer to the responsibility as the data processor” )
+- "data_protection" (DEFINITION: “may refer to the responsibility to keep personal information safe such as using a strong password and enabling multi-factor authentication”)
+- "childrens_accounts" (DEFINITION: “may refer to the responsibility to manage children’s accounts under 18”)
+- "user_content_intellectual_property_ip" (DEFINITION: “may refer to the responsibility that the user content does not infringe upon pon the copyright, trademark, patent, trade secret or other intellectual property rights of any third party." )
+- "user_content_harm" (DEFINITION: “may refer to the responsibility not to use or contribute User Content that is unlawful, tortious, defamatory, obscene, invasive of the privacy of another person, threatening, harassing, abusive, hateful, racist or otherwise objectionable or inappropriate" )
+- "beta confidentiality " (DEFINITION: “may refer to the responsibility that that the beta test is confidential”)
+- "user_indemnity" (DEFINITION: “may refer to the responsibility to defend and indemnify the company, licensor, and third parties from claims liabilities, losses, injuries damages, cost and expenses, from violation by you of the agreement”)
+
+---------- Privacy Policy Paragraph (number in beginning is the number of line):
+3. {removed href} Skip to content.
+6. Privacy Policy.
+9. Lifetime Brands, Inc. (Company, us or we) recognize the importance of your privacy. Please read the following privacy policy to understand how we will treat your information in connection with our Site located at {removed hyperref} (the Site).
+12. This privacy policy was last updated on DECEMBER 26, 2019.
+15. This policy applies to information we collect: (a) on this Site; (b) in e-mail, text and other electronic messages between you and this Site; or (c) through mobile and desktop applications you download from this Site, which provide dedicated non-browser-based interaction between you and this Site.
+18. It does not apply to information collected by (a) us offline or through any other means, including on any other Site operated by Company or any third party (including our affiliates and subsidiaries) or (b) any third party (including our affiliates and subsidiaries), including through any application or content that may link to or be accessible from or on the Site.
+21. Please read this policy carefully to understand our policies and practices regarding your information and how we will treat it. If you do not agree with our policies and practices, your choice is not to use our Site. By accessing or using this Site, you agree to this privacy policy. This policy may change from time to time. Your continued use of this Site after we make changes is deemed to be acceptance of those changes, so please check the policy periodically for updates.
+24. INFORMATION WE COLLECT ABOUT YOU AND HOW WE COLLECT IT.
+27. We may collect several types of information from and about users of our Site, including your name, address, email address, telephone number, credit or debit card number, and other similar information that can be used to identify you (Personally Identifiable Information). Specifically, when you use our Site, we may collect the following:
+30. {number list}.
+33. {list item} INFORMATION YOU PROVIDE TO US when you.
+36. {list item}.
+39. {number list}.
+42. {list item} Fill in forms on our Site, including when you register to use our Site, subscribe to our service, post material, request further services, enter a contest or promotion sponsored by us, or when you report a problem with our Site;
+45. {list item} Contact us;
+48. {list item} Respond to surveys;
+51. {list item} Place an order;
+54. {list item} Use the search bar on the Site; or.
+57. {list item} Otherwise post or publish on the Site.
+60. {list item} INFORMATION WE COLLECT THROUGH AUTOMATIC DATA COLLECTION TECHNOLOGIES.
+63. As you navigate through and interact with our Site, we may use cookies, flash cookies, or web beacons (collectively, Automatic Data Collection Technologies) to collect certain information about your equipment, browsing actions and patterns. We may use these technologies to collect information about your online activities over time and across third-party Sites or other online services (behavioral tracking).
+66. The information we collect automatically may include personal information or we may associate it with personal information we collect in other ways or receive from third parties. See the section titled Automatic Data Collection Technologies below to learn more.
+69. AUTOMATIC DATA COLLECTION TECHNOLOGIES.
+72. Automatic Data Collection Technologies help us to improve our Site and to deliver a better and more personalized service, including by enabling us to: (a) estimate our audience size and usage patterns; (b) store information about your preferences, allowing us to customize our Site according to your individual interests; (c) speed up your searches; and (d) recognize you when you return to our Site.
+75. The technologies we use for this automatic data collection may include:
+78. {number list}.
+81. {list item} Cookies (or browser cookies). A cookie is a small file placed on the hard drive of your computer. You may refuse to accept browser cookies by activating the appropriate setting on your browser. However, if you select this setting you may be unable to access certain parts of our Site. Unless you have adjusted your browser setting so that it will refuse cookies, our system will issue cookies when you direct your browser to our Site.
+84. {list item} Flash Cookies. Certain features of our Site may use local stored objects (or Flash cookies) to collect and store information about your preferences and navigation to, from and on our Site. Flash cookies are not managed by the same browser settings as are used for browser cookies.
+87. {list item} Web Beacons. Pages of our Site and our e-mails may contain small electronic files known as web beacons (also referred to as clear gifs, pixel tags and single-pixel gifs) that permit the Company, for example, to count users who have visited those pages or opened an e-mail and for other related Site statistics (for example, recording the popularity of certain Site content and verifying system and server integrity).
+90. Some content or applications, including advertisements, on the Site are served by third-parties, including advertisers, ad networks and servers, content providers and application providers. We do not control these third parties tracking technologies or how they may be used. If you have any questions about an advertisement or other targeted content, you should contact the responsible provider directly. For information about how you can opt out of receiving targeted advertising from many providers, see the section titled Choices About How We Use and Disclose Your Information below.
+93. HOW WE USE YOUR INFORMATION.
+96. We use information that we collect about you or that you provide to us, including any Personally Identifiable Information:
+99. {number list}.
+102. {list item} To present our Site and its contents to you;
+105. {list item} To provide you with information, products or services that you request from us;
+108. {list item} To fulfill any other purpose for which you provide it;
+111. {list item} To provide you with notices about your account;
+114. {list item} To carry out our obligations and enforce our rights arising from any contracts entered into between you and us, including for billing and collection;
+117. {list item} To notify you about changes to our Site or any products or services we offer or provide through it;
+120. {list item} To allow you to participate in interactive features on our Site;
+123. {list item} To administer our Site, including by monitoring and analyzing our Site traffic and usage patterns;
+126. {list item} In any other way we may describe when you provide the information;
+129. {list item} For any other purpose with your consent.
+132. We may also use your information to contact you about our own and third-parties goods and services that may be of interest to you. If you do not want us to use your Personally Identifiable Information in this way, please adjust your user preferences in your account profile. For more information, see the section titled Choices About How We Use and Disclose Your Information below.
+135. We may use the information we have collected from you to enable us to display advertisements to our advertisers target audiences. Even though we do not disclose your Personally Identifiable Information for these purposes without your consent, if you click on or otherwise interact with an advertisement, the advertiser may assume that you meet its target criteria.
+138. DISCLOSURE OF YOUR INFORMATION.
+141. We may disclose aggregated information about our users, and information that does not identify any individual, without restriction.
+144. {number list}.
+147. {list item} To our subsidiaries and affiliates;
+150. {list item} To contractors, service providers and other third parties we use to support our business;
+153. {list item} To a buyer or other successor in the event of a merger, divestiture, restructuring, reorganization, dissolution or other sale or transfer of some or all of our assets, whether as a going concern or as part of bankruptcy, liquidation or similar proceeding, in which personal information held by us about our Site users is among the assets transferred;
+156. {list item} To third parties to market their products or services to you if you have consented to/not opted out of these disclosures;
+159. {list item} To fulfill the purpose for which you provide it;
+162. {list item} For any other purpose disclosed by us when you provide the information;
+165. {list item} With your consent;
+168. {list item} To comply with any court order, law or legal process, including to respond to any government or regulatory request.
+171. {list item} To enforce or apply our {removed href} Terms of Use and other agreements, including for billing and collection purposes.
+174. {list item} If we believe disclosure is necessary or appropriate to protect the rights, property, or safety of us, our customers or others.
+177. DATA SECURITY.
+180. We have implemented commercially suitable physical, electronic, and managerial measures designed to secure your personal information from accidental loss and from unauthorized access, use, alteration and disclosure. These procedures include, but are not limited to, firewalls, encryption, intrusion detection, and Site monitoring. We also limit access to any Personally Identifiable Information we receive to employees who need access to that information in order to do their jobs.
+183. Unfortunately, the transmission of information via the internet is not completely secure. Although we do our best to protect your personal information, we cannot guarantee the security of your personal information transmitted to our Site. Any transmission of personal information is at your own risk. We are not responsible for circumvention of any privacy settings or security measures contained on the Site.
+186. CHOICES ABOUT HOW WE USE AND DISCLOSE YOUR INFORMATION.
+189. We strive to provide you with choices regarding the personal information you provide to us. We have created mechanisms to provide you with the following control over your information:
+192. {number list}.
+195. {list item} Tracking Technologies and Advertising. You can set your browser to refuse all or some browser cookies, or to alert you when cookies are being sent. To learn how you can manage your Flash cookie settings, visit the Flash player settings page on Adobes Site. If you disable or refuse cookies, please note that some parts of this site may then be inaccessible or not function properly.
+198. {list item} Disclosure of Your Information for Third-Party Advertising. If you do not want us to share your personal information with unaffiliated or non-agent third parties for promotional purposes, you can opt-out by sending us an e-mail stating your request to {removed hyperref}.
+201. {list item} Promotional Offers from the Company. If you do not wish to have your e-mail address/contact information used by the Company to promote our own or third parties products or services, you can opt-out by sending us an e-mail stating your request to {removed hyperref}. If we have sent you a promotional e-mail, you may send us a return e-mail asking to be omitted from future e-mail distributions. This opt out does not apply to information provided to the Company as a result of a product purchase, warranty registration, product service experience or other transactions.
+204. {list item} Targeted Advertising. If you do not want us to use information that we collect or that you provide to us to deliver advertisements according to our advertisers target-audience preferences, you can opt-out by sending us an e-mail stating your request to {removed hyperref}.
+207. ACCESSING AND CORRECTING YOUR INFORMATION.
+210. You can review and change your personal information by logging into the Site and visiting your account profile page.
+213. You may also send us an e-mail at {removed hyperref} to request access to, correct or delete any personal information that you have provided to us. We cannot delete your Personally Identifiable Information without also deleting your user account. We may not accommodate a request to change information if we believe the change would violate any law or legal requirement or cause the information to be incorrect.
+216. If you delete your User Contributions from the Site, copies of your User Contributions may remain viewable in cached and archived pages, or might have been copied or stored by other Site users. Proper access and use of information provided on the Site, including User Contributions, is governed by our {removed href} Terms of Use.
+219. YOUR CALIFORNIA PRIVACY RIGHTS.
+222. California Civil Code Section 1798. 83 permits users of our Site that are California residents to request, at one (1) time each year, certain information regarding our disclosure of personal information to third parties for their direct marketing purposes. To make such a request, please send an e-mail to {removed hyperref} or write us at:
+225. Lifetime Brands, Inc.
+228. Attn: Consumer Services Data Requests.
+231. 22 Blake Street.
+234. Medford, MA 02155.
+237. The {removed href} California Resident Privacy Notice supplements the information contained in our Privacy Policy above and applies solely to California residents or those protected by California law.
+240. CHILDREN UNDER THE AGE OF 13.
+243. Our Site is not intended for children under 13 years of age. No one under age 13 may provide any information to or on the Site. We do not knowingly collect personal information from children under 13. If you are under 13, do not use or provide any information on this Site or on or through any of its features/register on the Site, make any purchases through the Site, use any of the interactive or public comment features of this Site or provide any information about yourself to us, including your name, address, telephone number, e-mail address or any screen name or user name you may use. If we learn we have collected or received personal information from a child under 13 without verification of parental consent, we will delete that information. If you believe we might have any information from or about a child under 13, please contact us at {removed hyperref}.
+246. INTERNATIONAL VISITORS.
+249. Our Site is hosted and operated in the United States. By using the Site, you are consenting to the transfer of your Personally Identifiable Information to the United States. If you are accessing the Site from outside of the United States, please be advised that United States law may not offer the same privacy protections as the laws of your jurisdiction.
+252. CHANGES TO OUR PRIVACY POLICY.
+255. It is our policy to post any changes we make to our privacy policy on this page with a notice that the privacy policy has been updated on the Site home page. If we make material changes to how we treat our users personal information, we will notify you by e-mail to the e-mail address specified in your account and/or through a notice on the Site home page. The date the privacy policy was last revised is identified at the top of the page. You are responsible for ensuring we have an up-to-date active and deliverable e-mail address for you, and for periodically visiting our Site and this privacy policy to check for any changes.
+258. CONTACT INFORMATION.
+261. To ask questions or comment about this privacy policy and our privacy practices, contact us at:
+264. Lifetime Brands, Inc.
+267. Attn: Data Protection.
+270. Compliance Officer.
+273. 1000 Stewart Avenue.
+276. Garden City, NY 11530.
+279. {removed href}.
+282. {removed href}.
+285. Subscribe to Emails.
+288. Join our Newsletter.
+291. {number list}.
+294. {list item} Your Name*
+297. {list item} Email*
+
+
+--------- Example of a JSON structure:
+{
+  "data_types": [
+    {
+      "data_class": "Name",
+      "data_mentioned_in_text": "...",
+      "purpose_class": "Provide Services and fulfill contractual obligations",
+      "purpose_mentioned_in_text": "...",
+      "line_number": [...]
+    },
+  ],
+"TP_sharing": [
+    {
+      "purpose_class": "Provide Services and fulfill contractual obligations",
+      "purpose_mentioned_in_text": "...",
+      "third_party_sharing_practice_class": "Research",
+      "third_party_sharing_practice_mentioned_in_text": "...",
+      "line_number": [...]
+    },
+  ],
+"TP_name": [
+    {
+      "third_party_sharing_practice_class": "Research",
+      "third_party_sharing_practice_mentioned_in_text": "...",
+      "third_party_name": "Google",
+      "third_party_name_mentioned_in_text": "....",
+      "line_number": [...]
+    },
+  ],
+“your_rights”: [
+   {
+      "rights_class": "Content Removal/ Erasure",
+      "rights_mentioned_in_text": "...",
+      "line_number": [...]
+   },
+  ],
+“your_responsibilities”:[
+   {
+      "responsibilities_class": "Children's accounts",
+      "responsibilities_mentioned_in_text": "...",
+      "line_number": [...]
+   },
+  ],
+}

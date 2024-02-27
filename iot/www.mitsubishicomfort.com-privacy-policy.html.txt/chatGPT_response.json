@@ -1,0 +1,123 @@
+{
+    "data_types": [
+        {
+            "data_class": "identifiers",
+            "data_mentioned_in_text": "A real name, alias, postal address, Internet Protocol address, email address, account name, or other similar identifiers.",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "To fulfill or meet the reason for which the information is provided. For example, if you provide us with personal information in relation to a purchase, warranty submission, referral form, etc., we will use that information in conjunction with that specific purpose.",
+            "line_number": [
+                36,
+                72
+            ]
+        },
+        {
+            "data_class": "contact_information",
+            "data_mentioned_in_text": "his or her name, signature, address, telephone number.",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "if you provide us with personal information in relation to a purchase... we will use that information in conjunction with that specific purpose.",
+            "line_number": [
+                39,
+                66,
+                72
+            ]
+        },
+        {
+            "data_class": "purchase_history",
+            "data_mentioned_in_text": "records of personal property, products or services purchased, obtained, or considered, or other purchasing or consuming histories or tendencies.",
+            "purpose_class": "research",
+            "purpose_mentioned_in_text": "For testing, research, analysis and product development.",
+            "line_number": [
+                42,
+                87
+            ]
+        },
+        {
+            "data_class": "usage_activity_data",
+            "data_mentioned_in_text": "Browsing history, search history, information on a consumers interaction with a website, application, or advertisement.",
+            "purpose_class": "improve_products_and_services",
+            "purpose_mentioned_in_text": "To improve our website and present its contents to you.",
+            "line_number": [
+                45,
+                84
+            ]
+        },
+        {
+            "data_class": "users_location",
+            "data_mentioned_in_text": "Physical location of Products registered for extended Warranty.",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "To carry out our obligations and enforce our rights arising from any contracts entered into between you and us, including for billing and collections.",
+            "line_number": [
+                48,
+                81
+            ]
+        }
+    ],
+    "TP_sharing": [
+        {
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "To fulfill or meet the reason for which the information is provided. For example, if you provide us with personal information in relation to a purchase, warranty submission, referral form, etc., we will use that information in conjunction with that specific purpose.",
+            "third_party_sharing_practice_class": "affiliates_and_subsidiaries",
+            "third_party_sharing_practice_mentioned_in_text": "we may store and process personal information and share it with our worldwide subsidiaries and affiliates to better understand your needs and improve our relationship with you.",
+            "line_number": [
+                36,
+                72,
+                108
+            ]
+        },
+        {
+            "purpose_class": "defend_legal_rights",
+            "purpose_mentioned_in_text": "To respond to law enforcement requests and as required by litigation requirements, applicable law, court order, or governmental regulations.",
+            "third_party_sharing_practice_class": "regulatory_compliance",
+            "third_party_sharing_practice_mentioned_in_text": "(a) meet any applicable law, regulation, legal process or enforceable governmental request; (b) enforce applicable terms of service, including investigation of potential violations; (c) detect, prevent, or otherwise address fraud, security or technical issues; and (d) protect against harm to the rights, property or safety of METUS, our users or the public as required or permitted by law.",
+            "line_number": [
+                93,
+                108
+            ]
+        }
+    ],
+    "TP_name": [
+        {
+            "third_party_sharing_practice_class": "affiliates_and_subsidiaries",
+            "third_party_sharing_practice_mentioned_in_text": "share it with our worldwide subsidiaries and affiliates to better understand your needs and improve our relationship with you.",
+            "third_party_name": "Unknown",
+            "third_party_name_mentioned_in_text": "worldwide subsidiaries and affiliates",
+            "line_number": [
+                108
+            ]
+        },
+        {
+            "third_party_sharing_practice_class": "regulatory_compliance",
+            "third_party_sharing_practice_mentioned_in_text": "meet any applicable law, regulation, legal process or enforceable governmental request;",
+            "third_party_name": "Unknown",
+            "third_party_name_mentioned_in_text": "applicable law, regulation, legal process or enforceable governmental request",
+            "line_number": [
+                108
+            ]
+        }
+    ],
+    "your_rights": [
+        {
+            "rights_class": "access_to_information",
+            "rights_mentioned_in_text": "You have the right to request the disclosure of your personal information in our possession and mandate revisions when necessary.",
+            "line_number": [
+                135
+            ]
+        },
+        {
+            "rights_class": "data_portability",
+            "rights_mentioned_in_text": "METUS offers you ways to update and/or to delete incorrect information, barring the need to retain it for legitimate business or legal purposes.",
+            "line_number": [
+                135
+            ]
+        }
+    ],
+    "your_responsibilities": [
+        {
+            "responsibilities_class": "visitor_consent",
+            "responsibilities_mentioned_in_text": "By using these Sites, you consent to the terms of our privacy statement and to our collecting and processing of personal information for the purposes given above.",
+            "line_number": [
+                522
+            ]
+        }
+    ]
+}

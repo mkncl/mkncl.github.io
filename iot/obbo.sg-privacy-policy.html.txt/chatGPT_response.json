@@ -1,0 +1,104 @@
+{
+    "data_types": [
+        {
+            "data_class": "name",
+            "data_mentioned_in_text": "names",
+            "purpose_class": "personalisation",
+            "purpose_mentioned_in_text": "evaluating and/or processing your booking/reservation",
+            "line_number": [
+                42
+            ]
+        },
+        {
+            "data_class": "contact_information",
+            "data_mentioned_in_text": "contact information",
+            "purpose_class": "personalisation",
+            "purpose_mentioned_in_text": "evaluating and/or processing your booking/reservation",
+            "line_number": [
+                42
+            ]
+        },
+        {
+            "data_class": "contact_information",
+            "data_mentioned_in_text": "contact information",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "administering, dealing and/or managing booking/reservation with OBBO",
+            "line_number": [
+                45
+            ]
+        },
+        {
+            "data_class": "contact_information",
+            "data_mentioned_in_text": "contact information",
+            "purpose_class": "marketing",
+            "purpose_mentioned_in_text": "providing and sending you marketing, advertising and/or promotional information and materials",
+            "line_number": [
+                51
+            ]
+        }
+    ],
+    "TP_sharing": [
+        {
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "administering, dealing and/or managing booking/reservation with OBBO",
+            "third_party_sharing_practice_class": "affiliates_and_subsidiaries",
+            "third_party_sharing_practice_mentioned_in_text": "sharing your personal data with OBBO Partners to administer and deal with your booking",
+            "line_number": [
+                45
+            ]
+        },
+        {
+            "purpose_class": "marketing",
+            "purpose_mentioned_in_text": "providing and sending you marketing, advertising and/or promotional information and materials",
+            "third_party_sharing_practice_class": "affiliates_and_subsidiaries",
+            "third_party_sharing_practice_mentioned_in_text": "via various modes of communication",
+            "line_number": [
+                51
+            ]
+        }
+    ],
+    "TP_name": [
+        {
+            "third_party_sharing_practice_class": "affiliates_and_subsidiaries",
+            "third_party_sharing_practice_mentioned_in_text": "OBBO Partners",
+            "third_party_name": "OBBO related corporations or associated companies, as well as partners, merchants and/or third party organisations",
+            "third_party_name_mentioned_in_text": "offered by OBBO, OBBO's related corporations or associated companies, as well as partners, merchants and/or third party organisations with whom OBBO may collaborate, partner or tie up",
+            "line_number": [
+                42
+            ]
+        }
+    ],
+    "your_rights": [
+        {
+            "rights_class": "access_to_information",
+            "rights_mentioned_in_text": "You may request to access and/or correct the personal data currently in our possession or control",
+            "line_number": [
+                111
+            ]
+        },
+        {
+            "rights_class": "data_correction",
+            "rights_mentioned_in_text": "You may request to access and/or correct the personal data currently in our possession or control",
+            "line_number": [
+                111
+            ]
+        },
+        {
+            "rights_class": "content_removal_erasure",
+            "rights_mentioned_in_text": "destruction and/or anonymized as soon as it is reasonable to assume that (i) the purpose for which that personal data was collected is no longer being served by the retention of such personal data; and (ii) retention is no longer necessary for any other legal or business purposes",
+            "line_number": [
+                153
+            ]
+        }
+    ],
+    "your_responsibilities": [
+        {
+            "responsibilities_class": "data_protection",
+            "responsibilities_mentioned_in_text": "you must also update us of any changes in your personal data that you had initially provided us with. We will not be responsible for relying on inaccurate or incomplete personal data arising from you not updating us of any changes in your personal data that you had initially provided us with",
+            "line_number": [
+                147
+            ]
+        }
+    ],
+    "notes": "The text given does not explicitly provide all the information to fully fill the JSON structure per instruction. For instance, user responsibilities and user rights are not exhaustively mentioned in the given text, and the names of companies or third parties are broadly categorized as 'OBBO Partners.' There might be further data types, purposes, third-party sharing practices, third-party names, user rights, and responsibilities that are collected, used, or mentioned in the full privacy policy but not provided in the paragraph text given."
+}

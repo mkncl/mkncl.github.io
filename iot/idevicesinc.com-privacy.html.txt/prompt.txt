@@ -1,0 +1,301 @@
+Generate a JSON representation of: (a) all the data types and (b) all purposes of collection and (c) all third party sharing practices and (d) name of companies with which data are shared and (e) all user rights mentions and (f) all user responsibilities mentioned in the given privacy policy paragraph. If a data type is used for more than one purpose or if more than one data type is used for a single purpose, duplicate the records accordingly - similar for third party sharing practices.
+
+------- Instruction:
+1. Find in the text which data types the company collects and provide their corresponding purposes of collection. Data types can be one of these classes (use exactly the same class name) (for "data_class" in JSON):
+- "name" (DEFINITION: Uses the term name)
+- "contact_information" (DEFINITION: “May include, mailing addresses, email addresses, and phone numbers)
+- "physical_address" (DEFINITION: May include home address and/or zip/post code)
+- "date_of_birth" (DEFINITION: May refer to date of birth or birthday)
+- "photo_profile_picture" (DEFINITION: May refer to a photograph or image used to identify an individual)
+- "gender" (DEFINITION: May refer to an individual's actual or perceived sex, gender identity, self-image)
+- "biometric" (DEFINITION: May refer to information used to specifically identify a person, such as fingerprints, voice patterns, or iris scans)
+- "personal_description" (DEFINITION: May refer to physical description such height, weight, hair color, eye color, facial features, and body type. It might also include details about a person's usual attire, posture, or any distinctive physical characteristics. It might also refer to a description of a person's personality, interests, and values. This might describe their personality traits, their hobbies and interests, their values and beliefs, their strengths and weaknesses, and their overall demeanor.)
+- "social_media_profiles" (DEFINITION: This may include, instagram, X (formally twitter), Snapchat, Tiktok, facebook, Watsapp, telegram, discord, linkedin, youtube, pinterest, reddit ,quora or tumblr or any other social media platform)
+- "account_credentials" (DEFINITION: “may refer to pieces of information needed to access and use a particular  This can include Username or Identifier and password or access key.  This may also include security questions and answers, two-factor authentication and biometric authentication”)
+- "user_name" (DEFINITION: “may also refer to a login name, user ID, or account name”)
+- "password" (DEFINITION: Password as letters, biometric password that authenticate user.)
+- "phone_number" (DEFINITION: Mobile or stationary phone number)
+- "email_address" (DEFINITION: Email address)
+- "age" (DEFINITION: How old is the person)
+- "payment_information" (DEFINITION: “may refer to the payment method through which funds are transferred. This may include  Card information such as card number, expiration date, CVV code, and potentially the cardholder's name and billing address for credit or debit cards.
+For bank transfers, this might include the account number, routing number, and potentially the account holder's name and address.For a digital wallet like PayPal or Apple Pay, this could involve usernames, passwords, or unique identifiers associated with the wallet. It could also include details for alternative payment methods like cash app balances, cryptocurrency wallets, or loyalty points.”)
+- "purchase_history" (DEFINITION: “refers to a record of transactions you've made with a particular business or retailer over time. It may include items purchased, dates of purachase, quantities, prices paid, payment method or platform”)
+- "credit_related_information" (DEFINITION: “may refer to borrowing activity, including details of open and closed accounts and payment history. May also refer to a credit report, credit score score, county court judgements, liens or bankruptcy”)
+- "page_response_times" (DEFINITION: “may refer to server response time or TTDB and the refers to the amount of time  it takes for a web server to send the first byte of data back to a user's browser after receiving a request.”)
+- "cookie_information" (DEFINITION: “may refer to session cookies, persistent cookies, first-party cookies, and third-party cookies. It may also include website preference, login information, browsing history, shopping cart contents or location data”)
+- "ip_address" (DEFINITION: IP address or other internet address similar to IP)
+- "health_data" (DEFINITION: “health data refers to any data related to a person's physical or mental health, including the provision of healthcare services. It may include clinical data such as medical record,prescriptions immunisations, administrative data such as hospital admission, lifestyle and behavioural data such as Physical activity levels, sleep patterns, diet, smoking status, alcohol consumption, medication adherence”)
+- "health_activity_data" (DEFINITION: “refers to measurements and information related to physical activity and movement. It may include steps taken, distance covered, heart rate, calorie burned, active minutes, sleep duration and quality or specific activities such as yoga or swimming”)
+- "weight" (DEFINITION: Weight of the person in kg/lbs/etc)
+- "height" (DEFINITION: Height of the person in cm/etc)
+- "body_temperature" (DEFINITION: Body temperature of person)
+- "bmi" (DEFINITION: Body measurement index of the person)
+- "menstrual_cycle_dates" (DEFINITION: Date of menstrual cycle of the person)
+- "pregnancy" (DEFINITION: Pregnancy status or any information related to the person's pregnancy)
+- "other_health_related_information" (DEFINITION: “may refer to wearable sensor data not necessarily related to the activity, such as Skin temperature, sweat composition, oxygen saturation levels, travel history, biomarkers in  your blood, saliva, or other bodily fluids, such as blood sugar, cholesterol, or hormone levels, information about smoking, alcohol consumption, drug use, and other risky behaviours”)
+- "users_location" (DEFINITION: “may refer to the user’s physical location or the user’s virtual location, including where they are within a specific digital environment, such as what page the user is  currently viewing”)
+- "device_location" (DEFINITION: “may refer to the geographical position of the device or the devices location within a network such as its MAC address”)
+- "language" (DEFINITION: “may refer to the language settings”)
+- "temperature" (DEFINITION: Temperature of the home or other environment)
+- "humidity" (DEFINITION: Humidity of the home or other environment)
+- "ambient_light" (DEFINITION: Information about light (bulbs, light strips. etc.) of the home or other environment)
+- "movement" (DEFINITION: “may refer to the movement detected for motion detection”)
+- "smoke_carbon_monoxide_levels" (DEFINITION: “may include detection of volatile organic compounds  and particulate matter “ )
+- "general_environmental_data" (DEFINITION: “may include energy consumption, weather data, noise levels”)
+- "device_type" (DEFINITION: “may refer to the model or serial number”)
+- "operating_system" (DEFINITION: “may refer to mobile or pc operating system”)
+- "application" (DEFINITION: applications installed on the device)
+- "video_card" (DEFINITION: information about video card used by device)
+- "sound_card" (DEFINITION: information about sound card used by device)
+- "memory" (DEFINITION: information about RAM used by device)
+- "browser_type" (DEFINITION: information about used browser)
+- "enabled_device_accessibility_features" (DEFINITION: information about turned on accessibility features - such as increasing of text, text to speech, etc.)
+- "browser_plugin_types_and_versions" (DEFINITION: information about browser plugins)
+- "battery_level" (DEFINITION: information about battery of the device)
+- "device_signals__wifi__bluetooth_" (DEFINITION: “may refer to the wifi signal strength or Bluetooth strength”)
+- "technical_information__general_" (DEFINITION: any other information about device or software)
+- "mobile_network_information" (DEFINITION: information about mobile network strength, carrier, etc.)
+- "time_zone" (DEFINITION: information about timezone)
+- "the_number_of_sessions_on_app" (DEFINITION: number of sessions/opening of the app or website)
+- "usage_activity_data" (DEFINITION: “may refer to the time, frequency or duration of activities”)
+- "users_on_the_app" (DEFINITION: “may refer to users on the app”)
+- "error_reports" (DEFINITION: reports about app/website failures and errors)
+- "advertisement_engagement" (DEFINITION: “may refer to the advertisements shown and how the users interact with them”)
+- "behaviours" (DEFINITION: “may refers to actions taken by users perform within the system, such as clicks, taps, searches, selections, or button presses; navigation patterns: Sequences of actions users take, showing how they move through the system and complete tasks.Time spent: Duration of interaction in specific sections or activities within the system. Frequency of use: How often users engage with specific features or return to the system overall.”
+)
+- "visits_to_site" (DEFINITION: number of visits to the website/app)
+- "resources_you_access" (DEFINITION: specific information about resources that user access when visited the website/app)
+- "details_of_use_of_apps" (DEFINITION: any other information of how user use website/app)
+- "product_view_or_searched_for" (DEFINITION: information about user searches when visited the app/website)
+- "length_of_visits_to_certain_pages" (DEFINITION: time spend on specific page of app/website)
+- "page_interaction_information" (DEFINITION: “may refer to how the user interacts with the app, the page they are viewing, browsing actions, patterns”)
+- "methods_used_to_browse_away_from_the_page" (DEFINITION: how user browse away from the page (close, open new page, etc.))
+- "websites_visited" (DEFINITION: list of previously visited websites)
+- "steps" (DEFINITION: number of steps user did)
+- "pace" (DEFINITION: pace of the user)
+- "distance" (DEFINITION: walked distance of the user)
+- "url_clickstream_to_and_from" (DEFINITION: how user moved from one page to another)
+- "communications_between_players" (DEFINITION: “nay refer to the actual words, phrases, and messages exchanged between players. This could include chat logs, forum posts, in-game dialogues, voice chat transcripts or Images, videos, or audio files shared between players.”)
+- "friend_relationships" (DEFINITION: “may refer to friend list”)
+- "conversational_data__general_" (DEFINITION: “may refer to information provided to a chatbot, messages you send and receive”)
+- "Social meta data" (DEFINITION: “may refer to sender and receiver information: Usernames, IDs, or other identifiers of the players involved in the communication. Timestamps: When the communication occurred.Channel information: The specific channel or platform used for communication (e.g., in-game chat, voice chat, forum thread).
+Engagement details: Whether the message was read, reacted to, or forwarded.”)
+- "audio" (DEFINITION: any audio user-generated content)
+- "video" (DEFINITION: any video user-generated content)
+- "comments" (DEFINITION: “any text user-generated content, may refer to comments posted by user”)
+- "metadata_general" (DEFINITION: metadata of user-generated content)
+- "hashtag" (DEFINITION: “may refer to hashtags used”)
+- "Sexual Orientation" (DEFINITION: individual's sexual preferences or any information that may identify user's sexual preferences)
+- "Political views" (DEFINITION: individual's political views or any information that may identify user's political views)
+- "racial or ethnic origin" (DEFINITION: individual's racial or ethnic origin or any information that may identify user's racial or ethnic origin)
+- "philosophical beliefs" (DEFINITION: individual's philosophical beliefs or any information that may identify user's philosophical beliefs)
+- "trade union membership" (DEFINITION: information about trade union membership)
+- "Social Security Number" (DEFINITION: information about social security number)
+2. For each data type, categorize the purpose of collection into one of the following classes (use exactly the same class name) (for "purpose_class" in JSON):
+- "personalisation" (DEFINITION: “may refer to personalising the product or suggestions”)
+- "interaction" (DEFINITION: “may refer to the interactive feature of the service”)
+- "display" (DEFINITION: “may refer to how the content is displayed”)
+- "marketing" (DEFINITION: “may refer to advertisements, marketing communications, surveys, news, updates”)
+- "improve_products_and_services" (DEFINITION: “may refer to developing new features,products, offerings”)
+- "provide_services_and_fulfill_contractual_obligations" (DEFINITION: “may refer to using the information collected to deliver the product or service and fulfil terms and conditions”)
+- "preserve_system_integrity" (DEFINITION: “may refer to detecting and preventing fraud, cheating, unauthorised activities, prevent hacking, spamming, enforce terms of service”)
+- "provide_business_services" (DEFINITION: “may refer to specific features or functionalities of the software, technical support, maintenance, data storage, backups”)
+- "troubleshoot" (DEFINITION: “may refers to tests to ensure that the service or product is functioning”)
+- "communicate_with_user" (DEFINITION: may refer to using contact information to connect with user and send messages)
+- "connect_with_other_users" (DEFINITION: “may refer to using contact information to connect with others or allow others to connect or find you”)
+- "promotions" (DEFINITION: “may refer to contests, programs or promotions”)
+- "changes_to_terms" (DEFINITION: “may refer to change in the product or service” )
+- "user_safety" (DEFINITION: “may refer to the detection of illegal activity, abuse, violation of terms of service, threats to the security of users and the public, protecting harms against property”)
+- "service_security" (DEFINITION: “may refer to conducting audits”)
+- "defend_legal_rights" (DEFINITION: “may refer to the defence of legal rights in relation to litigation”)
+- "corporate_governance" (DEFINITION: “may refer to complying with finance, tax, accounting audits, assessments of operations, privacy, security, risk compliance obligations, information needed for a merger, acquisition, asset sale or transfer of the business” )
+- "research" (DEFINITION: “may refer to research and datasets for researchers, professional groups and charitable groups”)
+- "market_research" (DEFINITION: “may refer to sales, marketing or business strategy decisions” )
+3. For each purpose, categorize the third party sharing practices into one of the following classes (use exactly the same class name) (for "third_party_sharing_practice_class" in JSON):
+- "regulatory_compliance" (DEFINITION: “may refer to complying to a law, regulation, legal process”)
+- "performance_of_contract" (DEFINITION: “may refer to protecting, maintaining, or operating our business”)
+- "prevent_harm" (DEFINITION: “ may refer to protecting users from harm, fraud, abuse, violations of our terms, threats to the security of the service, threats to the physical safety of any person”)
+- "invesitigate  harm" (DEFINITION: “may refer to investigating fraud, abuse, violations of our terms, threats to the security of the service, threats to the physical safety of any person”)
+- "aggregated_information" (DEFINITION: “may refer to non-personal information that is aggregated or de-identified and shared with third-parties”)
+- "merger_and_acquisition" (DEFINITION: “may refer to information shared in the process of a sale, merger or acquisition”)
+- "affiliates_and_subsidiaries" (DEFINITION: “may refer to corporate affiliates, service providers, vendors agents who support our internal services”)
+- "third_party_platforms_integration" (DEFINITION: “may refer to third-party platforms such as steam”)
+- "consumer_retention_rewards_program" (DEFINITION: “may refer to product, reward offers and offers by us or partners”)
+4. For each third party sharing practice find the name of the company or government body with which data are shared (for "third_party_name" in JSON). If name is not mentioned - set name as "Unknown".
+5. Categorize the user rights into one of the following classes (use exactly the same class name) (for "rights_class" in JSON):
+- "opt_out_marketing" (DEFINITION: “may refer to the right to not process information for advertisement or marketing purposes.”)
+- "access_to_information" (DEFINITION: “may refer to the right to access information”)
+- "data_correction" (DEFINITION: “may refer to the right to correction or rectification to correct any incorrect or inaccurate personal information”)
+- "third_party_data_sharing" (DEFINITION: “ may refer to the right to revoke consent or process information by third parties”)
+- "cookie_preference" (DEFINITION: “may refer to managing cookie preferences” )
+- "content_removal_erasure" (DEFINITION: “may refer to the remover of user content”)
+- "automatic_decision_making" (DEFINITION: “may refer to being not subject to automated decision making if it affects or produces a legal effect”)
+- "data_processing_complaint" (DEFINITION: “may refer to the right to lodge a complaint if the data processing infringes the law” )
+- "data_portability" (DEFINITION: “may refer to the right to receive a copy of personal information obtained and it may gave a right to ask it transferred to third party” )
+- "limit_use_or_disclosure_of_sensitive_personal_information" (DEFINITION: “ may refer to the the right to limit use or disclosure of sensitive personal information” )
+- "opt_out_of_push_notification" (DEFINITION: “may refer to the right to opt out of push notifications” )
+- "arbitration_opt-out" (DEFINITION: “may refer to the right to opt-out arbitration or class action” )
+6. Categorize the user responsibilities into one of the following classes (use exactly the same class name) (for "responsibilities_class" in JSON):
+- "visitors_consent" (DEFINITION: “may refer to the need to gain consent of the people visiting home”)
+- "others_right_to_privacy" (DEFINITION: “may refer to respecting others right to privacy”)
+- "data_sharing" (DEFINITION: “may refer to sharing data such as name and photo that you are willing to be made public” )
+- "additional_users_data_responsibilities" (DEFINITION: “may refer to other authorised users who may be able to control the device or user content”  )
+- "data_processor" (DEFINITION: “may refer to the responsibility as the data processor” )
+- "data_protection" (DEFINITION: “may refer to the responsibility to keep personal information safe such as using a strong password and enabling multi-factor authentication”)
+- "childrens_accounts" (DEFINITION: “may refer to the responsibility to manage children’s accounts under 18”)
+- "user_content_intellectual_property_ip" (DEFINITION: “may refer to the responsibility that the user content does not infringe upon pon the copyright, trademark, patent, trade secret or other intellectual property rights of any third party." )
+- "user_content_harm" (DEFINITION: “may refer to the responsibility not to use or contribute User Content that is unlawful, tortious, defamatory, obscene, invasive of the privacy of another person, threatening, harassing, abusive, hateful, racist or otherwise objectionable or inappropriate" )
+- "beta confidentiality " (DEFINITION: “may refer to the responsibility that that the beta test is confidential”)
+- "user_indemnity" (DEFINITION: “may refer to the responsibility to defend and indemnify the company, licensor, and third parties from claims liabilities, losses, injuries damages, cost and expenses, from violation by you of the agreement”)
+
+---------- Privacy Policy Paragraph (number in beginning is the number of line):
+3. Privacy Policy Avon CT iDevices LLC gearidevices-logoUntitled-1.
+6. Hubbell Incorporated Privacy Policy.
+9. LAST UPDATED: JUNE 8, 2019.
+12. Hubbell Incorporated, located at 40 Waterview Drive, Shelton, Connecticut 06484, and its divisions, subsidiaries, and affiliates are committed to protecting the privacy of our users. This Privacy Policy (Privacy Policy) is intended to inform you of our policies and practices regarding our collection, use, and disclosure of the information that you submit to us and that we collect from you through our Website and Mobile Apps. BY VISITING THE WEBSITES, OR BY DOWNLOADING OR USING OUR MOBILE APPS, YOU ACCEPT THE PRACTICES DESCRIBED IN THIS PRIVACY POLICY.
+15. AS HUBBELL INCORPORATED IS A U. S.-HEADQUARTERED COMPANY, YOUR PERSONAL INFORMATION WILL BE TRANSFERRED TO AND PROCESSED IN THE UNITED STATES. BY SUBMITTING YOUR PERSONAL INFORMATION, YOU CONSENT TO TRANSFER AND PROCESSING.
+18. Whenever we use the words we or us or Hubbell Incorporated, we are referring to Hubbell Incorporated and its divisions, subsidiaries, and affiliates. Whenever we use the words our Websites, we are referring to {removed href} {removed hyperref} and all websites of Hubbell Incorporated and its divisions, subsidiaries and affiliates, as applicable. The mobile applications that are covered by this Privacy Policy include all mobile applications of Hubbell Incorporated and its divisions, subsidiaries and affiliates, as applicable (collectively Mobile Apps).
+21. This Privacy Policy is subject to revision and changes, which will be noted here. We encourage you to review this Privacy Policy as well as our {removed href} Terms of Use. All defined terms in the Privacy Policy have the same meaning as defined in the Terms of Use unless otherwise noted.
+24. {removed href} PERSONAL INFORMATION.
+27. For purposes of this Privacy Policy, Personal Information is information about you that is linked to you as an individual, such as your name, postal address, email address, phone number, credit card number and expiration date, as well as other non-public information that is associated with that information. Personal Information does not include technical information, such as unique device identifiers, randomly assigned unique identifiers in cookies, mobile device name, timestamp, or IP addresses.
+30. COLLECTION, STORAGE, AND USE IN THE UNITED STATES.
+33. Our Websites and Mobile Apps are operated from within the United States, and by submitting your Personal Information to us, either through our Websites, Mobile Apps, or by other means, you are agreeing to the collection, usage, and storage of your Personal Information in the United States as outlined in this Privacy Policy.
+36. Please note that your Personal Information may be used by us in the country where it was collected, as well as in the United States, where laws regarding the use of Personal Information may be less strict than the laws in your country.
+39. HOW WE COLLECT PERSONAL INFORMATION.
+42. We collect Personal Information to better tailor the features, performance and support of our products, services, Websites, and Mobile Apps, and to offer you additional information about our products and services. We collect Personal Information as follows:
+45. {number list}.
+48. {list item} When you voluntarily provide it to us.
+51. {list item} When you register and set up an account.
+54. {list item} When you sign up to receive emails or other communications.
+57. {list item} When you make purchases.
+60. {list item} When you participate in surveys, studies, or market research initiatives.
+63. {list item} When you communicate with us.
+66. {list item} When you consent to receive text messages, we collect your mobile telephone number, in order to send you the text messages.
+69. {list item} When you contact us offline or submit information to us offline.
+72. {list item} When you visit or otherwise interact with our Websites.
+75. {list item} When you download or use our Mobile Apps.
+78. {list item} By obtaining it from publicly available sources.
+81. {list item} By purchasing or otherwise obtaining it from third parties.
+84. HOW WE USE PERSONAL INFORMATION.
+87. Hubbell Incorporated may use the Personal Information we collect to:
+90. {number list}.
+93. {list item} communicate with you and respond to your requests;
+96. {list item} provide, operate, develop, improve, maintain, and protect our programs, products, services and content;
+99. {list item} conduct analysis of usage trends;
+102. {list item} conduct voluntary surveys, studies, or market research initiatives in order to gather feedback about the Websites and Mobile Apps as well as opinions on important issues. When participating in a Hubbell Incorporated survey, study, or market research initiative, we may ask you to submit Personal Information. Such Personal Information is not used for sales solicitations and will not be shared with third parties without your consent or as otherwise permitted by this Privacy Policy;
+105. {list item} support the safety and security of our services;
+108. {list item} authenticate users and to prevent fraud or other unauthorized or illegal activity;
+111. {list item} personalize and target content, including ads;
+114. {list item} enforce our Terms of Use and Privacy Statement and other rules about your use of the Websites and Mobile Apps;
+117. {list item} protect Hubbell Incorporateds rights or property and/or the rights of others;
+120. {list item} comply with laws or regulations, court orders or other legal process;
+123. {list item} create De-identified Information. We may create De-identified Information from Personal Information by excluding data (such as your name or email address) that makes the information personally identifiable to you. There are no restrictions to the way Hubbell Incorporated can use or share De-identified Information.
+126. OUR DISCLOSURE OF YOUR PERSONAL INFORMATION.
+129. Except as otherwise stated in this Privacy Policy, we do not sell, rent, or share your Personal Information with third parties. We disclose your Personal Information for the following purposes:
+132. {number list}.
+135. {list item} PROVIDING SERVICES TO YOU, FULFILLING ORDERS, AND MAINTAINING SYSTEMS. We may share information about you with third parties who perform services on our behalf, who provide content through our Services, and with others to enable services and functionality and to perform maintenance and improve the services.
+138. When you purchase a product or a service from us, we will share select Personal Information, such as your shipping address and billing address, with third-party fulfillment companies in the United States, in order to deliver the product or service to you. We may also share your Personal Information with third-party service providers in the United States that provide advertising and marketing services for us, including distribution of postal mail, electronic alerts, email and mobile text messages to our customers and potential customers. We require these third-party service providers to refrain from using your Personal Information, except to provide the services requested by us. To opt-out of being included in information that Hubbell Incorporated provides to third parties for advertising and marketing purposes, please see the How You Can Stop Receiving Marketing Communications section of this Privacy Policy.
+141. We also hire vendors that work on our systems that may have access to your Personal Information in the course of performing their duties. We require those vendors to keep your Personal Information confidential and not to use it for their own purposes.
+144. You expressly consent to the sharing of your Personal Information with our third-party service providers and vendors.
+147. {number list}.
+150. {list item} SHARING WITH AFFILIATES. We reserve the right to share some or all of your Personal Information with our subsidiaries, joint ventures, and other companies under our common control (collectively, Affiliates), for the purposes described in this Privacy Policy. We will require our Affiliates to honor this Privacy Policy.
+153. {list item} COMPLIANCE WITH LAWS AND PROTECTION OF RIGHTS. Regardless of any choices you make regarding your Personal Information, we may disclose your Personal Information if we believe in good faith that disclosure is necessary to (a) comply with laws or regulations court orders, subpoenas or other legal process; or (b) protect and defend our rights or property, or the rights or safety of third parties, or to enforce our Terms of Use or this Privacy Policy.
+156. {list item} ACQUISITION, SALE, OR REORGANIZATION. We may also use and disclose Personal Information in connection with a contemplated reorganization or an actual reorganization of our business, in connection with financing, a sale or other transaction involving the disposal of all or part of our business or assets, including for the purpose of permitting the due diligence required to decide whether to proceed with a transaction. If the sale occurs, the purchaser will be entitled to use and disclose the Personal Information collected by us, and the purchaser will assume the rights and obligations regarding your Personal Information as described in this Privacy Policy.
+159. {removed href} ADVERTISING.
+162. {number list}.
+165. {list item} INTEREST-BASED ADVERTISING. We may use interest-based advertisements also known as online behavioral advertising. Online behavioral advertising is advertising that is directed to you based, at least in part, on your Internet browsing behavior across websites and over time. Although we do not share Personal Information with the third parties that conduct interest-based advertising operations on our behalf, these third parties and their affiliates do collect certain information as a result of their javascript tags and other technologies being used on our Websites. The information that they collect includes the names of web pages you view (URLs), unique identifiers, your IP address, timestamp, and certain types of technical information. A longer list of some of the technologies used for advertising and other purposes on our Websites and in our Mobile Apps are listed under the Technologies Used section.
+168. {list item} THIRD PARTIES MAY COLLECT PERSONAL INFORMATION FROM OTHER SOURCES. Some third parties involved in advertising operations may maintain their own proprietary consumer databases that allow them to personally identify or track website visitors. Other third parties have proprietary technologies to determine what additional devices you may use, on which it can display relevant advertisements.
+171. {list item} DO-NOT-TRACK. Do-Not-Track is a public-private initiative that has developed a flag or signal that an Internet user may activate in the users browser software to notify websites that the user does not wish to be tracked by third-parties as defined by the initiative. The online community has not agreed on what actions, if any, should be taken by the websites that receive the do-not-track signal, and therefore Do-Not-Track is not yet standardized. Our website does not alter its behavior or change its services when it receives a do-not-track flag or signal from your browser.
+174. {list item} YOUR PRIVACY AND AD CHOICES. You can make decisions about your privacy and the ads you receive. You can control whether companies serve you on-line behavioral advertising by visiting the Digital Advertising Alliance website and using its opt-out: {removed href} {removed hyperref}/. The DAA opt-out requires that cookies not be blocked in your browser.
+177. As an alternative to the DAA optout, you can also elect to block browser cookies from first parties (such as those from our website) and browser cookies from third parties (such as advertisers) by using the cookie blocking options built into your browser software. If you block browser cookies, some parts of our website may not function correctly. Also, blocking cookies will not stop third-parties from collecting IP address, data stored in Flash cookies, and certain other types of technical information that may uniquely identify your browser.
+180. TECHNOLOGIES USED.
+183. Third parties, widgets, and hosted solutions that we may use on our website may use the following technologies for features, services, advertising, or analytics:
+186. {number list}.
+189. {list item} BROWSER COOKIES. Browser cookies are small pieces data placed on your computer as you navigate websites with your browser. Browser cookies allow websites and various third-parties to distinguish your device from others by having the cookie consist of a unique identifier or other data. Cookies can have many uses, such as to target advertising as well as to enable website functionality and for security. We use both session cookies (which expire after you close your web browser) and persistent cookies (which stay on your computer until you delete them). Persistent cookies can be removed by following your Internet browser help file directions. (Each browser is different, so check the help menu of your browser to learn how to change your cookie preferences.) If you reject all cookies, you will not be able to use Hubbell Incorporated products or services that require you to sign in, and some areas of our website may not work properly, and you may not be able to take full advantage of all offerings.
+192. {list item} LOCAL SHARED OBJECTS. Local shared objects (such as Flash cookies) are associated with non-Browser software like Flash Player. Local shared objects can be used like cookies to distinguish your device from others but will not be deleted or blocked using browser cookie controls. You can visit {removed hyperref} for guidance on how to delete and block Flash cookies.
+195. {list item} HTML5 LOCAL STORAGE. HTML5 local storage is another way that browsers can distinguish your device from others as well as remember data that may be important for the functioning of the website. Typically HTML5 local storage is only deleted if all Internet history, cache, and cookies are deleted. You should check your browser software for how to delete HTML5 local storage in your particular case.
+198. {list item} WEB BEACONS. Web beacons are image files that are used by third-party advertisers, analytics companies, and others. Web beacons are embedded in web pages you visit and cause your browser to share its IP address with the third-party source of the beacon, together with any cookies associated with that third-party. Web beacons can be used with or without cookies. Blocking cookies will not stop your IP address from being shared through the use of beacons.
+201. {list item} E-TAGS. E-tags are used to prevent duplicative downloading of content to your browser, which can enhance browser performance. E-tags use unique identifiers for content that can also be used to distinguish your browser in certain instances from others. Typically e-tags are only deleted if all Internet history, cache, and cookies are deleted. You should check your browser software for how to delete e-tags in your particular case.
+204. {list item} LOG FILES, IP ADDRESSES AND INFORMATION ABOUT YOUR COMPUTER AND MOBILE DEVICE. Due to the communications standards on the Internet, when you visit the Websites, we may automatically receive the URL of the site from which you came and the site to which you are going when you leave one of our Websites. We also receive the Internet protocol (IP) address of your computer (or the proxy server you use to access the World Wide Web), your computer operating system, type of web browser you are using, email patterns, information regarding your mobile device (including UDID) and mobile operating system (if you are accessing the Websites using a mobile device), as well as the name of your ISP or your mobile carrier. We may also receive location data passed to us from third-party services or GPS-enabled devices that you have enabled. Also, as described in this Privacy Policy, we may receive information when you access Third-Party Sites through the Service.
+207. {list item} We use Hotjar in order to better understand our users needs and to optimize this service and experience. Hotjar is a technology service that helps us better understand our users experience (e. g. how much time they spend on which pages, which links they choose to click, what users do and dont like, etc.) and this enables us to build and maintain our service with user feedback. Hotjar uses cookies and other technologies to collect data on our users behavior and their devices (in particular devices IP address (captured and stored only in anonymized form), device screen size, device type (unique device identifiers), browser information, geographic location (country only), preferred language used to display our website). Hotjar stores this information in a pseudonymized user profile. Neither Hotjar nor we will ever use this information to identify individual users or to match it with further data on an individual user. For further details, please see Hotjars privacy policy by clicking on {removed href} this link.
+210. You can opt-out to the creation of a user profile, Hotjars storing of data about your usage of our site and Hotjars use of tracking cookies on other websites by following this {removed href} opt-out link.
+213. Our Mobile Apps may use the following technologies for features, services, advertising, or analytics:
+216. {number list}.
+219. {list item} Collection of device identifiers, such as Android ID and MAC address.
+222. {list item} Collection of geolocation, including precise geolocation.
+225. {list item} Device name.
+228. {list item} Collection of platform specific identifiers such as Apples Identifier for Advertising and Identifier for Vendor, and Android ID or Androids advertising identifier.
+231. {list item} Collection of carrier-related information including the name of your wireless carrier, and IDs related to the cell phone hardware in your phone as well as the network to which the device is connected.
+234. {list item} IP address.
+237. {list item} Mobile phone number.
+240. {list item} App-specific and instance-specific identifiers.
+243. OTHER TECHNOLOGIES. Our Websites and Mobile Apps may occasionally use other technologies both for purposes of advertising as well as for features, analytics, and services.
+246. SOCIAL NETWORK WIDGETS.
+249. Our Websites or Mobile Apps may include social network sharing widgets that may provide information to their associated social networks or third parties about your interactions with our web pages that you visit, even if you do not click on or otherwise interact with the plug-in or widget. Information is transmitted from your browser and may include an identifier assigned by the social network or third party, information about your browser type, operating system, device type, IP address, and the URL of the web page where widget appears. If you use social network tools or visit social networking sites, you should read their privacy disclosures, to learn what information they collect, use, and share.
+252. HOW YOU CAN STOP RECEIVING MARKETING COMMUNICATIONS.
+255. We respect your communication preferences, and you may opt-out of receiving certain communications for marketing purposes sent by Hubbell Incorporated or sent by third parties on behalf of Hubbell Incorporated. When you receive sales flyers, advertisements, direct mail, and other promotional communications from us, including e-mail, you will have the opportunity to opt-out by following the unsubscribe instructions in the email you receive, or by contacting us directly using the {removed href} Contact Us Form. Once you have submitted your email address to unsubscribe, please note that you may continue to receive emails for a time while our system updates your request. On our Websites and certain of our Mobile Apps, you may change any of your Personal Information by logging into your account and editing your information. Regardless of recorded opt-out preferences, Hubbell Incorporated reserves the right to send emails or other communications for administrative or transactional purposes, including, but not limited to, communications related to the maintenance of your account and software or product updates.
+258. INFORMATION FROM CHILDREN UNDER 13.
+261. This website is not intentionally designed for or directed at children under 13 years of age. We do not intentionally collect or maintain information about anyone under 13 years of age. Please contact Hubbell Incorporated using this {removed href} Contact Us Form if you think we may have inadvertently collected such information, and we will attempt to delete the information.
+264. LINKS TO OTHER WEBSITES.
+267. Our Websites or Mobile Apps may provide a link or otherwise provide access to another website, mobile application, or Internet location (collectively Third-Party Sites). We provide these links merely for your convenience, and we do not endorse Third-Party Sites, their contents, or any goods or services available through the Third-Party Sites. We have no control over, do not review, and are not responsible for Third-Party Sites, their content, or any goods or services available through the Third-Party Sites. Our Privacy Policy does not apply to Third-Party Sites, and any information you provide to Third-Party Sites, you provide at your own risk.
+270. Any information you share with Third-Party Sites through the Service may be collected by Hubbell Incorporated. We will use such information in accordance with this Privacy Policy.
+273. SECURITY.
+276. We implement technical, administrative, and organizational safeguards to prevent access to your Personal Information by unauthorized persons. You should know, however, that we cannot fully eliminate security risks associated with the storage and transmission of Personal Information.
+279. YOUR CALIFORNIA PRIVACY RIGHTS.
+282. Under Section 1798. 83 of the California Civil Code, residents of California have the right to request from a business, with whom the California resident has an established business relationship, certain information with respect to the types of personal information the business shares with third parties for those third parties direct marketing purposes, and the identities of the third parties with whom the business has shared such information during the immediately preceding calendar year. To exercise your rights, you may make one request each year by contacting us using the {removed href} Contact Us Form with a Request for California Privacy Information on the subject line or in the body of your message. Be sure to provide in the request sufficient information to properly identify you and/or the members of your family.
+285. {removed href} HOW YOU CAN REACH US.
+288. If you have any questions regarding this Privacy Policy, or to opt-out of receiving information as permitted under this Privacy Policy, please contact us using our {removed href} Contact Us Form or by writing to use at:
+291. Hubbell Incorporated.
+294. 40 Waterview Drive.
+297. Shelton, CT 06484-1000 Attn: Hubbell Website.
+300. HOW TO REQUEST ACCESS TO, OR THE CORRECTION OF, YOUR PERSONAL INFORMATION.
+303. Except in limited circumstances governed by law, you may obtain access to and have your Personal Information in our records corrected. A request for access or correction must be made using our {removed href} Contact Us Form or by writing to us at:
+306. Hubbell Incorporated.
+309. 40 Waterview Drive.
+312. Shelton, CT 06484-1000 Attn: Hubbell Website.
+
+
+--------- Example of a JSON structure:
+{
+  "data_types": [
+    {
+      "data_class": "Name",
+      "data_mentioned_in_text": "...",
+      "purpose_class": "Provide Services and fulfill contractual obligations",
+      "purpose_mentioned_in_text": "...",
+      "line_number": [...]
+    },
+  ],
+"TP_sharing": [
+    {
+      "purpose_class": "Provide Services and fulfill contractual obligations",
+      "purpose_mentioned_in_text": "...",
+      "third_party_sharing_practice_class": "Research",
+      "third_party_sharing_practice_mentioned_in_text": "...",
+      "line_number": [...]
+    },
+  ],
+"TP_name": [
+    {
+      "third_party_sharing_practice_class": "Research",
+      "third_party_sharing_practice_mentioned_in_text": "...",
+      "third_party_name": "Google",
+      "third_party_name_mentioned_in_text": "....",
+      "line_number": [...]
+    },
+  ],
+“your_rights”: [
+   {
+      "rights_class": "Content Removal/ Erasure",
+      "rights_mentioned_in_text": "...",
+      "line_number": [...]
+   },
+  ],
+“your_responsibilities”:[
+   {
+      "responsibilities_class": "Children's accounts",
+      "responsibilities_mentioned_in_text": "...",
+      "line_number": [...]
+   },
+  ],
+}

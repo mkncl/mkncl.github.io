@@ -1,0 +1,181 @@
+{
+    "data_types": [
+        {
+            "data_class": "name",
+            "data_mentioned_in_text": "including your name",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "to present our Site and its contents to you, To provide you with information, products or services that you request from us",
+            "line_number": [
+                27,
+                102,
+                105
+            ]
+        },
+        {
+            "data_class": "physical_address",
+            "data_mentioned_in_text": "address",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "to present our Site and its contents to you, To provide you with information, products or services that you request from us",
+            "line_number": [
+                27,
+                102,
+                105
+            ]
+        },
+        {
+            "data_class": "email_address",
+            "data_mentioned_in_text": "email address",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "to present our Site and its contents to you, To provide you with information, products or services that you request from us",
+            "line_number": [
+                27,
+                102,
+                105
+            ]
+        },
+        {
+            "data_class": "phone_number",
+            "data_mentioned_in_text": "telephone number",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "to present our Site and its contents to you, To provide you with information, products or services that you request from us",
+            "line_number": [
+                27,
+                102,
+                105
+            ]
+        },
+        {
+            "data_class": "payment_information",
+            "data_mentioned_in_text": "credit or debit card number",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "to fulfill any other purpose for which you provide it, including for billing and collection",
+            "line_number": [
+                27,
+                108,
+                114
+            ]
+        }
+    ],
+    "TP_sharing": [
+        {
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "To carry out our obligations and enforce our rights arising from any contracts entered into between you and us, including for billing and collection",
+            "third_party_sharing_practice_class": "affiliates_and_subsidiaries",
+            "third_party_sharing_practice_mentioned_in_text": "To our subsidiaries and affiliates",
+            "line_number": [
+                114,
+                147
+            ]
+        },
+        {
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "To carry out our obligations and enforce our rights arising from any contracts entered into between you and us, including for billing and collection",
+            "third_party_sharing_practice_class": "performance_of_contract",
+            "third_party_sharing_practice_mentioned_in_text": "To contractors, service providers and other third parties we use to support our business",
+            "line_number": [
+                114,
+                150
+            ]
+        },
+        {
+            "purpose_class": "merger_and_acquisition",
+            "purpose_mentioned_in_text": "in the event of a merger, divestiture, restructuring, reorganization, dissolution or other sale or transfer of some or all of our assets",
+            "third_party_sharing_practice_class": "merger_and_acquisition",
+            "third_party_sharing_practice_mentioned_in_text": "To a buyer or other successor",
+            "line_number": [
+                153
+            ]
+        },
+        {
+            "purpose_class": "marketing",
+            "purpose_mentioned_in_text": "To third parties to market their products or services to you",
+            "third_party_sharing_practice_class": "consumer_retention_rewards_program",
+            "third_party_sharing_practice_mentioned_in_text": "To third parties to market their products or services to you",
+            "line_number": [
+                156
+            ]
+        },
+        {
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "To fulfill the purpose for which you provide it",
+            "third_party_sharing_practice_class": "performance_of_contract",
+            "third_party_sharing_practice_mentioned_in_text": "To fulfill the purpose for which you provide it",
+            "line_number": [
+                159
+            ]
+        },
+        {
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "For any other purpose disclosed by us when you provide the information",
+            "third_party_sharing_practice_class": "performance_of_contract",
+            "third_party_sharing_practice_mentioned_in_text": "For any other purpose disclosed by us when you provide the information",
+            "line_number": [
+                162
+            ]
+        },
+        {
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "With your consent",
+            "third_party_sharing_practice_class": "performance_of_contract",
+            "third_party_sharing_practice_mentioned_in_text": "With your consent",
+            "line_number": [
+                165
+            ]
+        },
+        {
+            "purpose_class": "regulatory_compliance",
+            "purpose_mentioned_in_text": "To comply with any court order, law or legal process, including to respond to any government or regulatory request",
+            "third_party_sharing_practice_class": "regulatory_compliance",
+            "third_party_sharing_practice_mentioned_in_text": "To comply with any court order, law or legal process, including to respond to any government or regulatory request",
+            "line_number": [
+                168
+            ]
+        },
+        {
+            "purpose_class": "service_security",
+            "purpose_mentioned_in_text": "To enforce or apply our Terms of Use and other agreements, including for billing and collection purposes",
+            "third_party_sharing_practice_class": "prevent_harm",
+            "third_party_sharing_practice_mentioned_in_text": "To enforce or apply our Terms of Use and other agreements",
+            "line_number": [
+                171
+            ]
+        },
+        {
+            "purpose_class": "user_safety",
+            "purpose_mentioned_in_text": "If we believe disclosure is necessary or appropriate to protect the rights, property, or safety of us, our customers or others",
+            "third_party_sharing_practice_class": "prevent_harm",
+            "third_party_sharing_practice_mentioned_in_text": "If we believe disclosure is necessary or appropriate to protect the rights, property, or safety of us, our customers or others",
+            "line_number": [
+                174
+            ]
+        }
+    ],
+    "TP_name": [
+        {
+            "third_party_sharing_practice_class": "performance_of_contract",
+            "third_party_sharing_practice_mentioned_in_text": "To contractors, service providers and other third parties we use to support our business",
+            "third_party_name": "Unknown",
+            "third_party_name_mentioned_in_text": "",
+            "line_number": [
+                150
+            ]
+        }
+    ],
+    "your_rights": [
+        {
+            "rights_class": "opt_out_marketing",
+            "rights_mentioned_in_text": "If you do not want us to use your information to contact you about our own and third-parties goods and services that may be of interest to you, please adjust your user preferences in your account profile.",
+            "line_number": [
+                132
+            ]
+        },
+        {
+            "rights_class": "access_to_information",
+            "rights_mentioned_in_text": "You can review and change your personal information by logging into the Site and visiting your account profile page.",
+            "line_number": [
+                210
+            ]
+        }
+    ],
+    "your_responsibilities": []
+}

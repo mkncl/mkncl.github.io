@@ -1,0 +1,75 @@
+{
+    "data_types": [
+        {
+            "data_class": "cookie_information",
+            "data_mentioned_in_text": "Cookies zijn kleine stukjes informatie (bestandjes) die een website op uw computer achterlaat.",
+            "purpose_class": "improve_products_and_services",
+            "purpose_mentioned_in_text": "om het gebruik van de website te kunnen analyseren en om daarmee de website te kunnen optimaliseren.",
+            "line_number": [
+                18,
+                21,
+                24
+            ]
+        },
+        {
+            "data_class": "cookie_information",
+            "data_mentioned_in_text": "BBP Media B. V. maakt gebruik van cookies om informatie te verzamelen over haar klanten, voor doeleinden van gerichte communicatie, waaronder het verstrekken van service-informatie rond onze producten en gerichte marketingactiviteiten rond de producten van BBP Media B. V.",
+            "purpose_class": "marketing",
+            "purpose_mentioned_in_text": "waaronder het verstrekken van service-informatie rond onze producten en gerichte marketingactiviteiten rond de producten van BBP Media B. V.",
+            "line_number": [
+                24
+            ]
+        },
+        {
+            "data_class": "user_name",
+            "data_mentioned_in_text": "Maar ook als u ingelogd bent bij BBP Media B. V. kan uw gebruikersnaam bewaard worden in een cookie.",
+            "purpose_class": "personalisation",
+            "purpose_mentioned_in_text": "Maar ook als u ingelogd bent bij BBP Media B. V. kan uw gebruikersnaam bewaard worden in een cookie.",
+            "line_number": [
+                24
+            ]
+        },
+        {
+            "data_class": "email_address",
+            "data_mentioned_in_text": "Voor websites van BBP Media bv is uw emailadres de gebruikersnaam.",
+            "purpose_class": "personalisation",
+            "purpose_mentioned_in_text": "Voor websites van BBP Media bv is uw emailadres de gebruikersnaam.",
+            "line_number": [
+                24
+            ]
+        }
+    ],
+    "TP_sharing": [
+        {
+            "purpose_class": "marketing",
+            "purpose_mentioned_in_text": "gerichte marketingactiviteiten rond de producten van BBP Media B. V., haar groepsmaatschappijen en eventueel door ons zorgvuldig geselecteerde derden.",
+            "third_party_sharing_practice_class": "affiliates_and_subsidiaries",
+            "third_party_sharing_practice_mentioned_in_text": "haar groepsmaatschappijen",
+            "line_number": [
+                24
+            ]
+        },
+        {
+            "purpose_class": "marketing",
+            "purpose_mentioned_in_text": "gerichte marketingactiviteiten rond de producten van BBP Media B. V., haar groepsmaatschappijen en eventueel door ons zorgvuldig geselecteerde derden.",
+            "third_party_sharing_practice_class": "consumer_retention_rewards_program",
+            "third_party_sharing_practice_mentioned_in_text": "eventueel door ons zorgvuldig geselecteerde derden.",
+            "line_number": [
+                24
+            ]
+        }
+    ],
+    "TP_name": [
+        {
+            "third_party_sharing_practice_class": "consumer_retention_rewards_program",
+            "third_party_sharing_practice_mentioned_in_text": "eventueel door ons zorgvuldig geselecteerde derden.",
+            "third_party_name": "Unknown",
+            "third_party_name_mentioned_in_text": "eventueel door ons zorgvuldig geselecteerde derden.",
+            "line_number": [
+                24
+            ]
+        }
+    ],
+    "your_rights": [],
+    "your_responsibilities": []
+}

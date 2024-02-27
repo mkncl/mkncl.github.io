@@ -1,0 +1,102 @@
+{
+    "data_types": [
+        {
+            "data_class": "name",
+            "data_mentioned_in_text": "such as your name, address, email addresses and your use of our website.",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "Personal data means all data that can be used to identify you, such as your name, address, email addresses and your use of our website.",
+            "line_number": [
+                15
+            ]
+        },
+        {
+            "data_class": "physical_address",
+            "data_mentioned_in_text": "such as your name, address, email addresses and your use of our website.",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "Personal data means all data that can be used to identify you, such as your name, address, email addresses and your use of our website.",
+            "line_number": [
+                15
+            ]
+        },
+        {
+            "data_class": "email_address",
+            "data_mentioned_in_text": "such as your name, address, email addresses and your use of our website.",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "Personal data means all data that can be used to identify you, such as your name, address, email addresses and your use of our website.",
+            "line_number": [
+                15
+            ]
+        },
+        {
+            "data_class": "ip_address",
+            "data_mentioned_in_text": "IP address, date and time of the request, time zone difference to Greenwich Mean Time (GMT), content of the request (specific page),",
+            "purpose_class": "preserve_system_integrity",
+            "purpose_mentioned_in_text": "we will collect the following data required by us to display our website to you and ensure its stability and security.",
+            "line_number": [
+                66
+            ]
+        }
+    ],
+    "TP_sharing": [
+        {
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "Personal data means all data that can be used to identify you",
+            "third_party_sharing_practice_class": "performance_of_contract",
+            "third_party_sharing_practice_mentioned_in_text": "External service providers and partner companies... will only receive your data to the extent necessary for processing your order.",
+            "line_number": [
+                327
+            ]
+        }
+    ],
+    "TP_name": [
+        {
+            "third_party_sharing_practice_class": "performance_of_contract",
+            "third_party_sharing_practice_mentioned_in_text": "External service providers and partner companies, such as online payment providers or the shipping company contracted for the delivery",
+            "third_party_name": "Unknown",
+            "third_party_name_mentioned_in_text": "",
+            "line_number": [
+                327
+            ]
+        }
+    ],
+    "your_rights": [
+        {
+            "rights_class": "access_to_information",
+            "rights_mentioned_in_text": "You have a right to information",
+            "line_number": [
+                39
+            ]
+        },
+        {
+            "rights_class": "data_correction",
+            "rights_mentioned_in_text": "rectification",
+            "line_number": [
+                39
+            ]
+        },
+        {
+            "rights_class": "content_removal_erasure",
+            "rights_mentioned_in_text": "erasure",
+            "line_number": [
+                39
+            ]
+        },
+        {
+            "rights_class": "data_portability",
+            "rights_mentioned_in_text": "and to data portability.",
+            "line_number": [
+                39
+            ]
+        }
+    ],
+    "your_responsibilities": [
+        {
+            "responsibilities_class": "data_protection",
+            "responsibilities_mentioned_in_text": "we have put comprehensive technical and operational safeguards in place to protect your data against coincidental or intentional manipulation, loss, destruction or access by unauthorized persons.",
+            "line_number": [
+                15,
+                336
+            ]
+        }
+    ]
+}
