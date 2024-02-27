@@ -1,0 +1,182 @@
+{
+    "data_types": [
+        {
+            "data_class": "ip_address",
+            "data_mentioned_in_text": "It includes things like your Internet Protocol (IP) address",
+            "purpose_class": "improve_products_and_services",
+            "purpose_mentioned_in_text": "how long you stay on them, and what you click",
+            "line_number": [
+                8,
+                10
+            ]
+        },
+        {
+            "data_class": "browser_type",
+            "data_mentioned_in_text": "browser type",
+            "purpose_class": "improve_products_and_services",
+            "purpose_mentioned_in_text": "how long you stay on them, and what you click",
+            "line_number": [
+                8,
+                10
+            ]
+        },
+        {
+            "data_class": "cookie_information",
+            "data_mentioned_in_text": "We may place a cookie on your computer",
+            "purpose_class": "personalisation",
+            "purpose_mentioned_in_text": "We may use cookies to keep track of your choice of language and home page preference",
+            "line_number": [
+                10
+            ]
+        },
+        {
+            "data_class": "cookie_information",
+            "data_mentioned_in_text": "We may use cookies to ... gather usage data that will help us generally improve the quality of the Websites.",
+            "purpose_class": "improve_products_and_services",
+            "purpose_mentioned_in_text": "gather usage data that will help us generally improve the quality of the Websites",
+            "line_number": [
+                10
+            ]
+        },
+        {
+            "data_class": "name",
+            "data_mentioned_in_text": "information including your name",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "fulfill your requests, respond to your inquiries and provide other services",
+            "line_number": [
+                16,
+                18
+            ]
+        },
+        {
+            "data_class": "email_address",
+            "data_mentioned_in_text": "email addresses",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "fulfill your requests, respond to your inquiries and provide other services",
+            "line_number": [
+                16,
+                18
+            ]
+        },
+        {
+            "data_class": "physical_address",
+            "data_mentioned_in_text": "address",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "fulfill your requests, respond to your inquiries and provide other services",
+            "line_number": [
+                16,
+                18
+            ]
+        },
+        {
+            "data_class": "phone_number",
+            "data_mentioned_in_text": "telephone number",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "fulfill your requests, respond to your inquiries and provide other services",
+            "line_number": [
+                16,
+                18
+            ]
+        },
+        {
+            "data_class": "payment_information",
+            "data_mentioned_in_text": "information such as your credit card number",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "in connection with the purchase of services or content available through the Websites",
+            "line_number": [
+                16
+            ]
+        }
+    ],
+    "TP_sharing": [
+        {
+            "purpose_class": "improve_products_and_services",
+            "purpose_mentioned_in_text": "allow third-party companies to serve ads and/or collect certain Non-Personally Identifiable Information",
+            "third_party_sharing_practice_class": "marketing",
+            "third_party_sharing_practice_mentioned_in_text": "serve ads and/or collect certain Non-Personally Identifiable Information",
+            "line_number": [
+                14
+            ]
+        },
+        {
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "may partner with unaffiliated companies or individuals for market research, product development or similar purposes.",
+            "third_party_sharing_practice_class": "performance_of_contract",
+            "third_party_sharing_practice_mentioned_in_text": "they may be provided with access to Personally Identifiable Information and Non-Personally Identifiable Information, but we will require by contract that they agree to maintain the confidentiality",
+            "line_number": [
+                22
+            ]
+        },
+        {
+            "purpose_class": "marketing",
+            "purpose_mentioned_in_text": "We may share Personally Identifiable Information with third parties, who may contact you to offer products and services.",
+            "third_party_sharing_practice_class": "marketing",
+            "third_party_sharing_practice_mentioned_in_text": "We may share Personally Identifiable Information with third parties, who may contact you to offer products and services.",
+            "line_number": [
+                24
+            ]
+        },
+        {
+            "purpose_class": "corporate_governance",
+            "purpose_mentioned_in_text": "We may disclose your Personally Identifiable Information to third parties in connection with a corporate transaction where all or a portion of our business is sold or transferred.",
+            "third_party_sharing_practice_class": "merger_and_acquisition",
+            "third_party_sharing_practice_mentioned_in_text": "We may disclose your Personally Identifiable Information to third parties in connection with a corporate transaction where all or a portion of our business is sold or transferred.",
+            "line_number": [
+                26
+            ]
+        },
+        {
+            "purpose_class": "defend_legal_rights",
+            "purpose_mentioned_in_text": "We alsomay disclose your Personally Identifiable Information if disclosure is required by law or as part of a lawsuit or government investigation or proceeding",
+            "third_party_sharing_practice_class": "regulatory_compliance",
+            "third_party_sharing_practice_mentioned_in_text": "if disclosure is required by law or as part of a lawsuit or government investigation or proceeding",
+            "line_number": [
+                26
+            ]
+        }
+    ],
+    "TP_name": [
+        {
+            "third_party_sharing_practice_class": "marketing",
+            "third_party_sharing_practice_mentioned_in_text": "allow third-party companies to serve ads",
+            "third_party_name": "Unknown",
+            "third_party_name_mentioned_in_text": "third-party companies",
+            "line_number": [
+                14
+            ]
+        },
+        {
+            "third_party_sharing_practice_class": "performance_of_contract",
+            "third_party_sharing_practice_mentioned_in_text": "may partner with unaffiliated companies or individuals",
+            "third_party_name": "Unknown",
+            "third_party_name_mentioned_in_text": "unaffiliated companies or individuals",
+            "line_number": [
+                22
+            ]
+        }
+    ],
+    "your_rights": [
+        {
+            "rights_class": "access_to_information",
+            "rights_mentioned_in_text": "You may contact us if at any time you would like to see the Personally Identifiable Information we hold about you",
+            "line_number": [
+                40
+            ]
+        },
+        {
+            "rights_class": "data_correction",
+            "rights_mentioned_in_text": "ask us to correct or update this information",
+            "line_number": [
+                40
+            ]
+        },
+        {
+            "rights_class": "content_removal_erasure",
+            "rights_mentioned_in_text": "ask us to delete it",
+            "line_number": [
+                40
+            ]
+        }
+    ],
+    "your_responsibilities": []
+}

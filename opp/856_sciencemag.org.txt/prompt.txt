@@ -1,0 +1,254 @@
+Generate a JSON representation of: (a) all the data types and (b) all purposes of collection and (c) all third party sharing practices and (d) name of companies with which data are shared and (e) all user rights mentions and (f) all user responsibilities mentioned in the given privacy policy paragraph. If a data type is used for more than one purpose or if more than one data type is used for a single purpose, duplicate the records accordingly - similar for third party sharing practices.
+
+------- Instruction:
+1. Find in the text which data types the company collects and provide their corresponding purposes of collection. Data types can be one of these classes (use exactly the same class name) (for "data_class" in JSON):
+- "name" (DEFINITION: Uses the term name)
+- "contact_information" (DEFINITION: “May include, mailing addresses, email addresses, and phone numbers)
+- "physical_address" (DEFINITION: May include home address and/or zip/post code)
+- "date_of_birth" (DEFINITION: May refer to date of birth or birthday)
+- "photo_profile_picture" (DEFINITION: May refer to a photograph or image used to identify an individual)
+- "gender" (DEFINITION: May refer to an individual's actual or perceived sex, gender identity, self-image)
+- "biometric" (DEFINITION: May refer to information used to specifically identify a person, such as fingerprints, voice patterns, or iris scans)
+- "personal_description" (DEFINITION: May refer to physical description such height, weight, hair color, eye color, facial features, and body type. It might also include details about a person's usual attire, posture, or any distinctive physical characteristics. It might also refer to a description of a person's personality, interests, and values. This might describe their personality traits, their hobbies and interests, their values and beliefs, their strengths and weaknesses, and their overall demeanor.)
+- "social_media_profiles" (DEFINITION: This may include, instagram, X (formally twitter), Snapchat, Tiktok, facebook, Watsapp, telegram, discord, linkedin, youtube, pinterest, reddit ,quora or tumblr or any other social media platform)
+- "account_credentials" (DEFINITION: “may refer to pieces of information needed to access and use a particular  This can include Username or Identifier and password or access key.  This may also include security questions and answers, two-factor authentication and biometric authentication”)
+- "user_name" (DEFINITION: “may also refer to a login name, user ID, or account name”)
+- "password" (DEFINITION: Password as letters, biometric password that authenticate user.)
+- "phone_number" (DEFINITION: Mobile or stationary phone number)
+- "email_address" (DEFINITION: Email address)
+- "age" (DEFINITION: How old is the person)
+- "payment_information" (DEFINITION: “may refer to the payment method through which funds are transferred. This may include  Card information such as card number, expiration date, CVV code, and potentially the cardholder's name and billing address for credit or debit cards.
+For bank transfers, this might include the account number, routing number, and potentially the account holder's name and address.For a digital wallet like PayPal or Apple Pay, this could involve usernames, passwords, or unique identifiers associated with the wallet. It could also include details for alternative payment methods like cash app balances, cryptocurrency wallets, or loyalty points.”)
+- "purchase_history" (DEFINITION: “refers to a record of transactions you've made with a particular business or retailer over time. It may include items purchased, dates of purachase, quantities, prices paid, payment method or platform”)
+- "credit_related_information" (DEFINITION: “may refer to borrowing activity, including details of open and closed accounts and payment history. May also refer to a credit report, credit score score, county court judgements, liens or bankruptcy”)
+- "page_response_times" (DEFINITION: “may refer to server response time or TTDB and the refers to the amount of time  it takes for a web server to send the first byte of data back to a user's browser after receiving a request.”)
+- "cookie_information" (DEFINITION: “may refer to session cookies, persistent cookies, first-party cookies, and third-party cookies. It may also include website preference, login information, browsing history, shopping cart contents or location data”)
+- "ip_address" (DEFINITION: IP address or other internet address similar to IP)
+- "health_data" (DEFINITION: “health data refers to any data related to a person's physical or mental health, including the provision of healthcare services. It may include clinical data such as medical record,prescriptions immunisations, administrative data such as hospital admission, lifestyle and behavioural data such as Physical activity levels, sleep patterns, diet, smoking status, alcohol consumption, medication adherence”)
+- "health_activity_data" (DEFINITION: “refers to measurements and information related to physical activity and movement. It may include steps taken, distance covered, heart rate, calorie burned, active minutes, sleep duration and quality or specific activities such as yoga or swimming”)
+- "weight" (DEFINITION: Weight of the person in kg/lbs/etc)
+- "height" (DEFINITION: Height of the person in cm/etc)
+- "body_temperature" (DEFINITION: Body temperature of person)
+- "bmi" (DEFINITION: Body measurement index of the person)
+- "menstrual_cycle_dates" (DEFINITION: Date of menstrual cycle of the person)
+- "pregnancy" (DEFINITION: Pregnancy status or any information related to the person's pregnancy)
+- "other_health_related_information" (DEFINITION: “may refer to wearable sensor data not necessarily related to the activity, such as Skin temperature, sweat composition, oxygen saturation levels, travel history, biomarkers in  your blood, saliva, or other bodily fluids, such as blood sugar, cholesterol, or hormone levels, information about smoking, alcohol consumption, drug use, and other risky behaviours”)
+- "users_location" (DEFINITION: “may refer to the user’s physical location or the user’s virtual location, including where they are within a specific digital environment, such as what page the user is  currently viewing”)
+- "device_location" (DEFINITION: “may refer to the geographical position of the device or the devices location within a network such as its MAC address”)
+- "language" (DEFINITION: “may refer to the language settings”)
+- "temperature" (DEFINITION: Temperature of the home or other environment)
+- "humidity" (DEFINITION: Humidity of the home or other environment)
+- "ambient_light" (DEFINITION: Information about light (bulbs, light strips. etc.) of the home or other environment)
+- "movement" (DEFINITION: “may refer to the movement detected for motion detection”)
+- "smoke_carbon_monoxide_levels" (DEFINITION: “may include detection of volatile organic compounds  and particulate matter “ )
+- "general_environmental_data" (DEFINITION: “may include energy consumption, weather data, noise levels”)
+- "device_type" (DEFINITION: “may refer to the model or serial number”)
+- "operating_system" (DEFINITION: “may refer to mobile or pc operating system”)
+- "application" (DEFINITION: applications installed on the device)
+- "video_card" (DEFINITION: information about video card used by device)
+- "sound_card" (DEFINITION: information about sound card used by device)
+- "memory" (DEFINITION: information about RAM used by device)
+- "browser_type" (DEFINITION: information about used browser)
+- "enabled_device_accessibility_features" (DEFINITION: information about turned on accessibility features - such as increasing of text, text to speech, etc.)
+- "browser_plugin_types_and_versions" (DEFINITION: information about browser plugins)
+- "battery_level" (DEFINITION: information about battery of the device)
+- "device_signals__wifi__bluetooth_" (DEFINITION: “may refer to the wifi signal strength or Bluetooth strength”)
+- "technical_information__general_" (DEFINITION: any other information about device or software)
+- "mobile_network_information" (DEFINITION: information about mobile network strength, carrier, etc.)
+- "time_zone" (DEFINITION: information about timezone)
+- "the_number_of_sessions_on_app" (DEFINITION: number of sessions/opening of the app or website)
+- "usage_activity_data" (DEFINITION: “may refer to the time, frequency or duration of activities”)
+- "users_on_the_app" (DEFINITION: “may refer to users on the app”)
+- "error_reports" (DEFINITION: reports about app/website failures and errors)
+- "advertisement_engagement" (DEFINITION: “may refer to the advertisements shown and how the users interact with them”)
+- "behaviours" (DEFINITION: “may refers to actions taken by users perform within the system, such as clicks, taps, searches, selections, or button presses; navigation patterns: Sequences of actions users take, showing how they move through the system and complete tasks.Time spent: Duration of interaction in specific sections or activities within the system. Frequency of use: How often users engage with specific features or return to the system overall.”
+)
+- "visits_to_site" (DEFINITION: number of visits to the website/app)
+- "resources_you_access" (DEFINITION: specific information about resources that user access when visited the website/app)
+- "details_of_use_of_apps" (DEFINITION: any other information of how user use website/app)
+- "product_view_or_searched_for" (DEFINITION: information about user searches when visited the app/website)
+- "length_of_visits_to_certain_pages" (DEFINITION: time spend on specific page of app/website)
+- "page_interaction_information" (DEFINITION: “may refer to how the user interacts with the app, the page they are viewing, browsing actions, patterns”)
+- "methods_used_to_browse_away_from_the_page" (DEFINITION: how user browse away from the page (close, open new page, etc.))
+- "websites_visited" (DEFINITION: list of previously visited websites)
+- "steps" (DEFINITION: number of steps user did)
+- "pace" (DEFINITION: pace of the user)
+- "distance" (DEFINITION: walked distance of the user)
+- "url_clickstream_to_and_from" (DEFINITION: how user moved from one page to another)
+- "communications_between_players" (DEFINITION: “nay refer to the actual words, phrases, and messages exchanged between players. This could include chat logs, forum posts, in-game dialogues, voice chat transcripts or Images, videos, or audio files shared between players.”)
+- "friend_relationships" (DEFINITION: “may refer to friend list”)
+- "conversational_data__general_" (DEFINITION: “may refer to information provided to a chatbot, messages you send and receive”)
+- "Social meta data" (DEFINITION: “may refer to sender and receiver information: Usernames, IDs, or other identifiers of the players involved in the communication. Timestamps: When the communication occurred.Channel information: The specific channel or platform used for communication (e.g., in-game chat, voice chat, forum thread).
+Engagement details: Whether the message was read, reacted to, or forwarded.”)
+- "audio" (DEFINITION: any audio user-generated content)
+- "video" (DEFINITION: any video user-generated content)
+- "comments" (DEFINITION: “any text user-generated content, may refer to comments posted by user”)
+- "metadata_general" (DEFINITION: metadata of user-generated content)
+- "hashtag" (DEFINITION: “may refer to hashtags used”)
+- "Sexual Orientation" (DEFINITION: individual's sexual preferences or any information that may identify user's sexual preferences)
+- "Political views" (DEFINITION: individual's political views or any information that may identify user's political views)
+- "racial or ethnic origin" (DEFINITION: individual's racial or ethnic origin or any information that may identify user's racial or ethnic origin)
+- "philosophical beliefs" (DEFINITION: individual's philosophical beliefs or any information that may identify user's philosophical beliefs)
+- "trade union membership" (DEFINITION: information about trade union membership)
+- "Social Security Number" (DEFINITION: information about social security number)
+2. For each data type, categorize the purpose of collection into one of the following classes (use exactly the same class name) (for "purpose_class" in JSON):
+- "personalisation" (DEFINITION: “may refer to personalising the product or suggestions”)
+- "interaction" (DEFINITION: “may refer to the interactive feature of the service”)
+- "display" (DEFINITION: “may refer to how the content is displayed”)
+- "marketing" (DEFINITION: “may refer to advertisements, marketing communications, surveys, news, updates”)
+- "improve_products_and_services" (DEFINITION: “may refer to developing new features,products, offerings”)
+- "provide_services_and_fulfill_contractual_obligations" (DEFINITION: “may refer to using the information collected to deliver the product or service and fulfil terms and conditions”)
+- "preserve_system_integrity" (DEFINITION: “may refer to detecting and preventing fraud, cheating, unauthorised activities, prevent hacking, spamming, enforce terms of service”)
+- "provide_business_services" (DEFINITION: “may refer to specific features or functionalities of the software, technical support, maintenance, data storage, backups”)
+- "troubleshoot" (DEFINITION: “may refers to tests to ensure that the service or product is functioning”)
+- "communicate_with_user" (DEFINITION: may refer to using contact information to connect with user and send messages)
+- "connect_with_other_users" (DEFINITION: “may refer to using contact information to connect with others or allow others to connect or find you”)
+- "promotions" (DEFINITION: “may refer to contests, programs or promotions”)
+- "changes_to_terms" (DEFINITION: “may refer to change in the product or service” )
+- "user_safety" (DEFINITION: “may refer to the detection of illegal activity, abuse, violation of terms of service, threats to the security of users and the public, protecting harms against property”)
+- "service_security" (DEFINITION: “may refer to conducting audits”)
+- "defend_legal_rights" (DEFINITION: “may refer to the defence of legal rights in relation to litigation”)
+- "corporate_governance" (DEFINITION: “may refer to complying with finance, tax, accounting audits, assessments of operations, privacy, security, risk compliance obligations, information needed for a merger, acquisition, asset sale or transfer of the business” )
+- "research" (DEFINITION: “may refer to research and datasets for researchers, professional groups and charitable groups”)
+- "market_research" (DEFINITION: “may refer to sales, marketing or business strategy decisions” )
+3. For each purpose, categorize the third party sharing practices into one of the following classes (use exactly the same class name) (for "third_party_sharing_practice_class" in JSON):
+- "regulatory_compliance" (DEFINITION: “may refer to complying to a law, regulation, legal process”)
+- "performance_of_contract" (DEFINITION: “may refer to protecting, maintaining, or operating our business”)
+- "prevent_harm" (DEFINITION: “ may refer to protecting users from harm, fraud, abuse, violations of our terms, threats to the security of the service, threats to the physical safety of any person”)
+- "invesitigate  harm" (DEFINITION: “may refer to investigating fraud, abuse, violations of our terms, threats to the security of the service, threats to the physical safety of any person”)
+- "aggregated_information" (DEFINITION: “may refer to non-personal information that is aggregated or de-identified and shared with third-parties”)
+- "merger_and_acquisition" (DEFINITION: “may refer to information shared in the process of a sale, merger or acquisition”)
+- "affiliates_and_subsidiaries" (DEFINITION: “may refer to corporate affiliates, service providers, vendors agents who support our internal services”)
+- "third_party_platforms_integration" (DEFINITION: “may refer to third-party platforms such as steam”)
+- "consumer_retention_rewards_program" (DEFINITION: “may refer to product, reward offers and offers by us or partners”)
+4. For each third party sharing practice find the name of the company or government body with which data are shared (for "third_party_name" in JSON). If name is not mentioned - set name as "Unknown".
+5. Categorize the user rights into one of the following classes (use exactly the same class name) (for "rights_class" in JSON):
+- "opt_out_marketing" (DEFINITION: “may refer to the right to not process information for advertisement or marketing purposes.”)
+- "access_to_information" (DEFINITION: “may refer to the right to access information”)
+- "data_correction" (DEFINITION: “may refer to the right to correction or rectification to correct any incorrect or inaccurate personal information”)
+- "third_party_data_sharing" (DEFINITION: “ may refer to the right to revoke consent or process information by third parties”)
+- "cookie_preference" (DEFINITION: “may refer to managing cookie preferences” )
+- "content_removal_erasure" (DEFINITION: “may refer to the remover of user content”)
+- "automatic_decision_making" (DEFINITION: “may refer to being not subject to automated decision making if it affects or produces a legal effect”)
+- "data_processing_complaint" (DEFINITION: “may refer to the right to lodge a complaint if the data processing infringes the law” )
+- "data_portability" (DEFINITION: “may refer to the right to receive a copy of personal information obtained and it may gave a right to ask it transferred to third party” )
+- "limit_use_or_disclosure_of_sensitive_personal_information" (DEFINITION: “ may refer to the the right to limit use or disclosure of sensitive personal information” )
+- "opt_out_of_push_notification" (DEFINITION: “may refer to the right to opt out of push notifications” )
+- "arbitration_opt-out" (DEFINITION: “may refer to the right to opt-out arbitration or class action” )
+6. Categorize the user responsibilities into one of the following classes (use exactly the same class name) (for "responsibilities_class" in JSON):
+- "visitors_consent" (DEFINITION: “may refer to the need to gain consent of the people visiting home”)
+- "others_right_to_privacy" (DEFINITION: “may refer to respecting others right to privacy”)
+- "data_sharing" (DEFINITION: “may refer to sharing data such as name and photo that you are willing to be made public” )
+- "additional_users_data_responsibilities" (DEFINITION: “may refer to other authorised users who may be able to control the device or user content”  )
+- "data_processor" (DEFINITION: “may refer to the responsibility as the data processor” )
+- "data_protection" (DEFINITION: “may refer to the responsibility to keep personal information safe such as using a strong password and enabling multi-factor authentication”)
+- "childrens_accounts" (DEFINITION: “may refer to the responsibility to manage children’s accounts under 18”)
+- "user_content_intellectual_property_ip" (DEFINITION: “may refer to the responsibility that the user content does not infringe upon pon the copyright, trademark, patent, trade secret or other intellectual property rights of any third party." )
+- "user_content_harm" (DEFINITION: “may refer to the responsibility not to use or contribute User Content that is unlawful, tortious, defamatory, obscene, invasive of the privacy of another person, threatening, harassing, abusive, hateful, racist or otherwise objectionable or inappropriate" )
+- "beta confidentiality " (DEFINITION: “may refer to the responsibility that that the beta test is confidential”)
+- "user_indemnity" (DEFINITION: “may refer to the responsibility to defend and indemnify the company, licensor, and third parties from claims liabilities, losses, injuries damages, cost and expenses, from violation by you of the agreement”)
+
+---------- Privacy Policy Paragraph (number in beginning is the number of line):
+0. Privacy Policy 
+2. The Science Website is maintained by the American Association for the Advancement of Science (AAAS), 1200 New York Avenue, NW, Washington, DC 20005. 
+4. AAAS is committed to protecting the privacy of our users. We strive to provide a safe, secure user experience. This Privacy Statement sets forth the online data collection and usage policies and practices that apply to the Science family of websites (also referred to as "Science Online " or the "Science websites"), currently including Science (online version), Science Classic, Science Express, Science NOW, SAGE KE, Science Signaling, Science Translational Medicine , and Science Careers. It also includes the order forms and member services accessible from those websites. Your data will be stored and processed in whole or in part in the United States. If you access the Science Website outside the United States, your usage of that site constitutes consent to the transfer of your data out of your country and to the United States. The Science Website contains links to other websites over which we have no control. We are not responsible for the privacy policies or practices of other websites to which you choose to link from the Science Website. 
+6. |||INFORMATION WE COLLECT 
+8. When you visit the Science Website there are two types of information you might provide to us: personal information you knowingly choose to disclose and website use information collected by us as you interact with our website. 
+10. |||In some areas of the Science Website, we request or may request that you provide personal information, including your name, address, e-mail address, telephone number, credit card number, contact information, billing information, and any other information from which your identity is discernible. In other areas, we collect or may collect demographic information such as your age, career focus and discipline, preferences, gender, educational degrees, ethnic background, interests, and household income range. Sometimes we collect or may collect a combination of the two types of information. Examples of areas on the Science Website where we collect or may collect personal or combined personal and demographic data are pages where you can sign up to use a service, post a resume, enter a contest, or purchase a product. 
+12. |||We also gather or may gather certain information about your use of our site, such as what areas you visit and what services you access. Moreover, there is information about your computer hardware and software that we collect or may collect. This information can include, without limitation, your IP address, browser type, domain names, access times, and referring website addresses. 
+14. |||Please remember that if you post any of your personal information in public and/or Social Network areas of the Science Website, such as in online forums or chat rooms, such information may be displayed to other users of these services and may be collected and used by others over whom we have no control. We are not responsible for the use made by third parties of information you post or otherwise make available in public areas of the Science Website. We retain indefinitely all the information we gather about you in an effort to make your repeat use of our website more efficient, practical, and relevant. 
+16. |||USE OF INFORMATION 
+18. The information collected may be used by AAAS for the purpose of operating and improving the Science Website, fostering a positive user experience, and delivering the products and services that we offer. We may also use the information we gather to inform you of other products or services available from the Science Website or to contact you about your opinion of current products and services or potential new products and services that may be offered. 
+20. |||We may use your contact information in order to send you e-mail, postal mail, or other communications regarding updates at the Science Website, such as Job Alerts, newsletters, new opportunities, and additional listings which may be of interest to you. We may also use it to send you information about third-party products and services that match your interests and preferences, if you opt in for this communication. We do not release any of your contact information to third parties unless we have your permission. The nature and frequency of these messages will vary depending upon the information we have about you. In addition, at the time of registration for certain services, such as Science Careers Job Alerts, or free partial access to any of the Science websites, you have the option to elect to receive additional communications, information, newsletters, and promotions relating to topics that may be of special interest to you. 
+22. |||We may share information, such as your IP address, with third parties as might be required for technical purposes, such as facilitating user discovery and access via web search engines. 
+24. |||OPT-IN AND OPT-OUT CHOICES 
+26. The registration forms and other sections of the Science Website where we collect your information provide you with relevant opt-in and opt-out choices regarding promotional activity and other communications with you. 
+28. |||E-mail 
+30. AAAS members may opt in for third-party informational e-mails or opt out of all e-mail communication, with the exception of subscription renewal and association election information. Members can provide data privacy instructions at the members-only Website, MemberCentral.aaas.org. Select Member Services/Data Privacy. Or contact AAAS Member Services. 
+32. |||Paid subscribers to AAAS publications including Science , Science NOW, Science Signaling , and Science Translational Medicine may also opt in for third-party informational e-mails or opt out of all e-mail communication (with the exception of subscription renewal information) by contacting AAAS Member Services. 
+34. |||Users of free online services provided by AAASsuch as free partial access to Science , Science Signaling , or Science Translational Medicine , access to Science NOW or SAGE KE, e-mail alerting services or Science Careers servicesare agreeing that AAAS may contact them by e-mail in exchange for these free services. Users can also opt in for third-party informational e-mails. Users who do not wish to receive e-mail may cancel their online services by following the unsubscribe instructions at the bottom of any e-mail message from AAAS. 
+36. |||Users who download a free sample issue of Science Digital are agreeing that they may receive occasional e-mail messages from AAAS in exchange for this free content. Users who do not wish to receive e-mail may follow the unsubscribe instructions at the bottom of any e-mail message from AAAS. 
+38. |||Science Careers registrants can change their communication options by clicking on My Science Careers/My Account. 
+40. The above are examples of opt-in/opt-out options and are not intended to describe every option on the site. 
+42. |||Feedback 
+44. We have, or may have, an area where you can submit feedback. Any feedback you submit in this area becomes our property, and we may contact you for further information. 
+46. |||DISCLOSURE OF INFORMATION TO OTHERS 
+48. We do not disclose to third parties your personal information, combined personal and demographic information, or information about your use of the Science Websites (such as the areas you visit or the services you access), except as set forth in the following four subparagraphs. 
+50. 1. We may disclose such information to third parties if you consent to such disclosure. For example we may use data we have about you (such as the interests and preferences you have expressed) to determine whether you might be interested in the products or services of a particular third party. 
+52. |||2. We may disclose such information to companies and individuals we employ to perform functions on our behalf. Examples may include hosting our web servers, analyzing data, providing marketing assistance, processing credit card payments, and providing customer service. These companies and individuals will have access to your personal information as necessary to perform their functions, but they may not share that information with any other third party. 
+54. |||3. We may disclose such information if legally required to do so, if requested to do so by a governmental entity, or if we believe in good faith that such action is necessary to: (a) conform to legal requirements or comply with legal process; (b) protect the rights or property of AAAS; (c) prevent a crime or protect national security; or (d) protect the personal safety of users or the public. 
+56. |||4. We may disclose and transfer such information to a third party who acquires all or a substantial portion of the Science business, whether such acquisition is by way of merger, consolidation, or purchase of all or a substantial portion of our assets. In addition, in the event any one or all of the Science websites become the subject of a bankruptcy proceeding, whether voluntary or involuntary, the AAAS or its trustee in bankruptcy may sell, license, or otherwise dispose of such information in a transaction approved by the bankruptcy court. The AAAS may also share aggregated anonymous information about visitors to Science websites with its clients, partners, and other third parties so that they may understand the kinds of visitors to the Science websites and how those visitors use the site. 
+58. |||RESUMES 
+60. On Science Careers, we give you the option of putting your resume or CV (collectively referred to as "resume") in our database. There are two ways of doing this: 
+62. You can post your resume in our database as either a public or private resume. Public resumes can be searched by parties with access to our searchable resume database. 
+64. |||If you allow your resume to be searchable, then all parties with access to our searchable resume database (or copies thereof) will have access to your resume. We attempt to limit access to our searchable resume database (or copies thereof) only to paying employers, recruiters, hiring managers, headhunters, and human resource professionals as well as law enforcement and national security agencies, but cannot guarantee that other parties will not gain access to this database. We are not responsible for the use made of resumes by third parties who access such resumes while they are in our searchable database. You may remove your resume from our searchable database at any time. However, employers, recruiters, and others who have paid for access to that database or to obtain a copy of that database as well as parties who have otherwise gained access to the database may have retained a copy of your resume in their own files or databases. We are not responsible for the retention, use, or privacy of resumes in these instances. 
+66. |||Please Note: It is not our practice to restrict access to our resume database to any particular customer(s). Please be advised that your current employer or an entity affiliated with your current employer might be a customer of the Science Careers.org sites. We are not responsible for any actions or results that may occur as a result of any customer's access to and/or use of your resume. 
+68. |||We reserve the right to remove from our database any resumes we consider to be illegal or offensive. 
+70. |||ADDITIONAL TERMS AND RULES FOR SOCIAL NETWORKING 
+72. Social networking services provided on the Science Website (e.g. the Science Careers Community pages) may have additional terms of conduct, privacy policies, and privacy settings that you will be required to agree to and set when you register for such services. 
+74. |||USE OF COOKIES 
+76. We use "cookies" to help personalize and maximize your online experience. A cookie is a text file that is placed on your hard drive by a web page server. Cookies are not used to run programs or deliver viruses to your computer. Cookies are uniquely assigned to your computer, and can only be read by a web server in the domain that issued the cookie to you. One of the primary purposes of cookies is to provide a convenience feature to save you time. The purpose of a cookie is to tell the web server that you have returned to a specific page. For example, if you personalize pages or register for services on any of the Science websites, a cookie helps us to recall your specific information (such as user name, password, and preferences). Because of our use of cookies, we can deliver faster and more accurate results and a more personalized site experience. When you return to the Science Website, the information you previously provided can be retrieved, so you can easily use the features that you customized. We also use cookies to track click streams and for load balancing. 
+78. |||You may have the ability to accept or decline all cookies. Most web browsers automatically accept cookies, but you can usually modify your browser setting to decline all cookies if you prefer. Alternatively, you may be able to modify your browser setting to notify you each time a cookie is tendered and permit you to accept or decline cookies on an individual basis. It is possible to sign in to any of the Science websites without accepting cookies. If you choose to decline cookies, however, that may hinder performance and negatively impact your experience at the Science Website. 
+80. |||USE OF WEB BEACONS 
+82. Our web pages may contain electronic images known as web beacons (sometimes called single-pixel GIFs) that allow us to count users who have visited those pages and to deliver co-branded services. Web beacons are not used to access your personally identifiable information on the Science Website; they are a technique we use to compile aggregated statistics about our Website usage. Web beacons collect only a limited set of information including a cookie number, time and date of a page view, and a description of the page on which the web beacon resides. 
+84. |||UPDATING YOUR INFORMATION 
+86. It is important to us that we have your correct contact information so that you don't miss out on further correspondence or experience problems with the delivery of publications and products. 
+88. |||Members can change their personal information or update their account information at any time by linking to http://aaasmember.org and selecting Member Services. Other registrants or users may also update their personal information at any time by sending e-mail to membership{at}aaas.org. 
+90. |||SECURITY 
+92. We implement reasonable technical and organizational measures designed to secure your personal information from accidental loss and from unauthorized access, use, alteration, or disclosure. In addition, all credit transactions occur in a secure area of our site, to protect you from any loss, misuse, or alteration of information collected. However, we cannot guarantee that unauthorized third parties will never be able to defeat those measures or use your personal information for improper purposes. When you place an order online at any of the Science websites, your credit card information is protected through the use of encryption utilizing Secure Socket Layer (SSL) protocol, the industry standard in transferring information to process your orders. 
+94. |||The SSL encrypts, or translates, your order information into a highly indecipherable code, which is processed immediately. When you've finished your transactions and begin the checkout process, you will move into the secure area of our site. A warning window may pop up to notify you that you are entering this "safe" area. Once you've entered, the page address (URL) will change from http to https, to let you know you are in a secure area. Also, a key or closed lock will appear in the lower left-hand corner of your screen to notify you of this change. You will remain in this secure zone for the entire checkout process. In addition, only the last four digits of your credit card number will be revealed on the screen when confirming an order. Of course, we securely transmit the entire credit card number to the appropriate credit card service company during order processing. 
+96. |||CHILDREN 
+98. The Science websites are not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. 
+100. |||ACCEPTANCE OF THESE TERMS 
+102. Your use of the Science Website shall indicate your understanding and acceptance of the terms of this Privacy Statement. If you do not agree with all of the terms herein, you should not use the Science Website or services. 
+104. |||CHANGES TO PRIVACY STATEMENT 
+106. If we decide to change our Privacy Statement for the Science websites, we will post those changes here so that you will always know what information we gather, how we might use that information, and to whom we will disclose it. If at any time, you have questions or concerns about this Privacy Statement, please feel free to e-mail us at membership{at}aaas.org or call us at +1 202-326-6417 and speak to one of our representatives. 
+108. |||We welcome your comments concerning this Privacy Statement. If you believe that we have not adhered to this statement, please contact us by e-mailing us at membership{at}aaas.org. We will use commercially reasonable efforts to promptly determine and remedy the problem. Thank you for using the Science Website. 
+110. |||CONTACT INFORMATION 
+112. American Association for the Advancement of Science 1200 New York Ave NW Washington, DC 20005 Tel: 202-326-6417 E-mail: membership{at}aaas.org
+
+
+--------- Example of a JSON structure:
+{
+  "data_types": [
+    {
+      "data_class": "Name",
+      "data_mentioned_in_text": "...",
+      "purpose_class": "Provide Services and fulfill contractual obligations",
+      "purpose_mentioned_in_text": "...",
+      "line_number": [...]
+    },
+  ],
+"TP_sharing": [
+    {
+      "purpose_class": "Provide Services and fulfill contractual obligations",
+      "purpose_mentioned_in_text": "...",
+      "third_party_sharing_practice_class": "Research",
+      "third_party_sharing_practice_mentioned_in_text": "...",
+      "line_number": [...]
+    },
+  ],
+"TP_name": [
+    {
+      "third_party_sharing_practice_class": "Research",
+      "third_party_sharing_practice_mentioned_in_text": "...",
+      "third_party_name": "Google",
+      "third_party_name_mentioned_in_text": "....",
+      "line_number": [...]
+    },
+  ],
+“your_rights”: [
+   {
+      "rights_class": "Content Removal/ Erasure",
+      "rights_mentioned_in_text": "...",
+      "line_number": [...]
+   },
+  ],
+“your_responsibilities”:[
+   {
+      "responsibilities_class": "Children's accounts",
+      "responsibilities_mentioned_in_text": "...",
+      "line_number": [...]
+   },
+  ],
+}

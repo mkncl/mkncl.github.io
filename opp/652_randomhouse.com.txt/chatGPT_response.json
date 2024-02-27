@@ -1,0 +1,167 @@
+{
+    "data_types": [
+        {
+            "data_class": "name",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "line_number": [
+                25,
+                29,
+                31
+            ]
+        },
+        {
+            "data_class": "email_address",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "line_number": [
+                25,
+                29,
+                32
+            ]
+        },
+        {
+            "data_class": "telephone_number",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "line_number": [
+                25,
+                29
+            ]
+        },
+        {
+            "data_class": "postal_address",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "line_number": [
+                25,
+                29
+            ]
+        },
+        {
+            "data_class": "credit_card_information",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "line_number": [
+                25,
+                29,
+                33
+            ]
+        },
+        {
+            "data_class": "age",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "line_number": [
+                25
+            ]
+        },
+        {
+            "data_class": "gender",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "line_number": [
+                25
+            ]
+        },
+        {
+            "data_class": "_5digit_zip_code",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "line_number": [
+                25
+            ]
+        },
+        {
+            "data_class": "ip_address",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "line_number": [
+                46
+            ]
+        },
+        {
+            "data_class": "geolocation_information",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "line_number": [
+                46,
+                54
+            ]
+        },
+        {
+            "data_class": "unique_device_identifiers",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "line_number": [
+                46
+            ]
+        },
+        {
+            "data_class": "browser_type",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "line_number": [
+                46
+            ]
+        },
+        {
+            "data_class": "browser_language",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "line_number": [
+                46
+            ]
+        },
+        {
+            "data_class": "cookie_information",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "line_number": [
+                58
+            ]
+        }
+    ],
+    "TP_sharing": [
+        {
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "third_party_sharing_practice_class": "marketing",
+            "line_number": [
+                106,
+                110
+            ]
+        },
+        {
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "third_party_sharing_practice_class": "performance_of_contract",
+            "line_number": [
+                106
+            ]
+        },
+        {
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "third_party_sharing_practice_class": "corporate_governance",
+            "line_number": [
+                116
+            ]
+        }
+    ],
+    "TP_name": [
+        {
+            "third_party_sharing_practice_class": "marketing",
+            "third_party_name": "Unknown",
+            "line_number": [
+                110
+            ]
+        },
+        {
+            "third_party_sharing_practice_class": "performance_of_contract",
+            "third_party_name": "Unknown",
+            "line_number": [
+                106
+            ]
+        },
+        {
+            "third_party_sharing_practice_class": "corporate_governance",
+            "third_party_name": "Unknown",
+            "line_number": [
+                118
+            ]
+        }
+    ],
+    "your_rights": [
+        {
+            "rights_class": "access_to_information",
+            "line_number": [
+                158
+            ]
+        }
+    ],
+    "your_responsibilities": []
+}

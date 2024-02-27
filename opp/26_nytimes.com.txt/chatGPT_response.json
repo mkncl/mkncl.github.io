@@ -1,0 +1,135 @@
+{
+    "data_types": [
+        {
+            "data_class": "email_address",
+            "data_mentioned_in_text": "unique email address",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "Registration for the NYT Services",
+            "line_number": [
+                41
+            ]
+        },
+        {
+            "data_class": "demographic",
+            "data_mentioned_in_text": "demographic information (ZIP code, age, sex, household income, job industry and job title)",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "Registration for the NYT Services",
+            "line_number": [
+                39
+            ]
+        },
+        {
+            "data_class": "name",
+            "data_mentioned_in_text": "we collect and store name",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "To enable payment and donations via the NYT Services",
+            "line_number": [
+                49
+            ]
+        },
+        {
+            "data_class": "physical_address",
+            "data_mentioned_in_text": "address",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "To enable payment and donations via the NYT Services",
+            "line_number": [
+                49
+            ]
+        },
+        {
+            "data_class": "phone_number",
+            "data_mentioned_in_text": "telephone number",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "To enable payment and donations via the NYT Services",
+            "line_number": [
+                49
+            ]
+        },
+        {
+            "data_class": "payment_information",
+            "data_mentioned_in_text": "credit card information and other billing information",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "This information will only be shared with third parties who help to complete the purchase transaction.",
+            "line_number": [
+                49
+            ]
+        },
+        {
+            "data_class": "ip_address",
+            "data_mentioned_in_text": "Social media registration features may collect your IP address",
+            "purpose_class": "improve_products_and_services",
+            "purpose_mentioned_in_text": "Non-personal information collected through technology",
+            "line_number": [
+                77,
+                79
+            ]
+        },
+        {
+            "data_class": "cookie_information",
+            "data_mentioned_in_text": "We use cookies, Web beacons, HTML5 local storage and other similar technologies.",
+            "purpose_class": "improve_products_and_services",
+            "purpose_mentioned_in_text": "Non-personal information collected through technology",
+            "line_number": [
+                81
+            ]
+        }
+    ],
+    "TP_sharing": [
+        {
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "To enable payment and donations via the NYT Services",
+            "third_party_sharing_practice_class": "performance_of_contract",
+            "third_party_sharing_practice_mentioned_in_text": "This information will only be shared with third parties who help to complete the purchase transaction.",
+            "line_number": [
+                49
+            ]
+        },
+        {
+            "purpose_class": "marketing",
+            "purpose_mentioned_in_text": "If you are a print subscriber, we may exchange or rent your name and mailing address",
+            "third_party_sharing_practice_class": "affiliates_and_subsidiaries",
+            "third_party_sharing_practice_mentioned_in_text": "We may exchange or rent your name and mailing address (but not your email address) and certain other information",
+            "line_number": [
+                151
+            ]
+        }
+    ],
+    "TP_name": [
+        {
+            "third_party_sharing_practice_class": "performance_of_contract",
+            "third_party_sharing_practice_mentioned_in_text": "Examples of this include fulfilling orders and processing credit card payments.",
+            "third_party_name": "Unknown",
+            "third_party_name_mentioned_in_text": "third parties who help to complete the purchase transaction",
+            "line_number": [
+                49
+            ]
+        },
+        {
+            "third_party_sharing_practice_class": "marketing",
+            "third_party_sharing_practice_mentioned_in_text": "If you are a print subscriber",
+            "third_party_name": "Unknown",
+            "third_party_name_mentioned_in_text": "with other reputable companies that offer marketing information or products through direct mail",
+            "line_number": [
+                151
+            ]
+        }
+    ],
+    "your_rights": [
+        {
+            "rights_class": "opt_out_marketing",
+            "rights_mentioned_in_text": "If you prefer not to receive email marketing information from us",
+            "line_number": [
+                183
+            ]
+        }
+    ],
+    "your_responsibilities": [
+        {
+            "responsibilities_class": "data_protection",
+            "responsibilities_mentioned_in_text": "To prevent unauthorized access, maintain data accuracy",
+            "line_number": [
+                193
+            ]
+        }
+    ]
+}

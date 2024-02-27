@@ -1,0 +1,134 @@
+{
+    "data_types": [
+        {
+            "data_class": "name",
+            "data_mentioned_in_text": "name",
+            "purpose_class": "personalisation",
+            "purpose_mentioned_in_text": "email broadcasts utilizing tailored information upon the request of a visitor",
+            "line_number": [
+                6
+            ]
+        },
+        {
+            "data_class": "email_address",
+            "data_mentioned_in_text": "email address",
+            "purpose_class": "personalisation",
+            "purpose_mentioned_in_text": "email broadcasts utilizing tailored information upon the request of a visitor",
+            "line_number": [
+                6
+            ]
+        },
+        {
+            "data_class": "physical_address",
+            "data_mentioned_in_text": "home address",
+            "purpose_class": "personalisation",
+            "purpose_mentioned_in_text": "email broadcasts utilizing tailored information upon the request of a visitor",
+            "line_number": [
+                6
+            ]
+        },
+        {
+            "data_class": "name",
+            "data_mentioned_in_text": "name",
+            "purpose_class": "personalisation",
+            "purpose_mentioned_in_text": "All personal information collected at any Player's Club booth including name, address, phone number and email address is placed in a database that is not shared or sold with any third party",
+            "line_number": [
+                10
+            ]
+        },
+        {
+            "data_class": "physical_address",
+            "data_mentioned_in_text": "address",
+            "purpose_class": "personalisation",
+            "purpose_mentioned_in_text": "All personal information collected at any Player's Club booth including name, address, phone number and email address is placed in a database that is not shared or sold with any third party",
+            "line_number": [
+                10
+            ]
+        },
+        {
+            "data_class": "phone_number",
+            "data_mentioned_in_text": "phone number",
+            "purpose_class": "personalisation",
+            "purpose_mentioned_in_text": "All personal information collected at any Player's Club booth including name, address, phone number and email address is placed in a database that is not shared or sold with any third party",
+            "line_number": [
+                10
+            ]
+        },
+        {
+            "data_class": "email_address",
+            "data_mentioned_in_text": "email address",
+            "purpose_class": "personalisation",
+            "purpose_mentioned_in_text": "All personal information collected at any Player's Club booth including name, address, phone number and email address is placed in a database that is not shared or sold with any third party",
+            "line_number": [
+                10
+            ]
+        },
+        {
+            "data_class": "age",
+            "data_mentioned_in_text": "Age is verified",
+            "purpose_class": "personalisation",
+            "purpose_mentioned_in_text": "All recipients of any online promotions must be 21 years of age or older. Age is verified upon contact of the specified winner",
+            "line_number": [
+                18
+            ]
+        }
+    ],
+    "TP_sharing": [
+        {
+            "purpose_class": "personalisation",
+            "purpose_mentioned_in_text": "The database is available for Mohegan Sun's usage only and is not shared with anyone",
+            "third_party_sharing_practice_class": "affiliates_and_subsidiaries",
+            "third_party_sharing_practice_mentioned_in_text": "The database is available for Mohegan Sun's usage only and is not shared with anyone",
+            "line_number": [
+                6
+            ]
+        },
+        {
+            "purpose_class": "personalisation",
+            "purpose_mentioned_in_text": "The database...is not shared or sold with any third party",
+            "third_party_sharing_practice_class": "affiliates_and_subsidiaries",
+            "third_party_sharing_practice_mentioned_in_text": "The database...is not shared or sold with any third party",
+            "line_number": [
+                10
+            ]
+        }
+    ],
+    "TP_name": [
+        {
+            "third_party_sharing_practice_class": "affiliates_and_subsidiaries",
+            "third_party_sharing_practice_mentioned_in_text": "not shared with anyone",
+            "third_party_name": "Unknown",
+            "third_party_name_mentioned_in_text": "not shared with anyone",
+            "line_number": [
+                6
+            ]
+        },
+        {
+            "third_party_sharing_practice_class": "affiliates_and_subsidiaries",
+            "third_party_sharing_practice_mentioned_in_text": "not shared or sold with any third party",
+            "third_party_name": "Unknown",
+            "third_party_name_mentioned_in_text": "not shared or sold with any third party",
+            "line_number": [
+                10
+            ]
+        }
+    ],
+    "your_rights": [
+        {
+            "rights_class": "access_to_information",
+            "rights_mentioned_in_text": "certain information, such as address or email address, can be updated or corrected simply by calling Customer Service",
+            "line_number": [
+                14
+            ]
+        }
+    ],
+    "your_responsibilities": [
+        {
+            "responsibilities_class": "childrens_accounts",
+            "responsibilities_mentioned_in_text": "This site is not intended for children. Children may use this site only with the direct supervision of their parent or legal guardian",
+            "line_number": [
+                18
+            ]
+        }
+    ]
+}

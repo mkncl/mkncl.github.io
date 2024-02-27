@@ -1,0 +1,166 @@
+{
+    "data_types": [
+        {
+            "data_class": "name",
+            "data_mentioned_in_text": "when you provide your name",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "when you provide your name",
+            "line_number": [
+                8
+            ]
+        },
+        {
+            "data_class": "contact_information",
+            "data_mentioned_in_text": "contact information",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "contact information",
+            "line_number": [
+                8
+            ]
+        },
+        {
+            "data_class": "email_address",
+            "data_mentioned_in_text": "email address",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "email address",
+            "line_number": [
+                8
+            ]
+        },
+        {
+            "data_class": "phone_number",
+            "data_mentioned_in_text": "phone",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "phone",
+            "line_number": [
+                8
+            ]
+        },
+        {
+            "data_class": "physical_address",
+            "data_mentioned_in_text": "shipping address, billing address",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "shipping address, billing address",
+            "line_number": [
+                8
+            ]
+        },
+        {
+            "data_class": "payment_information",
+            "data_mentioned_in_text": "method of payment",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "method of payment",
+            "line_number": [
+                8
+            ]
+        },
+        {
+            "data_class": "cookie_information",
+            "data_mentioned_in_text": "use of cookies",
+            "purpose_class": "marketing",
+            "purpose_mentioned_in_text": "Cookies",
+            "line_number": [
+                10
+            ]
+        },
+        {
+            "data_class": "social_media_profiles",
+            "data_mentioned_in_text": "social media sites",
+            "purpose_class": "marketing",
+            "purpose_mentioned_in_text": "social media sites",
+            "line_number": [
+                14
+            ]
+        },
+        {
+            "data_class": "comments",
+            "data_mentioned_in_text": "post a comment on our Facebook page",
+            "purpose_class": "marketing",
+            "purpose_mentioned_in_text": "post a comment",
+            "line_number": [
+                14
+            ]
+        }
+    ],
+    "TP_sharing": [
+        {
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "provide better services to you",
+            "third_party_sharing_practice_class": "affiliates_and_subsidiaries",
+            "third_party_sharing_practice_mentioned_in_text": "share your information within the BWW organization and with our franchisees, with current and future affiliated companies",
+            "line_number": [
+                22
+            ]
+        },
+        {
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "provide better services to you",
+            "third_party_sharing_practice_class": "performance_of_contract",
+            "third_party_sharing_practice_mentioned_in_text": "reputable third parties as needed to provide better services to you",
+            "line_number": [
+                22
+            ]
+        },
+        {
+            "purpose_class": "regulatory_compliance",
+            "purpose_mentioned_in_text": "comply with law, regulation, legal process or government request",
+            "third_party_sharing_practice_class": "regulatory_compliance",
+            "third_party_sharing_practice_mentioned_in_text": "disclosure is appropriate to comply with law, regulation, legal process or government request",
+            "line_number": [
+                24
+            ]
+        },
+        {
+            "purpose_class": "merger_and_acquisition",
+            "purpose_mentioned_in_text": "substantial corporate transaction, such as a merger, consolidation, asset sale, or in the unlikely event of bankruptcy",
+            "third_party_sharing_practice_class": "merger_and_acquisition",
+            "third_party_sharing_practice_mentioned_in_text": "share or transfer your information in connection with a substantial corporate transaction, such as a merger, consolidation, asset sale",
+            "line_number": [
+                24
+            ]
+        }
+    ],
+    "TP_name": [
+        {
+            "third_party_sharing_practice_class": "affiliates_and_subsidiaries",
+            "third_party_sharing_practice_mentioned_in_text": "share your information within the BWW organization and with our franchisees, with current and future affiliated companies",
+            "third_party_name": "Unknown",
+            "third_party_name_mentioned_in_text": "",
+            "line_number": [
+                22
+            ]
+        }
+    ],
+    "your_rights": [
+        {
+            "rights_class": "opt_out_marketing",
+            "rights_mentioned_in_text": "If you do not wish to receive such communications from us, please follow the opt-out instructions generally provided in such communications",
+            "line_number": [
+                18
+            ]
+        },
+        {
+            "rights_class": "content_removal_erasure",
+            "rights_mentioned_in_text": "Upon your request, we will make reasonable efforts to delete your personal information from our database",
+            "line_number": [
+                18
+            ]
+        },
+        {
+            "rights_class": "access_to_information",
+            "rights_mentioned_in_text": "Residents of the State of California may request a list of all third parties to which BWW has disclosed personal information",
+            "line_number": [
+                42
+            ]
+        }
+    ],
+    "your_responsibilities": [
+        {
+            "responsibilities_class": "childrens_accounts",
+            "responsibilities_mentioned_in_text": "If you are under 18, get your parent's consent before giving out any personal information online",
+            "line_number": [
+                38
+            ]
+        }
+    ]
+}

@@ -1,0 +1,91 @@
+{
+    "data_types": [
+        {
+            "data_class": "name",
+            "data_mentioned_in_text": "You provide us information about yourself, such as your name",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "You provide us information about yourself, such as your name",
+            "line_number": [
+                46
+            ]
+        },
+        {
+            "data_class": "email_address",
+            "data_mentioned_in_text": "such as your name and email address, when you register with the Service.",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "such as your name and email address, when you register with the Service.",
+            "line_number": [
+                46
+            ]
+        },
+        {
+            "data_class": "email_address",
+            "data_mentioned_in_text": "If you correspond with us by email, we may retain the content of your email messages, your email address and our responses",
+            "purpose_class": "communicate_with_user",
+            "purpose_mentioned_in_text": "If you correspond with us by email, we may retain the content of your email messages, your email address and our responses",
+            "line_number": [
+                46
+            ]
+        },
+        {
+            "data_class": "cookie_information",
+            "data_mentioned_in_text": "When you visit the Website, we may send one or more cookies - a small text file containing a string of alphanumeric characters - to your computer",
+            "purpose_class": "improve_products_and_services",
+            "purpose_mentioned_in_text": "cookies - to your computer, mobile or other device ('Local Device Storage') that uniquely identifies your browser or device and allows Company to help you log in faster and enhance your navigation through the Website.",
+            "line_number": [
+                48
+            ]
+        },
+        {
+            "data_class": "ip_address",
+            "data_mentioned_in_text": "These server logs may include information such as your web request, Internet Protocol ('IP') address",
+            "purpose_class": "preserve_system_integrity",
+            "purpose_mentioned_in_text": "These server logs may include information such as your web request, Internet Protocol ('IP') address",
+            "line_number": [
+                52
+            ]
+        }
+    ],
+    "TP_sharing": [
+        {
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "we will use this information to notify you if you are a winner.",
+            "third_party_sharing_practice_class": "performance_of_contract",
+            "third_party_sharing_practice_mentioned_in_text": "we may forward your information to third parties for services such as credit card or other payment processing, order fulfillment, credit pre-authorization, and address verification",
+            "line_number": [
+                62,
+                76
+            ]
+        },
+        {
+            "purpose_class": "improve_products_and_services",
+            "purpose_mentioned_in_text": "to enable more accurate reporting, improve the effectiveness of our marketing and make us better for our users.",
+            "third_party_sharing_practice_class": "marketing",
+            "third_party_sharing_practice_mentioned_in_text": "we may send one or more cookies - to your computer, mobile or other device ('Local Device Storage') that uniquely identifies your browser or device and allows Company to help you log in faster and enhance your navigation through the Website.",
+            "line_number": [
+                56
+            ]
+        }
+    ],
+    "TP_name": [
+        {
+            "third_party_sharing_practice_class": "performance_of_contract",
+            "third_party_sharing_practice_mentioned_in_text": "We may forward your information to third parties for services such as credit card or other payment processing, order fulfillment, credit pre-authorization, and address verification.",
+            "third_party_name": "Unknown",
+            "third_party_name_mentioned_in_text": "We may forward your information to third parties for services such as credit card or other payment processing, order fulfillment, credit pre-authorization, and address verification.",
+            "line_number": [
+                76
+            ]
+        }
+    ],
+    "your_rights": [
+        {
+            "rights_class": "opt_out_marketing",
+            "rights_mentioned_in_text": "If you do not want to receive such email messages, you may opt out",
+            "line_number": [
+                66
+            ]
+        }
+    ],
+    "your_responsibilities": []
+}

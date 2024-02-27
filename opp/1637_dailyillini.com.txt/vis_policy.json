@@ -1,0 +1,174 @@
+{
+    "policy_text": [
+        "Privacy Policy ",
+        "Our commitment to privacy ",
+        "Your privacy is important to us. To better protect your privacy we provide this notice explaining our online information practices and the choices you can make about the way your information is collected and used. ",
+        "||| The information we collect ",
+        "This notice applies to all information collected or submitted on any of Illini Media's websites including dailyillini.com. On some of our pages, you may have the option to create an account, make requests, register for contests, and/or submit content to our websites. ",
+        "|||The personal information collected at these pages are used to identify you as a user of the site, to track your usage of interactive features, and to communicate with you regarding site news and updates. You can opt out of all newsletters, but you may still receive occasional notices regarding your specific usage of the site. We do not share this information with outside parties unless otherwise noted at the time of data entry. ",
+        "|||Illini Media uses non-identifying and aggregate information to better customize our websites for your use and to share general data about those who view our websites with our advertisers. We do not disclose anything that could be used to identify individuals. ",
+        "|||Illini Media partners with Google and OnCampus Advertising to serve some of the ads you see when you visit our websites. ",
+        "|||Illini Media also uses Google Analytics that allows us to analyze data on our users' demographics (age, gender) and interests (affinity categories, other categories). Specifically, we are able analyze the this type of data: ",
+        "|||Demographics ",
+        "\t\u2022\tOverview (overview of traffic by age and gender)",
+        "\t\u2022\tAge (traffic by age ranges)",
+        "\t\u2022\tGender (traffic by gender)",
+        "|||Interests ",
+        "\t\u2022\tOverview (overview of traffic by affinity and other categories)",
+        "\t\u2022\tAffinity Categories (behavior by affinity categories)",
+        "\t\u2022\tIn-Market Categories (behavior by in-market categories)",
+        "\t\u2022\tOther Categories (behavior by other interest categories)",
+        "|||This analysis enables us to track how our users engage over a date range, who our users are generally, and how their behavior varies by attribute (e.g., male vs. female). Illini Media may use this type of analysis to refine our advertising and content strategies. ",
+        "|||Please note: ",
+        "\t\u2022\tIllini Media uses Google Analytics.",
+        "\t\u2022\tThird-party vendors ads (including those served by Google) that appear on Illini Media's websites may appear across the Internet.",
+        "\t\u2022\tIllini Media and third-party vendors, including Google, use first-party cookies (such as the Google Analytics cookie) and third-party cookies (such as the DoubleClick cookie) together to inform, optimize, and serve ads based on someone's past visits to your website.",
+        "\t\u2022\tIllini Media and third-party vendors, including Google, use first-party cookies (such as the Google Analytics cookies) and third-party cookies (such as the DoubleClick cookie) together to report how our ad impressions, other uses of ad services, and interactions with these ad impressions and ad services are related to visits to your site.",
+        "|||Illini Media never shares personally identifiable information provided to us online in ways unrelated to the ones described above without also providing you an opportunity to opt-out or otherwise prohibit such unrelated uses. Google or any ad server may use information (not including your name, address, email address or telephone number) about your visits to this and other websites in order to provide advertisements about goods and services of interest to you. ",
+        "||| To opt-out ",
+        "You may use Google Analytics' currently available opt-outs at any time. ",
+        "||| To access or correct your information ",
+        "You can access all your personally identifiable information that we collect online and maintain by logging into your account and adjusting your account settings and profile information. You can correct factual errors in your personally identifiable information by sending us a request that credibly shows error. To protect your privacy and security, we will also take reasonable steps to verify your identity before granting access or making corrections. ",
+        "||| Our commitment to data security ",
+        "To prevent unauthorized access, maintain data accuracy, and ensure the correct use of information, we have put in place appropriate physical, electronic, and managerial procedures to safeguard and secure the information we collect online. ",
+        "|||May 12, 2014 "
+    ],
+    "data_purpose": [
+        {
+            "md": "id",
+            "d": "age",
+            "mp": "research",
+            "p": "research",
+            "r": 9,
+            "c": "#808080",
+            "o": 0.0
+        },
+        {
+            "md": "id",
+            "d": "age",
+            "mp": "research",
+            "p": "research",
+            "r": 11,
+            "c": "#808080",
+            "o": 0.0
+        },
+        {
+            "md": "id",
+            "d": "gender",
+            "mp": "research",
+            "p": "research",
+            "r": 9,
+            "c": "#9e6060",
+            "o": 0.7436289352453366
+        },
+        {
+            "md": "id",
+            "d": "gender",
+            "mp": "research",
+            "p": "research",
+            "r": 12,
+            "c": "#9e6060",
+            "o": 0.7436289352453366
+        },
+        {
+            "md": "usage_information",
+            "d": "behaviours",
+            "mp": "research",
+            "p": "research",
+            "r": 13,
+            "c": "#b94545",
+            "o": 0.4551802398150276
+        },
+        {
+            "md": "usage_information",
+            "d": "behaviours",
+            "mp": "research",
+            "p": "research",
+            "r": 14,
+            "c": "#b94545",
+            "o": 0.4551802398150276
+        },
+        {
+            "md": "usage_information",
+            "d": "behaviours",
+            "mp": "research",
+            "p": "research",
+            "r": 15,
+            "c": "#b94545",
+            "o": 0.4551802398150276
+        },
+        {
+            "md": "usage_information",
+            "d": "behaviours",
+            "mp": "research",
+            "p": "research",
+            "r": 16,
+            "c": "#b94545",
+            "o": 0.4551802398150276
+        },
+        {
+            "md": "usage_information",
+            "d": "behaviours",
+            "mp": "research",
+            "p": "research",
+            "r": 17,
+            "c": "#b94545",
+            "o": 0.4551802398150276
+        }
+    ],
+    "purpose_share": [
+        {
+            "mp": "research",
+            "p": "research",
+            "ms": "analytics",
+            "s": "aggregated_information",
+            "r": 6,
+            "c": "#bf4040",
+            "o": 0.9972013401367864
+        },
+        {
+            "mp": "research",
+            "p": "research",
+            "ms": "analytics",
+            "s": "aggregated_information",
+            "r": 18,
+            "c": "#bf4040",
+            "o": 0.9972013401367864
+        }
+    ],
+    "share_name": [
+        {
+            "ms": "analytics",
+            "s": "aggregated_information",
+            "mn": "Named",
+            "n": "google",
+            "r": 7,
+            "c": "#808080",
+            "o": 0.3
+        },
+        {
+            "ms": "analytics",
+            "s": "aggregated_information",
+            "mn": "Named",
+            "n": "oncampus_advertising",
+            "r": 7,
+            "c": "#808080",
+            "o": 0.3
+        }
+    ],
+    "user_rights": [
+        {
+            "n": "opt_out_marketing",
+            "r": 26
+        },
+        {
+            "n": "access_to_information",
+            "r": 28
+        },
+        {
+            "n": "data_correction",
+            "r": 28
+        }
+    ],
+    "user_responsibilities": []
+}

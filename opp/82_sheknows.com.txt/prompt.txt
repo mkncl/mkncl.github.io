@@ -1,0 +1,280 @@
+Generate a JSON representation of: (a) all the data types and (b) all purposes of collection and (c) all third party sharing practices and (d) name of companies with which data are shared and (e) all user rights mentions and (f) all user responsibilities mentioned in the given privacy policy paragraph. If a data type is used for more than one purpose or if more than one data type is used for a single purpose, duplicate the records accordingly - similar for third party sharing practices.
+
+------- Instruction:
+1. Find in the text which data types the company collects and provide their corresponding purposes of collection. Data types can be one of these classes (use exactly the same class name) (for "data_class" in JSON):
+- "name" (DEFINITION: Uses the term name)
+- "contact_information" (DEFINITION: “May include, mailing addresses, email addresses, and phone numbers)
+- "physical_address" (DEFINITION: May include home address and/or zip/post code)
+- "date_of_birth" (DEFINITION: May refer to date of birth or birthday)
+- "photo_profile_picture" (DEFINITION: May refer to a photograph or image used to identify an individual)
+- "gender" (DEFINITION: May refer to an individual's actual or perceived sex, gender identity, self-image)
+- "biometric" (DEFINITION: May refer to information used to specifically identify a person, such as fingerprints, voice patterns, or iris scans)
+- "personal_description" (DEFINITION: May refer to physical description such height, weight, hair color, eye color, facial features, and body type. It might also include details about a person's usual attire, posture, or any distinctive physical characteristics. It might also refer to a description of a person's personality, interests, and values. This might describe their personality traits, their hobbies and interests, their values and beliefs, their strengths and weaknesses, and their overall demeanor.)
+- "social_media_profiles" (DEFINITION: This may include, instagram, X (formally twitter), Snapchat, Tiktok, facebook, Watsapp, telegram, discord, linkedin, youtube, pinterest, reddit ,quora or tumblr or any other social media platform)
+- "account_credentials" (DEFINITION: “may refer to pieces of information needed to access and use a particular  This can include Username or Identifier and password or access key.  This may also include security questions and answers, two-factor authentication and biometric authentication”)
+- "user_name" (DEFINITION: “may also refer to a login name, user ID, or account name”)
+- "password" (DEFINITION: Password as letters, biometric password that authenticate user.)
+- "phone_number" (DEFINITION: Mobile or stationary phone number)
+- "email_address" (DEFINITION: Email address)
+- "age" (DEFINITION: How old is the person)
+- "payment_information" (DEFINITION: “may refer to the payment method through which funds are transferred. This may include  Card information such as card number, expiration date, CVV code, and potentially the cardholder's name and billing address for credit or debit cards.
+For bank transfers, this might include the account number, routing number, and potentially the account holder's name and address.For a digital wallet like PayPal or Apple Pay, this could involve usernames, passwords, or unique identifiers associated with the wallet. It could also include details for alternative payment methods like cash app balances, cryptocurrency wallets, or loyalty points.”)
+- "purchase_history" (DEFINITION: “refers to a record of transactions you've made with a particular business or retailer over time. It may include items purchased, dates of purachase, quantities, prices paid, payment method or platform”)
+- "credit_related_information" (DEFINITION: “may refer to borrowing activity, including details of open and closed accounts and payment history. May also refer to a credit report, credit score score, county court judgements, liens or bankruptcy”)
+- "page_response_times" (DEFINITION: “may refer to server response time or TTDB and the refers to the amount of time  it takes for a web server to send the first byte of data back to a user's browser after receiving a request.”)
+- "cookie_information" (DEFINITION: “may refer to session cookies, persistent cookies, first-party cookies, and third-party cookies. It may also include website preference, login information, browsing history, shopping cart contents or location data”)
+- "ip_address" (DEFINITION: IP address or other internet address similar to IP)
+- "health_data" (DEFINITION: “health data refers to any data related to a person's physical or mental health, including the provision of healthcare services. It may include clinical data such as medical record,prescriptions immunisations, administrative data such as hospital admission, lifestyle and behavioural data such as Physical activity levels, sleep patterns, diet, smoking status, alcohol consumption, medication adherence”)
+- "health_activity_data" (DEFINITION: “refers to measurements and information related to physical activity and movement. It may include steps taken, distance covered, heart rate, calorie burned, active minutes, sleep duration and quality or specific activities such as yoga or swimming”)
+- "weight" (DEFINITION: Weight of the person in kg/lbs/etc)
+- "height" (DEFINITION: Height of the person in cm/etc)
+- "body_temperature" (DEFINITION: Body temperature of person)
+- "bmi" (DEFINITION: Body measurement index of the person)
+- "menstrual_cycle_dates" (DEFINITION: Date of menstrual cycle of the person)
+- "pregnancy" (DEFINITION: Pregnancy status or any information related to the person's pregnancy)
+- "other_health_related_information" (DEFINITION: “may refer to wearable sensor data not necessarily related to the activity, such as Skin temperature, sweat composition, oxygen saturation levels, travel history, biomarkers in  your blood, saliva, or other bodily fluids, such as blood sugar, cholesterol, or hormone levels, information about smoking, alcohol consumption, drug use, and other risky behaviours”)
+- "users_location" (DEFINITION: “may refer to the user’s physical location or the user’s virtual location, including where they are within a specific digital environment, such as what page the user is  currently viewing”)
+- "device_location" (DEFINITION: “may refer to the geographical position of the device or the devices location within a network such as its MAC address”)
+- "language" (DEFINITION: “may refer to the language settings”)
+- "temperature" (DEFINITION: Temperature of the home or other environment)
+- "humidity" (DEFINITION: Humidity of the home or other environment)
+- "ambient_light" (DEFINITION: Information about light (bulbs, light strips. etc.) of the home or other environment)
+- "movement" (DEFINITION: “may refer to the movement detected for motion detection”)
+- "smoke_carbon_monoxide_levels" (DEFINITION: “may include detection of volatile organic compounds  and particulate matter “ )
+- "general_environmental_data" (DEFINITION: “may include energy consumption, weather data, noise levels”)
+- "device_type" (DEFINITION: “may refer to the model or serial number”)
+- "operating_system" (DEFINITION: “may refer to mobile or pc operating system”)
+- "application" (DEFINITION: applications installed on the device)
+- "video_card" (DEFINITION: information about video card used by device)
+- "sound_card" (DEFINITION: information about sound card used by device)
+- "memory" (DEFINITION: information about RAM used by device)
+- "browser_type" (DEFINITION: information about used browser)
+- "enabled_device_accessibility_features" (DEFINITION: information about turned on accessibility features - such as increasing of text, text to speech, etc.)
+- "browser_plugin_types_and_versions" (DEFINITION: information about browser plugins)
+- "battery_level" (DEFINITION: information about battery of the device)
+- "device_signals__wifi__bluetooth_" (DEFINITION: “may refer to the wifi signal strength or Bluetooth strength”)
+- "technical_information__general_" (DEFINITION: any other information about device or software)
+- "mobile_network_information" (DEFINITION: information about mobile network strength, carrier, etc.)
+- "time_zone" (DEFINITION: information about timezone)
+- "the_number_of_sessions_on_app" (DEFINITION: number of sessions/opening of the app or website)
+- "usage_activity_data" (DEFINITION: “may refer to the time, frequency or duration of activities”)
+- "users_on_the_app" (DEFINITION: “may refer to users on the app”)
+- "error_reports" (DEFINITION: reports about app/website failures and errors)
+- "advertisement_engagement" (DEFINITION: “may refer to the advertisements shown and how the users interact with them”)
+- "behaviours" (DEFINITION: “may refers to actions taken by users perform within the system, such as clicks, taps, searches, selections, or button presses; navigation patterns: Sequences of actions users take, showing how they move through the system and complete tasks.Time spent: Duration of interaction in specific sections or activities within the system. Frequency of use: How often users engage with specific features or return to the system overall.”
+)
+- "visits_to_site" (DEFINITION: number of visits to the website/app)
+- "resources_you_access" (DEFINITION: specific information about resources that user access when visited the website/app)
+- "details_of_use_of_apps" (DEFINITION: any other information of how user use website/app)
+- "product_view_or_searched_for" (DEFINITION: information about user searches when visited the app/website)
+- "length_of_visits_to_certain_pages" (DEFINITION: time spend on specific page of app/website)
+- "page_interaction_information" (DEFINITION: “may refer to how the user interacts with the app, the page they are viewing, browsing actions, patterns”)
+- "methods_used_to_browse_away_from_the_page" (DEFINITION: how user browse away from the page (close, open new page, etc.))
+- "websites_visited" (DEFINITION: list of previously visited websites)
+- "steps" (DEFINITION: number of steps user did)
+- "pace" (DEFINITION: pace of the user)
+- "distance" (DEFINITION: walked distance of the user)
+- "url_clickstream_to_and_from" (DEFINITION: how user moved from one page to another)
+- "communications_between_players" (DEFINITION: “nay refer to the actual words, phrases, and messages exchanged between players. This could include chat logs, forum posts, in-game dialogues, voice chat transcripts or Images, videos, or audio files shared between players.”)
+- "friend_relationships" (DEFINITION: “may refer to friend list”)
+- "conversational_data__general_" (DEFINITION: “may refer to information provided to a chatbot, messages you send and receive”)
+- "Social meta data" (DEFINITION: “may refer to sender and receiver information: Usernames, IDs, or other identifiers of the players involved in the communication. Timestamps: When the communication occurred.Channel information: The specific channel or platform used for communication (e.g., in-game chat, voice chat, forum thread).
+Engagement details: Whether the message was read, reacted to, or forwarded.”)
+- "audio" (DEFINITION: any audio user-generated content)
+- "video" (DEFINITION: any video user-generated content)
+- "comments" (DEFINITION: “any text user-generated content, may refer to comments posted by user”)
+- "metadata_general" (DEFINITION: metadata of user-generated content)
+- "hashtag" (DEFINITION: “may refer to hashtags used”)
+- "Sexual Orientation" (DEFINITION: individual's sexual preferences or any information that may identify user's sexual preferences)
+- "Political views" (DEFINITION: individual's political views or any information that may identify user's political views)
+- "racial or ethnic origin" (DEFINITION: individual's racial or ethnic origin or any information that may identify user's racial or ethnic origin)
+- "philosophical beliefs" (DEFINITION: individual's philosophical beliefs or any information that may identify user's philosophical beliefs)
+- "trade union membership" (DEFINITION: information about trade union membership)
+- "Social Security Number" (DEFINITION: information about social security number)
+2. For each data type, categorize the purpose of collection into one of the following classes (use exactly the same class name) (for "purpose_class" in JSON):
+- "personalisation" (DEFINITION: “may refer to personalising the product or suggestions”)
+- "interaction" (DEFINITION: “may refer to the interactive feature of the service”)
+- "display" (DEFINITION: “may refer to how the content is displayed”)
+- "marketing" (DEFINITION: “may refer to advertisements, marketing communications, surveys, news, updates”)
+- "improve_products_and_services" (DEFINITION: “may refer to developing new features,products, offerings”)
+- "provide_services_and_fulfill_contractual_obligations" (DEFINITION: “may refer to using the information collected to deliver the product or service and fulfil terms and conditions”)
+- "preserve_system_integrity" (DEFINITION: “may refer to detecting and preventing fraud, cheating, unauthorised activities, prevent hacking, spamming, enforce terms of service”)
+- "provide_business_services" (DEFINITION: “may refer to specific features or functionalities of the software, technical support, maintenance, data storage, backups”)
+- "troubleshoot" (DEFINITION: “may refers to tests to ensure that the service or product is functioning”)
+- "communicate_with_user" (DEFINITION: may refer to using contact information to connect with user and send messages)
+- "connect_with_other_users" (DEFINITION: “may refer to using contact information to connect with others or allow others to connect or find you”)
+- "promotions" (DEFINITION: “may refer to contests, programs or promotions”)
+- "changes_to_terms" (DEFINITION: “may refer to change in the product or service” )
+- "user_safety" (DEFINITION: “may refer to the detection of illegal activity, abuse, violation of terms of service, threats to the security of users and the public, protecting harms against property”)
+- "service_security" (DEFINITION: “may refer to conducting audits”)
+- "defend_legal_rights" (DEFINITION: “may refer to the defence of legal rights in relation to litigation”)
+- "corporate_governance" (DEFINITION: “may refer to complying with finance, tax, accounting audits, assessments of operations, privacy, security, risk compliance obligations, information needed for a merger, acquisition, asset sale or transfer of the business” )
+- "research" (DEFINITION: “may refer to research and datasets for researchers, professional groups and charitable groups”)
+- "market_research" (DEFINITION: “may refer to sales, marketing or business strategy decisions” )
+3. For each purpose, categorize the third party sharing practices into one of the following classes (use exactly the same class name) (for "third_party_sharing_practice_class" in JSON):
+- "regulatory_compliance" (DEFINITION: “may refer to complying to a law, regulation, legal process”)
+- "performance_of_contract" (DEFINITION: “may refer to protecting, maintaining, or operating our business”)
+- "prevent_harm" (DEFINITION: “ may refer to protecting users from harm, fraud, abuse, violations of our terms, threats to the security of the service, threats to the physical safety of any person”)
+- "invesitigate  harm" (DEFINITION: “may refer to investigating fraud, abuse, violations of our terms, threats to the security of the service, threats to the physical safety of any person”)
+- "aggregated_information" (DEFINITION: “may refer to non-personal information that is aggregated or de-identified and shared with third-parties”)
+- "merger_and_acquisition" (DEFINITION: “may refer to information shared in the process of a sale, merger or acquisition”)
+- "affiliates_and_subsidiaries" (DEFINITION: “may refer to corporate affiliates, service providers, vendors agents who support our internal services”)
+- "third_party_platforms_integration" (DEFINITION: “may refer to third-party platforms such as steam”)
+- "consumer_retention_rewards_program" (DEFINITION: “may refer to product, reward offers and offers by us or partners”)
+4. For each third party sharing practice find the name of the company or government body with which data are shared (for "third_party_name" in JSON). If name is not mentioned - set name as "Unknown".
+5. Categorize the user rights into one of the following classes (use exactly the same class name) (for "rights_class" in JSON):
+- "opt_out_marketing" (DEFINITION: “may refer to the right to not process information for advertisement or marketing purposes.”)
+- "access_to_information" (DEFINITION: “may refer to the right to access information”)
+- "data_correction" (DEFINITION: “may refer to the right to correction or rectification to correct any incorrect or inaccurate personal information”)
+- "third_party_data_sharing" (DEFINITION: “ may refer to the right to revoke consent or process information by third parties”)
+- "cookie_preference" (DEFINITION: “may refer to managing cookie preferences” )
+- "content_removal_erasure" (DEFINITION: “may refer to the remover of user content”)
+- "automatic_decision_making" (DEFINITION: “may refer to being not subject to automated decision making if it affects or produces a legal effect”)
+- "data_processing_complaint" (DEFINITION: “may refer to the right to lodge a complaint if the data processing infringes the law” )
+- "data_portability" (DEFINITION: “may refer to the right to receive a copy of personal information obtained and it may gave a right to ask it transferred to third party” )
+- "limit_use_or_disclosure_of_sensitive_personal_information" (DEFINITION: “ may refer to the the right to limit use or disclosure of sensitive personal information” )
+- "opt_out_of_push_notification" (DEFINITION: “may refer to the right to opt out of push notifications” )
+- "arbitration_opt-out" (DEFINITION: “may refer to the right to opt-out arbitration or class action” )
+6. Categorize the user responsibilities into one of the following classes (use exactly the same class name) (for "responsibilities_class" in JSON):
+- "visitors_consent" (DEFINITION: “may refer to the need to gain consent of the people visiting home”)
+- "others_right_to_privacy" (DEFINITION: “may refer to respecting others right to privacy”)
+- "data_sharing" (DEFINITION: “may refer to sharing data such as name and photo that you are willing to be made public” )
+- "additional_users_data_responsibilities" (DEFINITION: “may refer to other authorised users who may be able to control the device or user content”  )
+- "data_processor" (DEFINITION: “may refer to the responsibility as the data processor” )
+- "data_protection" (DEFINITION: “may refer to the responsibility to keep personal information safe such as using a strong password and enabling multi-factor authentication”)
+- "childrens_accounts" (DEFINITION: “may refer to the responsibility to manage children’s accounts under 18”)
+- "user_content_intellectual_property_ip" (DEFINITION: “may refer to the responsibility that the user content does not infringe upon pon the copyright, trademark, patent, trade secret or other intellectual property rights of any third party." )
+- "user_content_harm" (DEFINITION: “may refer to the responsibility not to use or contribute User Content that is unlawful, tortious, defamatory, obscene, invasive of the privacy of another person, threatening, harassing, abusive, hateful, racist or otherwise objectionable or inappropriate" )
+- "beta confidentiality " (DEFINITION: “may refer to the responsibility that that the beta test is confidential”)
+- "user_indemnity" (DEFINITION: “may refer to the responsibility to defend and indemnify the company, licensor, and third parties from claims liabilities, losses, injuries damages, cost and expenses, from violation by you of the agreement”)
+
+---------- Privacy Policy Paragraph (number in beginning is the number of line):
+0. Privacy Policy 
+2. This privacy policy (this "Privacy Policy") was last modified on January 14, 2015. 
+4. www.AllParenting.com 
+6. www.BeautyHigh.com 
+8. www.BlogHer.com 
+10. www.DailyMakeover.com 
+12. www.DrinksMixer.com 
+14. www.FabulousFoods.com 
+16. www.FabulousLiving.com 
+18. www.HarryPotterFans.com 
+20. www.LovingYou.com 
+22. www.MakeoverSolutions.com 
+24. www.PregnancyandBaby.com 
+26. www.SheKnows.com 
+28. Australia.SheKnows.com 
+30. Canada.SheKnows.com 
+32. UK.SheKnows.com 
+34. www.SoapOperaFan.com 
+36. www.StyleCaster.com 
+38. www.StyleCasterMediaGroup.com 
+40. (collectively, the "Website") 
+42. |||SheKnows, LLC, an Arizona limited liability company, and its affiliated companies, including StyleCaster, Inc., a Delaware corporation, and BlogHer Inc., a Delaware corporation (collectively, "Company," "we," or "us"), knows that you care how information about you is used and shared. This Privacy Policy explains what information of yours will be collected by Company when you use the Website, any mobile versions of the Website, any applications published by the Company that you download from the Website or from a third-party, and other related services (the "Service"), how the information will be used and how you can control the collection, correction and/or deletion of information. We will not use or share your information with anyone except as described in this Privacy Policy. To the extent that any terms of the Privacy Policy conflict with the terms of an existing written (including electronic) agreement between you and the Company regarding the use of specific areas of the Website or specific services (collectively, the "Other Agreements"), the terms of such Other Agreements shall govern. 
+44. ||| Information We Collect 
+46. User-Provided Information: You provide us information about yourself, such as your name and email address, when you register with the Service. Also, you may provide information when you participate in sweepstakes and contests, message boards and chat rooms, leave a comment on the Website, respond to one of our surveys, or use Try On technology other interactive areas of our Website (all such information and material, "User Content"). If you correspond with us by email, we may retain the content of your email messages, your email address and our responses. 
+48. |||Cookies Information: When you visit the Website, we may send one or more cookies - a small text file containing a string of alphanumeric characters - to your computer, mobile or other device ("Local Device Storage") that uniquely identifies your browser or device and allows Company to help you log in faster and enhance your navigation through the Website. A cookie does not collect personal information about you from which your individual identity can be established. Company uses both session cookies and persistent cookies. A persistent cookie remains in your Local Device Storage after you close your browser. Persistent cookies may be used by your browser on subsequent visits to the Service. Persistent cookies can be removed by following your web browser's or Local Device Storage's directions. A session cookie is temporary and disappears after you close your browser. You can set your web browser to refuse all cookies or to indicate when a cookie is being sent. Therefore, some features of the Service may not function properly or at all if the ability to accept all cookies is disabled. Other cookies collect information about your browsing habits in order to help us and advertisers make suggestions relevant to you and your interests. They remember the websites you have visited and that information is shared with other parties such as advertisers. For example, we use third parties to provide you with more personalized advertisements when visiting other websites. You can change the settings on your browser or Local Device Storage to prevent cookies being stored on your Local Device Storage without your explicit consent. Your browser "help" section will normally provide details on how to manage the cookie settings. 
+50. |||Social Networking: If you choose to access, visit and/or use any third-party social networking service(s) that may be integrated with the Service, we may receive personally identifiable information and other information about you and your computer, mobile and other device that you have made available to those services, including information about your contacts on those services. For example, some social networking services allow you to push content from our Service to your contacts or to pull information about your contacts so you can connect with them on or through our Service. Some social networking services also will facilitate your registration for our Service or enhance or personalize your experience on our Service. Your decision to use a social networking service in connection with our Service is voluntary. However, you should make sure you are comfortable with the information your third-party social networking services may make available to our Service by vising those services' privacy policies and/or modifying your privacy settings directly with those services. We reserve the right to use, transfer, assign, share and provide access to all personally identifiable information and other information about you and your computer, mobile or other device that we receive through third-party social networking services in the same ways described in this Privacy Policy as all of your other information. 
+52. |||Log File Information: Log file information is automatically reported by your browser each time you access a web page. When you register with or view our Website, our servers automatically record certain information that your web browser sends whenever you visit any website. These server logs may include information such as your web request, Internet Protocol ("IP") address, browser type, referring / exit pages and URLs, number of clicks, domain names, landing pages, pages viewed and other such information. 
+54. |||Information Storage: Your information may be transferred to, and maintained on, servers and databases located outside of your state, province, country or other governmental jurisdiction where the privacy laws may not be as protective as your jurisdiction. Be advised that Company may transfer your information to and from any state, province, country or other governmental jurisdiction, and process it in the United States or elsewhere. Your consent to the Company's Privacy Policy followed by your submission of information represents your agreement to any such transfer. 
+56. |||Clear Gifs Information: When you use the Service, we may employ clear gifs (a.k.a. Web Beacons) which are used to track the online usage patterns of our users anonymously. No personally identifiable information from your Company account is collected using these clear gifs. In addition, we may also use clear gifs in HTML-based emails sent to our users to track which emails are opened by recipients. The information is used to enable more accurate reporting, improve the effectiveness of our marketing and make us better for our users. 
+58. |||New Technology: As we adopt additional technology, we may also gather information through other means and there may be other technologies present that act in a similar way, but are protected by confidentiality. 
+60. ||| How We Use Your Information 
+62. We use the information you submit (including any personal information) to operate, maintain and provide to you the features and functionality of the Service or otherwise in connection with our business in relation to the Service. By using the Service you consent to this use and any other use of information identified in this Privacy Policy. For example, if you enter an online sweepstakes, we will use this information to notify you if you are a winner. We may also use the information to communicate with you about new features, products or services, and/or to improve the services that we offer by tailoring them to your needs. 
+64. |||Any information or content that you voluntarily disclose for posting to the Service (for instance, in User Content you post on message boards, in chat areas, or leave a comment to an article) becomes available to the public. You should be aware that even if you remove User Content, copies may remain viewable in cached and archived pages or if other users have copied or stored your User Content. 
+66. |||By providing Company your email address, you consent to our using the email address to send you Service-related notices, including any notices required by law, in lieu of communication by postal mail. We may also use your email address to send you other messages, such as newsletters, changes to features of the Service or special offers. If you do not want to receive such email messages, you may opt out by sending an email message to legal@sheknows.com with the word "No email - SheKnows" in the subject field. Opting out may prevent you from receiving email messages regarding updates, improvements or offers. 
+68. |||Company may use certain information about you and/or your User Content without identifying you as an individual to third parties. We do this for purposes such as analyzing how the Service is used, diagnosing service or technical problems, maintaining security and personalizing advertisements and promotions. 
+70. |||Company reserves the right, but has no obligation, to monitor the User Content you post on the Website. Company has the right to remove any such User Content for any reason or no reason, including, without limitation, if in its sole opinion, such User Content violates, or may violate, any applicable law or our Terms of Use, which are incorporated herein by reference, or to protect or defend Company's rights or property or those of any third party. Company also reserves the right to remove User Content upon the request of any third party. 
+72. |||We use cookies, clear gifs and log file information to: (a) remember information so that you will not have to re-enter it during your visit or the next time you visit the Website; (b) provide custom, personalized content and information; (c) monitor the effectiveness of the Service; (d) monitor aggregate metrics such as total number of visitors and traffic; (e) diagnose or fix technology problems reported by our users or engineers that are associated with the IP addresses controlled by a specific web company or ISP; and (f) help you efficiently access your information after you sign in to the Website. 
+74. |||If you do not wish to receive future commercial messages from us, simply follow the unsubscribe instructions contained within the message you receive. Note that you may continue to receive certain communications from us, such as transactional or relationship messages, and/or messages about your account profile. 
+76. |||We may also allow access to our database by third parties that provide us with services, such as technical maintenance, market research, community and forums management, auction services, and shopping, personal/job search and other classified ads functionality, but only for the purpose of and to the extent necessary to provide those services. If you choose to purchase merchandise, products and/or services on or through features on the Service, we may forward your information to third parties for services such as credit card or other payment processing, order fulfillment, credit pre-authorization, and address verification. There are also times when you provide information about yourself to us in areas of the Service that may be managed or participated in by third parties. In such cases, the information may be used by us and by such third party(ies), each pursuant to its own policies. We may also provide your information to our advertisers, so that they can serve ads to you that meet your needs or match your interests. While we may seek to require such third parties to follow appropriate privacy policies and will not authorize them to use this information except for the express purpose for which it is provided, we do not bear any responsibility for any actions or policies of third parties. 
+78. |||We reserve the right to access, use, and share with others your personally identifiable information for purposes of health, safety and other matters in the public interest. 
+80. |||In addition, we reserve the right to use the information we collect about your computer, mobile or other device (including its geographic location), which may at times be able to identify you, for any lawful business purpose, including without limitation to help diagnose problems with our servers, to gather broad demographic information, analyze trends, track users' movements around the Service, and to otherwise administer the Service. Geographic location information about you and/or your computer, mobile or other device may specifically be used to show you content and sponsored messaging based on geographic location. 
+82. |||We reserve the right to use, transfer, sell and share aggregated, anonymous data about our users as a group for any lawful business purpose, such as analyzing usage trends and seeking compatible advertisers, sponsors, clients and customers. 
+84. |||In addition, as our business changes, we may buy or sell various assets. In the event all or a portion of the assets owned or controlled by us, our parent or any subsidiary or affiliated entity are sold, assigned, transferred or acquired by another company, the information from and/or about our Service users may be among the transferred assets. 
+86. |||We reserve the right to identify you from information you provide to us and/or to merge or co-mingle anonymous or non-personally identifiable data about you, your offline and online behavior, and/or your computer, mobile or other device (including its geographic location), with the information you provide to use and/or other personally identifiable data for any lawful business purpose. 
+88. ||| How We Share Your Information 
+90. Personally Identifiable Information: Except as described in this Privacy Policy, Company will not rent or sell your personally identifiable information to others. 
+92. |||Company may share your personally identifiable information or information about your computer, mobile or other device with our affiliates and third parties solely for the purpose of providing services to you. We may store personal information in locations outside the direct control of Company (for instance, on servers or databases co-located with hosting providers). 
+94. |||As we develop our business, we may buy or sell assets or business offerings. Customer, email and visitor information is generally one of the transferred business assets in these types of transactions. We may also transfer such information in the course of corporate divestitures, mergers or dissolution. 
+96. |||Except as otherwise described in this Privacy Policy, Company will not disclose personal information to any third party unless required to do so by law, regulation or subpoena or if we believe that such action is necessary to: (a) conform to the law, comply with legal process served on us or our affiliates or investigate, prevent or take action regarding suspected or actual illegal activities; (b) to enforce our Terms of Use, take precautions against liability, to investigate and defend ourselves against any third-party claims or allegations, to assist government enforcement agencies or to protect the security or integrity of our Website; and (c) to exercise or protect the rights, property or personal safety of Company, our users or others. Please note we may not provide notice prior to disclosure in such cases. 
+98. |||Non-Personally Identifiable Information: We may share non-personally identifiable information (such as anonymous usage data, referring/exit pages and URLs, platform types, number of clicks, etc.) with interested third parties to help them understand the usage patterns for certain Company services. 
+100. |||Company allows other companies, called third-party ad servers or ad networks, to serve advertisements on the Website. These third-party ad servers or ad networks use technology to send, directly to your browser, the advertisements and links that appear on the Website. They automatically receive your IP address when this happens. They may also use other technologies (such as cookies, JavaScript or Web Beacons) to measure the effectiveness of their advertisements and to personalize the advertising content. 
+102. |||Company does not provide any personally identifiable information to these third-party ad servers or ad networks without your consent. However, please note that if an advertiser asks Company to show an advertisement to a certain audience and you respond to that advertisement, the advertiser or ad-server may conclude that you fit the description of the audience they are trying to reach. 
+104. |||You should consult the respective privacy policies of these third-party ad servers or ad networks. This Privacy Policy does not apply to, and we cannot control the activities of, such advertisers. 
+106. ||| How We Protect Your Information 
+108. Company uses commercially reasonable physical, managerial and technical safeguards to preserve the integrity and security of your personal information. We cannot, however, ensure or warrant the security of any information you transmit to Company and you do so at your own risk. Once we receive your transmission of information, Company makes commercially reasonable efforts to ensure the security of our systems. However, please note that this is not a guarantee that such information may not be accessed, disclosed, altered or destroyed by breach of any of our physical, technical or managerial safeguards. 
+110. |||To protect your privacy and security, we take reasonable steps (such as requesting a unique password) to verify your identity before granting you access to your account. You are responsible for maintaining the secrecy of your unique password and account information, and for controlling access to your email communications from Company, at all times. 
+112. ||| Compromise of Personal Information 
+114. In the event that personal information is compromised as a result of a breach of security, Company will take commercially reasonable measures to promptly notify those persons whose personal information has been compromised, in accordance with the notification procedures set forth in this Privacy Policy or as otherwise required by applicable law. 
+116. ||| Your Choices About Your Personal Information 
+118. You may, of course, decline to submit personally identifiable information to Company, in which case Company may not be able to provide certain services to you. 
+120. ||| Children's Privacy 
+122. Protecting the privacy of young children is especially important. For that reason, Company does not knowingly collect or solicit personal information from anyone under the age of 13 or knowingly allow such persons to register. If you are under 13, please do not send any information about yourself to us, including your name, address, telephone number or email address. No one under age 13 is allowed to provide any personal information to Company. In the event that we learn that we have collected personal information from a child under age 13 without verification of parental consent, we will delete that information as quickly as possible. If you believe that we might have any information from or about a child under 13, please contact us at legal@sheknows.com. 
+124. ||| Third Parties 
+126. Company expects its partners, advertisers and affiliates to respect the privacy of our users. Be aware, however, that third parties, including our partners, advertisers, affiliates and other content providers accessible through our Website, may have their own privacy and data collection policies and practices. 
+128. |||You should also be aware that if you voluntarily disclose information (including personally identifiable information) on message boards or in chat areas, that information can be viewed publicly and can be collected and used by third parties without our knowledge and may result in unsolicited messages from other individuals or third parties. Such activities are beyond our control and outside the scope of this Privacy Policy. 
+130. |||Company is not responsible for the practices employed by websites linked to or from the Website nor the information or content contained therein. It follows that the Company accepts no responsibility for events experienced by you if you visit a third party site by clicking through from the Website. Please remember that when you use a link to go from the Website to another website, this Privacy Policy is no longer in effect. User browsing and interaction on any other website, including those that have a link on our Website, is subject to that other website's own rules and policies. Please read over those rules and policies before proceeding. 
+132. ||| Third Party Advertisements and Technologies: 
+134. We use third-party advertising companies to serve advertisements when you visit the Website as is explained in detail in the Terms of Use. In the course of advertisements being served to you, a unique third-party cookie or other advertising technology may be placed on your browser. This advertising technology uses information derived from your visits to the Website to target advertising within this Website or on other websites. This information is used for many purposes, for example, it helps us try to ensure that you do not see the same advertisements over and over again. We also use this information to help select and display targeted advertisements that we believe may be of interest to you (sometimes called "online behavioral advertising" or "interest-based advertising" or "OBA"). We also use web beacons, provided by third-party advertising companies, to help manage and optimize our online advertising. Web beacons enable us to recognize a browser's cookie when a browser visits this Website, to learn which banner ads bring users to our Website and to deliver more relevant advertising. 
+136. |||In addition, our advertisers or other third parties may use other third-party advertising technology to target advertising on the Website and other websites. We do not control the data collection and use practices of these other third parties. You should read the privacy notices of the websites you visit in order to determine what companies may be collecting information on those websites. 
+138. ||| OBA Opt Out 
+140. If you would like to "opt-out" of being served OBA on the Website by our third-party advertising companies, click on the AdChoices icon below and select the companies whose OBA technology you would like to block on the Website. 
+142. |||You may also "opt-out" of other third party programs using OBA technology on your web browser: (a) for users targeted in the United States by visiting http://www.aboutads.info/choices; (b) for users targeted in Europe by visiting http:://www.youronlinechoices.com, selecting the country where you are located; (c) for users targeted in Australia by visiting http://youronlinechoices.com.au, and selecting "Your Ad Choices" or "Your Choices" as applicable, and (d) for users targeted in Canada by visiting http://youradchoices.ca/choices. 
+144. |||For more information about online advertising, please visit: (a) http://aboutads.info/consumers regarding United States online choices; (b) http://youronlinechoices.com regarding European online choices; (c) http://youronlinechoices.com.au regarding Australian online choices; and/or (d) http://youradchoices.ca regarding Canadian online choices. 
+146. ||| Notification Procedures 
+148. It is our policy to provide notifications, whether such notifications are required by law or are for marketing or other business related purposes, to you via email notice, written or hard copy notice or through conspicuous posting of such notice on the Website, as determined by Company in its sole discretion. We reserve the right to determine the form and means of providing notifications to you, provided that you may opt out of certain means of notification as described in this Privacy Policy. 
+150. ||| Changes to Our Privacy Policy 
+152. We reserve the right to change this Privacy Policy at any time. Please check this page periodically for changes. Your continued use of the Website following the posting of changes to this Privacy Policy will constitute acceptance of those changes. Information collected prior to the time any change is posted will be used according to the rules and law that applied at the time the information was collected. 
+154. ||| How to Contact the Company 
+156. If you have any questions about this Privacy Policy, the practices of the Website or your dealings with the Website (including your choices regarding cookies), please contact us at legal@sheknows.com, or send mail to: 
+158. SheKnows, LLC 
+160. 14614 N. Kierland Blvd, Suite S150 
+162. Scottsdale, AZ 85254 
+164. Attn: General Counsel 
+
+
+--------- Example of a JSON structure:
+{
+  "data_types": [
+    {
+      "data_class": "Name",
+      "data_mentioned_in_text": "...",
+      "purpose_class": "Provide Services and fulfill contractual obligations",
+      "purpose_mentioned_in_text": "...",
+      "line_number": [...]
+    },
+  ],
+"TP_sharing": [
+    {
+      "purpose_class": "Provide Services and fulfill contractual obligations",
+      "purpose_mentioned_in_text": "...",
+      "third_party_sharing_practice_class": "Research",
+      "third_party_sharing_practice_mentioned_in_text": "...",
+      "line_number": [...]
+    },
+  ],
+"TP_name": [
+    {
+      "third_party_sharing_practice_class": "Research",
+      "third_party_sharing_practice_mentioned_in_text": "...",
+      "third_party_name": "Google",
+      "third_party_name_mentioned_in_text": "....",
+      "line_number": [...]
+    },
+  ],
+“your_rights”: [
+   {
+      "rights_class": "Content Removal/ Erasure",
+      "rights_mentioned_in_text": "...",
+      "line_number": [...]
+   },
+  ],
+“your_responsibilities”:[
+   {
+      "responsibilities_class": "Children's accounts",
+      "responsibilities_mentioned_in_text": "...",
+      "line_number": [...]
+   },
+  ],
+}

@@ -1,0 +1,150 @@
+{
+    "data_types": [
+        {
+            "data_class": "contact_information",
+            "data_mentioned_in_text": "your name, address, e-mail address, telephone number",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "sign up to use a service, post a resume, enter a contest, purchase a product",
+            "line_number": [
+                10
+            ]
+        },
+        {
+            "data_class": "payment_information",
+            "data_mentioned_in_text": "credit card number, contact information, billing information",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "purchase a product",
+            "line_number": [
+                10
+            ]
+        },
+        {
+            "data_class": "age",
+            "data_mentioned_in_text": "your age",
+            "purpose_class": "marketing",
+            "purpose_mentioned_in_text": "inform you of other products or services available",
+            "line_number": [
+                10,
+                18
+            ]
+        },
+        {
+            "data_class": "gender",
+            "data_mentioned_in_text": "gender",
+            "purpose_class": "personalization",
+            "purpose_mentioned_in_text": "inform you of other products or services available",
+            "line_number": [
+                10,
+                18
+            ]
+        },
+        {
+            "data_class": "cookie_information",
+            "data_mentioned_in_text": "cookies",
+            "purpose_class": "improve_products_and_services",
+            "purpose_mentioned_in_text": "deliver faster and more accurate results and a more personalized site experience",
+            "line_number": [
+                76
+            ]
+        },
+        {
+            "data_class": "ip_address",
+            "data_mentioned_in_text": "IP address",
+            "purpose_class": "service_security",
+            "purpose_mentioned_in_text": "information about your computer hardware and software",
+            "line_number": [
+                12,
+                54
+            ]
+        },
+        {
+            "data_class": "ip_address",
+            "data_mentioned_in_text": "IP address",
+            "purpose_class": "provide_business_services",
+            "purpose_mentioned_in_text": "facilitating user discovery and access via web search engines",
+            "line_number": [
+                22
+            ]
+        }
+    ],
+    "TP_sharing": [
+        {
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "purchase a product",
+            "third_party_sharing_practice_class": "performance_of_contract",
+            "third_party_sharing_practice_mentioned_in_text": "companies and individuals we employ to perform functions on our behalf, ... hosting our web servers, analyzing data, providing marketing assistance, processing credit card payments, and providing customer service",
+            "line_number": [
+                52
+            ]
+        },
+        {
+            "purpose_class": "service_security",
+            "purpose_mentioned_in_text": "if legally required to do so, protect the rights or property of AAAS; prevent a crime or protect national security; or protect the personal safety of users or the public",
+            "third_party_sharing_practice_class": "regulatory_compliance",
+            "third_party_sharing_practice_mentioned_in_text": "may disclose such information if legally required to do so, if requested to do so by a governmental entity",
+            "line_number": [
+                54
+            ]
+        },
+        {
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "may disclose and transfer such information to a third party who acquires all or a substantial portion of the Science business",
+            "third_party_sharing_practice_class": "merger_and_acquisition",
+            "third_party_sharing_practice_mentioned_in_text": "disclose and transfer such information to a third party",
+            "line_number": [
+                56
+            ]
+        }
+    ],
+    "TP_name": [
+        {
+            "third_party_sharing_practice_class": "performance_of_contract",
+            "third_party_sharing_practice_mentioned_in_text": "companies and individuals we employ to perform functions on our behalf",
+            "third_party_name": "Unknown",
+            "third_party_name_mentioned_in_text": "",
+            "line_number": [
+                52
+            ]
+        },
+        {
+            "third_party_sharing_practice_class": "regulatory_compliance",
+            "third_party_sharing_practice_mentioned_in_text": "if requested to do so by a governmental entity",
+            "third_party_name": "Unknown",
+            "third_party_name_mentioned_in_text": "",
+            "line_number": [
+                54
+            ]
+        },
+        {
+            "third_party_sharing_practice_class": "merger_and_acquisition",
+            "third_party_sharing_practice_mentioned_in_text": "third party who acquires all or a substantial portion of the Science business",
+            "third_party_name": "Unknown",
+            "third_party_name_mentioned_in_text": "",
+            "line_number": [
+                56
+            ]
+        }
+    ],
+    "your_rights": [
+        {
+            "rights_class": "opt_out_marketing",
+            "rights_mentioned_in_text": "opt in for third-party informational e-mails or opt out of all e-mail communication",
+            "line_number": [
+                30,
+                32,
+                34,
+                36,
+                38
+            ]
+        }
+    ],
+    "your_responsibilities": [
+        {
+            "responsibilities_class": "data_protection",
+            "responsibilities_mentioned_in_text": "protect you from any loss, misuse, or alteration of information collected",
+            "line_number": [
+                92
+            ]
+        }
+    ]
+}

@@ -1,0 +1,176 @@
+{
+    "data_types": [
+        {
+            "data_class": "name",
+            "data_mentioned_in_text": "names",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "You provide to allow you to make product purchases",
+            "line_number": [
+                6,
+                14
+            ]
+        },
+        {
+            "data_class": "contact_information",
+            "data_mentioned_in_text": "mailing addresses, e-mail addresses",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "full your requests, improve our publications, products and services, to send you promotional offers",
+            "line_number": [
+                6,
+                14
+            ]
+        },
+        {
+            "data_class": "email_address",
+            "data_mentioned_in_text": "e-mail addresses",
+            "purpose_class": "marketing",
+            "purpose_mentioned_in_text": "send you promotional offers",
+            "line_number": [
+                6,
+                14
+            ]
+        },
+        {
+            "data_class": "demographic_information",
+            "data_mentioned_in_text": "demographic information",
+            "purpose_class": "improve_products_and_services",
+            "purpose_mentioned_in_text": "improve our publications, products and services",
+            "line_number": [
+                6,
+                14
+            ]
+        },
+        {
+            "data_class": "credit_card_information",
+            "data_mentioned_in_text": "credit card and related financial information",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "purchase a product or subscribe to any publication or service offered via these sites",
+            "line_number": [
+                8,
+                14
+            ]
+        },
+        {
+            "data_class": "Social Security Number",
+            "data_mentioned_in_text": "social security numbers",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "fulfill consumers requests to receive quotes or other financial offers",
+            "line_number": [
+                8
+            ]
+        },
+        {
+            "data_class": "ip_address",
+            "data_mentioned_in_text": "IP address",
+            "purpose_class": "improve_products_and_services",
+            "purpose_mentioned_in_text": "helps facilitate your online experience at our websites",
+            "line_number": [
+                10
+            ]
+        },
+        {
+            "data_class": "browser_type",
+            "data_mentioned_in_text": "browser type",
+            "purpose_class": "improve_products_and_services",
+            "purpose_mentioned_in_text": "helps facilitate your online experience at our websites",
+            "line_number": [
+                10
+            ]
+        }
+    ],
+    "TP_sharing": [
+        {
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "we use it, to whom we disclose personal information and other information",
+            "third_party_sharing_practice_class": "affiliates_and_subsidiaries",
+            "third_party_sharing_practice_mentioned_in_text": "share your personal information with any parent company, subsidiary, or affiliate in the TEN corporate family",
+            "line_number": [
+                2,
+                20
+            ]
+        },
+        {
+            "purpose_class": "marketing",
+            "purpose_mentioned_in_text": "inform you about TENs products and services",
+            "third_party_sharing_practice_class": "performance_of_contract",
+            "third_party_sharing_practice_mentioned_in_text": "companies that work on behalf of or with TEN",
+            "line_number": [
+                14,
+                22
+            ]
+        },
+        {
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "we cannot",
+            "third_party_sharing_practice_class": "merger_and_acquisition",
+            "third_party_sharing_practice_mentioned_in_text": "user information, whether personally identifiable or otherwise, may be one of the transferred assets",
+            "line_number": [
+                38
+            ]
+        },
+        {
+            "purpose_class": "improve_products_and_services",
+            "purpose_mentioned_in_text": "web analytics techniques",
+            "third_party_sharing_practice_class": "aggregated_information",
+            "third_party_sharing_practice_mentioned_in_text": "behavior marketing technologies, to assess consumer behavior and to understand how we can better serve our customers",
+            "line_number": [
+                46,
+                48
+            ]
+        }
+    ],
+    "TP_name": [
+        {
+            "third_party_sharing_practice_class": "merger_and_acquisition",
+            "third_party_sharing_practice_mentioned_in_text": "company, or parts of it, may be sold, merged or otherwise transferred",
+            "third_party_name": "Unknown",
+            "third_party_name_mentioned_in_text": "",
+            "line_number": [
+                38
+            ]
+        },
+        {
+            "third_party_sharing_practice_class": "aggregated_information",
+            "third_party_sharing_practice_mentioned_in_text": "third party providers specializing in behavioral marketing and consumer behavior",
+            "third_party_name": "Unknown",
+            "third_party_name_mentioned_in_text": "",
+            "line_number": [
+                48
+            ]
+        },
+        {
+            "third_party_sharing_practice_class": "aggregated_information",
+            "third_party_sharing_practice_mentioned_in_text": "DoubleClick is our primary third party ad server",
+            "third_party_name": "DoubleClick",
+            "third_party_name_mentioned_in_text": "DoubleClick",
+            "line_number": [
+                54
+            ]
+        }
+    ],
+    "your_rights": [
+        {
+            "rights_class": "opt_out_marketing",
+            "rights_mentioned_in_text": "A user may, at any time, opt out of receiving promotional offers by mail or e-mail",
+            "line_number": [
+                14
+            ]
+        },
+        {
+            "rights_class": "data_processing_complaint",
+            "rights_mentioned_in_text": "we will implement your opt-out request within 10 business days of receiving the opt-out request",
+            "line_number": [
+                74
+            ]
+        }
+    ],
+    "your_responsibilities": [
+        {
+            "responsibilities_class": "data_protection",
+            "responsibilities_mentioned_in_text": "Your personal information may also be protected by the password you created",
+            "line_number": [
+                78
+            ]
+        }
+    ]
+}

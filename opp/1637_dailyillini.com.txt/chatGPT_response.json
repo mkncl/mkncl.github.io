@@ -1,0 +1,93 @@
+{
+    "data_types": [
+        {
+            "data_class": "age",
+            "data_mentioned_in_text": "Demographics, Age (traffic by age ranges)",
+            "purpose_class": "research",
+            "purpose_mentioned_in_text": "to analyze data on our users' demographics",
+            "line_number": [
+                18,
+                21
+            ]
+        },
+        {
+            "data_class": "gender",
+            "data_mentioned_in_text": "Demographics, Gender (traffic by gender)",
+            "purpose_class": "research",
+            "purpose_mentioned_in_text": "to analyze data on our users' demographics",
+            "line_number": [
+                18,
+                22
+            ]
+        },
+        {
+            "data_class": "behaviours",
+            "data_mentioned_in_text": "Interests, Affinity Categories, In-Market Categories, Other Categories (behavior by interest categories)",
+            "purpose_class": "research",
+            "purpose_mentioned_in_text": "to analyze the this type of data",
+            "line_number": [
+                23,
+                25,
+                26,
+                27,
+                28
+            ]
+        }
+    ],
+    "TP_sharing": [
+        {
+            "purpose_class": "research",
+            "purpose_mentioned_in_text": "This analysis enables us to track how our users engage over a date range, who our users are generally, and how their behavior varies by attribute",
+            "third_party_sharing_practice_class": "aggregated_information",
+            "third_party_sharing_practice_mentioned_in_text": "Illini Media uses non-identifying and aggregate information to better customize our websites for your use and to share general data about those who view our websites with our advertisers.",
+            "line_number": [
+                12,
+                29
+            ]
+        }
+    ],
+    "TP_name": [
+        {
+            "third_party_sharing_practice_class": "aggregated_information",
+            "third_party_sharing_practice_mentioned_in_text": "Illini Media partners with Google and OnCampus Advertising to serve some of the ads you see when you visit our websites.",
+            "third_party_name": "Google",
+            "third_party_name_mentioned_in_text": "partners with Google",
+            "line_number": [
+                14
+            ]
+        },
+        {
+            "third_party_sharing_practice_class": "aggregated_information",
+            "third_party_sharing_practice_mentioned_in_text": "Illini Media partners with Google and OnCampus Advertising to serve some of the ads you see when you visit our websites.",
+            "third_party_name": "OnCampus Advertising",
+            "third_party_name_mentioned_in_text": "partners with OnCampus Advertising",
+            "line_number": [
+                14
+            ]
+        }
+    ],
+    "your_rights": [
+        {
+            "rights_class": "opt_out_marketing",
+            "rights_mentioned_in_text": "You may use Google Analytics' currently available opt-outs at any time.",
+            "line_number": [
+                41
+            ]
+        },
+        {
+            "rights_class": "access_to_information",
+            "rights_mentioned_in_text": "You can access all your personally identifiable information that we collect online and maintain by logging into your account and adjusting your account settings and profile information.",
+            "line_number": [
+                45
+            ]
+        },
+        {
+            "rights_class": "data_correction",
+            "rights_mentioned_in_text": "You can correct factual errors in your personally identifiable information by sending us a request that credibly shows error.",
+            "line_number": [
+                45
+            ]
+        }
+    ],
+    "your_responsibilities": []
+}

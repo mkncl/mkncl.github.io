@@ -1,0 +1,109 @@
+{
+    "data_types": [
+        {
+            "data_class": "name",
+            "data_mentioned_in_text": "such as your name",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "if you decide not to register or provide such information, you may not be able to use certain features of the Site or other services",
+            "line_number": [
+                20
+            ]
+        },
+        {
+            "data_class": "physical_address",
+            "data_mentioned_in_text": "address",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "we may collect personal information from you when you register on the Site, subscribe to one of our services",
+            "line_number": [
+                20
+            ]
+        },
+        {
+            "data_class": "email_address",
+            "data_mentioned_in_text": "email address",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "we collect information that may personally identify you, only if you choose to share such information with us.",
+            "line_number": [
+                20
+            ]
+        },
+        {
+            "data_class": "phone_number",
+            "data_mentioned_in_text": "telephone number",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "we collect information that may personally identify you, only if you choose to share such information with us.",
+            "line_number": [
+                20
+            ]
+        },
+        {
+            "data_class": "credit_related_information",
+            "data_mentioned_in_text": "credit card information",
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "in connection with any purchase you make on or through the Site",
+            "line_number": [
+                20
+            ]
+        },
+        {
+            "data_class": "ip_address",
+            "data_mentioned_in_text": "such as IP (internet protocol) address",
+            "purpose_class": "improve_products_and_services",
+            "purpose_mentioned_in_text": "We may automatically collect non-personal information",
+            "line_number": [
+                22
+            ]
+        },
+        {
+            "data_class": "cookie_information",
+            "data_mentioned_in_text": "cookies",
+            "purpose_class": "improve_products_and_services",
+            "purpose_mentioned_in_text": "We use cookies and Web beacons to improve the quality of the Site.",
+            "line_number": [
+                24
+            ]
+        }
+    ],
+    "TP_sharing": [
+        {
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "We may share personal information with entities controlling, controlled by, or under common control with Freedom.",
+            "third_party_sharing_practice_class": "affiliates_and_subsidiaries",
+            "third_party_sharing_practice_mentioned_in_text": "entities controlling, controlled by, or under common control with Freedom",
+            "line_number": [
+                41
+            ]
+        },
+        {
+            "purpose_class": "provide_services_and_fulfill_contractual_obligations",
+            "purpose_mentioned_in_text": "In the event that Freedom is merged, or in the event of a transfer of our assets",
+            "third_party_sharing_practice_class": "merger_and_acquisition",
+            "third_party_sharing_practice_mentioned_in_text": "In the event of a transfer of our assets",
+            "line_number": [
+                41
+            ]
+        }
+    ],
+    "TP_name": [
+        {
+            "third_party_sharing_practice_class": "merger_and_acquisition",
+            "third_party_sharing_practice_mentioned_in_text": "transfer of our assets",
+            "third_party_name": "Unknown",
+            "third_party_name_mentioned_in_text": "",
+            "line_number": [
+                41
+            ]
+        },
+        {
+            "third_party_sharing_practice_class": "affiliates_and_subsidiaries",
+            "third_party_sharing_practice_mentioned_in_text": "entities controlling, controlled by, or under common control with Freedom",
+            "third_party_name": "Unknown",
+            "third_party_name_mentioned_in_text": "",
+            "line_number": [
+                41
+            ]
+        }
+    ],
+    "your_rights": [],
+    "your_responsibilities": []
+}
